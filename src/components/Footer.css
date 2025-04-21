@@ -1,0 +1,60 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: #fff6e8;
+  border-top: 2px solid black;
+}
+
+.footer-left {
+  max-width: 60%;
+}
+
+/* merci de  */
+.footer-left h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-rights {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+/* j'en avais marre */
+.footer-note {
+  color: #B582CA;
+  font-size: 0.6rem;
+  margin-top: 1rem;
+}
+
+/* parlons ensemble */
+/* .footer-right {
+  
+} */
+
+/*parlons ensemble*/
+.footer-contact-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.footer-icon {
+  font-size: 2rem;
+  color: #000000;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+  transform: translateY(2);
+  color: #B582CA; /* couleur hover */
+}

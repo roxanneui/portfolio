@@ -1,0 +1,57 @@
+.project-page {
+  display: flex;
+  padding: 2rem;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.left-column {
+  width: 33%;
+  position: sticky;
+  top: 6rem; /* pour ne pas être sous le header */
+  align-self: flex-start;
+  height: fit-content;
+  z-index: 2;
+  /* background-color: white; garde le fond lisible même si images passent à droite */
+  padding-right: 1rem;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill {
+  padding: 0.4rem 0.8rem;
+  background-color: #bb8be0;
+  color: white;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.right-column {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

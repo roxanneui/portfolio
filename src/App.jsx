@@ -1,0 +1,145 @@
+import { useEffect, useState, useContext } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import './main.css';
+import { LanguageContext } from './context/LanguageContext';
+import NameIntro from './components/NameIntro';
+import EyeIntro from './components/EyeIntro';
+
+function App() {
+  const [hasLoaded, setHasLoaded] = useState(false); // Gère l'activation de l'animation du texte après le chargement
+  const [isIntroDone, setIsIntroDone] = useState(false); // Ajout de l'état pour gérer la fin de l'intro
+
+  useEffect(() => {
+    // Simuler la fin de l'écran de chargement
+    const timer = setTimeout(() => {
+      setHasLoaded(true); // Lancer l'animation après 3 secondes (ou après la fin de ton écran de chargement)
+    }, 3000); // Ici, 3000ms = 3 secondes, ajuste en fonction de ton écran de chargement
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleIntroEnd = () => {
+    setIsIntroDone(true); // L'animation de l'intro est terminée
+  };
+
+  const { language, toggleLanguage } = useContext(LanguageContext); // language, toggleLanguage proviennent de LanguageContext
+  const [showHeader, setShowHeader] = useState(true);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setShowHeader(currentScrollY < lastScrollY || currentScrollY < 50);
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const content = {
+    fr: {
+      greeting: 'Bonjour / Hi !',
+      intro: `Actuellement étudiante en Design
+      Graphique à Paris, je recherche une alternance<br />
+       afin de me spécialiser en <br />
+      UI/UX design dès septembre 2025,<br/>
+      au rythme de 3 jours en entreprise<br/>
+      et 2 jours en formation et temps plein<br/>
+      pendant les vacances scolaires.`,
+      button: 'English pls',
+      cv: 'Télécharger mon CV',
+      linkedin: 'Mon LinkedIn',
+      projects: '/Projets récents',
+    },
+    en: {
+      greeting: 'Hi / Bonjour !',
+      intro: `Currently studying Graphic Design<br/>
+      in Paris, I'm looking for an internship<br/>
+      in UI/UX Design, starting in September<br/>
+      2025 and for a year, at the rate of 3 days<br/>
+      working and 2 days at school, plus full<br/>
+      time during school vacations.`,
+      button: 'Français',
+      cv: 'Download my resume',
+      linkedin: 'My LinkedIn',
+      projects: '/Recent projects',
+    },
+  };
+
+  const projects = [
+    { img: './public/Better/better1.png', title: 'Better' },
+    { img: './public/LesCheminsDeLaNature/lCDLN1.png', title: 'Les Chemins de la Nature' },
+    { img: './WWWoman/wwwoman1.png', title: 'WWWoman' },
+    { img: 'path/to/image2.jpg', title: 'Projet 2' },
+    { img: 'path/to/image2.jpg', title: 'Projet 2' },
+    { img: 'path/to/image2.jpg', title: 'Projet 2' },
+    { img: 'path/to/image2.jpg', title: 'Projet 2' },
+    { img: 'path/to/image2.jpg', title: 'Projet 2' },
+  ];
+
+  return (
+    <>
+      <Header showHeader={showHeader} />
+      {/* {isIntroDone && <NameIntro />} */}
+      <main className="homepage">
+        {isIntroDone && (
+          <>
+            <div className="lang-block">
+              <h1 className={hasLoaded ? 'fade-in' : ''}>{content[language].greeting}</h1>
+              <button onClick={toggleLanguage} className="lang-btn">
+                <span className="button_top">{content[language].button}</span>
+              </button>
+            </div>
+
+            <p
+              className={hasLoaded ? 'fade-in' : ''}
+              dangerouslySetInnerHTML={{ __html: content[language].intro }}
+            ></p>
+
+            <div className="links">
+              <div className="link">
+                <a href="/path/to/CV.pdf" className="cv-link" download>
+                  {content[language].cv}
+                </a>
+              </div>
+              <div className="link">
+                <a
+                  href="https://www.linkedin.com/in/roxanne-landry-144976289/"
+                  className="linkedin-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {content[language].linkedin}
+                </a>
+              </div>
+            </div>
+          </>
+        )}
+      </main>
+
+      <div className="scroll-invite">
+        <div className="arrow-down">↓</div>
+      </div>
+
+      <div className="project-section">
+        <div className="project-section-title">{content[language].projects}</div>
+        <span className="blinking-cursor">▍</span>
+        <section className="projects">
+          {projects.map((proj, i) => (
+            <div className="project" key={i}>
+              <img src={proj.img} alt={proj.title} className="project-image" />
+              <div className="project-title">{proj.title}</div>
+            </div>
+          ))}
+        </section>
+      </div>
+
+      <Footer />
+      <EyeIntro onIntroEnd={handleIntroEnd} /> {/* Passer la fonction ici */}
+    </>
+  );
+}
+
+export default App;

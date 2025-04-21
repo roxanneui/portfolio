@@ -1,0 +1,49 @@
+.eye-wrapper {
+  position: fixed;
+  inset: 0;
+  background: rgb(255, 255, 255);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 1s ease-in-out 2.5s forwards;
+}
+
+.eye-svg {
+  width: 200px;
+  height: 100px;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 4;
+  fill: none;
+}
+
+.eye-outline {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: drawEye 1.5s ease forwards;
+}
+
+.iris {
+  fill: rgb(0, 0, 0);
+  opacity: 0;
+  animation: irisAppear 1s ease 1.5s forwards;
+}
+
+@keyframes drawEye {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes irisAppear {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}

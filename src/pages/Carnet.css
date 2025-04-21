@@ -1,0 +1,21 @@
+.carnet-page {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(187, 139, 224, 0.3); /* violet transparent */
+    border: 2px solid #B582CA;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+  }
+  

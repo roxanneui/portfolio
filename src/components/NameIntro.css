@@ -1,0 +1,22 @@
+.name-intro {
+    display: flex;
+    justify-content: center;
+    gap: 0.3em;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .name-letter {
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    color: #222;
+    position: relative;
+  }
+  
+  .name-letter:hover {
+    color: #ff6f61;
+    transform: scale(1.2) rotate(-3deg);
+  }
+  
