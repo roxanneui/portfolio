@@ -9,6 +9,9 @@ import EyeIntro from './components/EyeIntro';
 function App() {
   const [hasLoaded, setHasLoaded] = useState(false); // Gère l'activation de l'animation du texte après le chargement
   const [isIntroDone, setIsIntroDone] = useState(false); // Ajout de l'état pour gérer la fin de l'intro
+  const { language, toggleLanguage } = useContext(LanguageContext); // language, toggleLanguage proviennent de LanguageContext
+  const [showHeader, setShowHeader] = useState(true);
+  const [hoveredProject, setHoveredProject] = useState(null); // État pour gérer le projet survolé
 
   useEffect(() => {
     // Simuler la fin de l'écran de chargement
@@ -21,9 +24,6 @@ function App() {
   const handleIntroEnd = () => {
     setIsIntroDone(true); // L'animation de l'intro est terminée
   };
-
-  const { language, toggleLanguage } = useContext(LanguageContext); // language, toggleLanguage proviennent de LanguageContext
-  const [showHeader, setShowHeader] = useState(true);
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -41,7 +41,7 @@ function App() {
   const content = {
     fr: {
       greeting: 'Bonjour / Hi !',
-      intro: `Actuellement étudiante en Design
+      intro: `Actuellement étudiante en Design<br />
       Graphique à Paris, je recherche une alternance<br />
        afin de me spécialiser en <br />
       UI/UX design dès septembre 2025,<br/>
@@ -69,15 +69,32 @@ function App() {
   };
 
   const projects = [
-    { img: './public/Better/better1.png', title: 'Better' },
-    { img: './public/LesCheminsDeLaNature/lCDLN1.png', title: 'Les Chemins de la Nature' },
-    { img: './WWWoman/wwwoman1.png', title: 'WWWoman' },
-    { img: 'path/to/image2.jpg', title: 'Projet 2' },
-    { img: 'path/to/image2.jpg', title: 'Projet 2' },
-    { img: 'path/to/image2.jpg', title: 'Projet 2' },
-    { img: 'path/to/image2.jpg', title: 'Projet 2' },
-    { img: 'path/to/image2.jpg', title: 'Projet 2' },
+    { img: './public/Better/better1.png', title: 'Better',
+      tags: { fr: ['Identité Visuelle', 'Packaging'], en: ['Visual Identity', 'Packaging'] },
+      color: '#8eb3db', pageName: 'better' },
+
+    { img: './public/LesCheminsDeLaNature/lCDLN1.png', title: 'Les Chemins de la Nature',
+      tags: { fr: ['Edition', 'Workshop'], en: ['Editorial', 'Workshop'] },
+      color: '#b4ce94', pageName: 'lescheminsdelanature' },
+
+    { img: './WWWoman/wwwoman1.png', title: 'WWWoman',
+      tags: { fr: ['Conception UI', 'Identité Visuelle'], en: ['UI Design', 'Visual Identity'] },
+      color: '#a41744', pageName: 'wwwoman'  },
+
+      { img: './WWWoman/wwwoman1.png', title: 'WWWoman',
+        tags: { fr: ['Conception UI', 'Identité Visuelle'], en: ['UI Design', 'Visual Identity'] },
+        color: '#a41744', pageName: 'wwwoman'  },
   ];
+
+  useEffect(() => {
+    if (hoveredProject !== null && projects[hoveredProject]?.color) {
+      document.querySelector('.project-section').style.backgroundColor = projects[hoveredProject].color;
+      document.querySelector('.projects').style.backgroundColor = projects[hoveredProject].color;
+    } else {
+      document.querySelector('.project-section').style.backgroundColor = '#000';
+      document.querySelector('.projects').style.backgroundColor = '#000';
+    }
+  }, [hoveredProject]);
 
   return (
     <>
@@ -124,14 +141,38 @@ function App() {
       </div>
 
       <div className="project-section">
-        <div className="project-section-title">{content[language].projects}</div>
-        <span className="blinking-cursor">▍</span>
+        <div className="project-section-title">
+          {content[language].projects}
+          <span className="blinking-cursor">|</span>
+        </div>
         <section className="projects">
           {projects.map((proj, i) => (
+            <>
             <div className="project" key={i}>
-              <img src={proj.img} alt={proj.title} className="project-image" />
+              <img
+                src={proj.img}
+                alt={proj.title}
+                className="project-image"
+                onMouseEnter={() => setHoveredProject(i)}
+                onMouseLeave={() => setHoveredProject(null)}
+                onClick={() => window.location.href = `/projects/${proj.pageName}`}
+              />
               <div className="project-title">{proj.title}</div>
+            {proj.tags && proj.tags[language] && (
+              <div className="project-tags">
+                {proj.tags[language].map((tag, index) => (
+                  <span
+                    key={index}
+                    className="project-tag"
+                    style={{ transitionDelay: `${index * 100}ms` }}
+                  >
+                    {tag}
+                  </span>
+                ))} 
+              </div>
+            )}
             </div>
+            </>
           ))}
         </section>
       </div>
