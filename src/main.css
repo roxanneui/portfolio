@@ -81,7 +81,7 @@
   
   .lang-btn:hover .button_top {
     transform: translateY(-0.33em);
-    --button_color: #bf45e4;
+    --button_color: #a482d1;
 
   }
   
@@ -111,7 +111,7 @@
   }
   
   .cv-link:hover, .linkedin-link:hover {
-    color: #B582CA;  /* Change la couleur au survol */
+    color: #a482d1;  /* Change la couleur au survol */
   }
 
   .project-section {
@@ -222,9 +222,9 @@
   }
   
   .arrow-down {
-    font-size: 2.5rem;
+    font-size: 10rem;
     animation: bounce 1.5s infinite;
-    color: #B582CA;
+    color: #a482d1;
   }
   
   @keyframes bounce {

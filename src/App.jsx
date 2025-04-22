@@ -51,7 +51,7 @@ function App() {
       button: 'English pls',
       cv: 'Télécharger mon CV',
       linkedin: 'Mon LinkedIn',
-      projects: '/Projets récents',
+      projects: '/Projets',
     },
     en: {
       greeting: 'Hi / Bonjour !',
@@ -64,44 +64,45 @@ function App() {
       button: 'Français',
       cv: 'Download my resume',
       linkedin: 'My LinkedIn',
-      projects: '/Recent projects',
+      projects: '/Projects',
     },
   };
 
   const projects = [
+
+    { img: './Ecomiam/Ecomiammockup2.1.png', title: 'Ecomiam',
+      tags: { fr: ['Conception UI', 'Identité Visuelle'], en: ['UI Design', 'Visual Identity'] },
+      color: '#a41744', pageName: 'wwwoman'  },
+      
     { img: './public/Better/better1.png', title: 'Better',
       tags: { fr: ['Identité Visuelle', 'Packaging'], en: ['Visual Identity', 'Packaging'] },
-      color: '#8eb3db', pageName: 'better' },
+      color: '#298040', pageName: 'better' },
 
     { img: './public/LesCheminsDeLaNature/lCDLN1.png', title: 'Les Chemins de la Nature',
       tags: { fr: ['Edition', 'Workshop'], en: ['Editorial', 'Workshop'] },
       color: '#b4ce94', pageName: 'lescheminsdelanature' },
-
-    { img: './WWWoman/wwwoman1.png', title: 'WWWoman',
-      tags: { fr: ['Conception UI', 'Identité Visuelle'], en: ['UI Design', 'Visual Identity'] },
-      color: '#a41744', pageName: 'wwwoman'  },
 
       { img: './WWWoman/wwwoman1.png', title: 'WWWoman',
         tags: { fr: ['Conception UI', 'Identité Visuelle'], en: ['UI Design', 'Visual Identity'] },
         color: '#a41744', pageName: 'wwwoman'  },
   ];
 
-  useEffect(() => {
-    if (hoveredProject !== null && projects[hoveredProject]?.color) {
-      document.querySelector('.project-section').style.backgroundColor = projects[hoveredProject].color;
-      document.querySelector('.projects').style.backgroundColor = projects[hoveredProject].color;
-    } else {
-      document.querySelector('.project-section').style.backgroundColor = '#000';
-      document.querySelector('.projects').style.backgroundColor = '#000';
-    }
-  }, [hoveredProject]);
+  // useEffect(() => {
+  //   if (hoveredProject !== null && projects[hoveredProject]?.color) {
+  //     document.querySelector('.project-section').style.backgroundColor = projects[hoveredProject].color;
+  //     document.querySelector('.projects').style.backgroundColor = projects[hoveredProject].color;
+  //   } else {
+  //     document.querySelector('.project-section').style.backgroundColor = '#000';
+  //     document.querySelector('.projects').style.backgroundColor = '#000';
+  //   }
+  // }, [hoveredProject]);
 
   return (
     <>
       <Header showHeader={showHeader} />
-      {/* {isIntroDone && <NameIntro />} */}
+      <NameIntro />
       <main className="homepage">
-        {isIntroDone && (
+        
           <>
             <div className="lang-block">
               <h1 className={hasLoaded ? 'fade-in' : ''}>{content[language].greeting}</h1>
@@ -133,7 +134,6 @@ function App() {
               </div>
             </div>
           </>
-        )}
       </main>
 
       <div className="scroll-invite">
@@ -178,7 +178,7 @@ function App() {
       </div>
 
       <Footer />
-      <EyeIntro onIntroEnd={handleIntroEnd} /> {/* Passer la fonction ici */}
+      {/* <EyeIntro onIntroEnd={handleIntroEnd} /> Passer la fonction ici */}
     </>
   );
 }
