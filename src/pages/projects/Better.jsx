@@ -3,6 +3,7 @@ import ProjectPage from "../../components/ProjectPage";
 import { LanguageContext } from '../../context/LanguageContext';
 
 function Better() {
+
   const { language } = useContext(LanguageContext);
   const informations =
   {
@@ -27,7 +28,11 @@ function Better() {
   title={informations[language].title}
   description={informations[language].description}
   skills={informations[language].skills}
-  images={images} />;
+  images={images} 
+  prevProject="/projects/Ecomiam"
+  nextProject="/projects/LesCheminsDeLaNature"
+  />;
+  
 }
 
 export default Better;

@@ -26,16 +26,15 @@ function Ecomiam() {
     "/Ecomiam/Eco.png"
   ];
 
-  console.log("Langue sélectionnée :", language);
-  console.log("Titre récupéré :", informations[language]?.title);
-
   return <ProjectPage
   
   title={informations[language].title}
   description={informations[language].description}
   skills={informations[language].skills}
   images={images} 
-  figmaLink={informations[language].figmaLink} />;
+  figmaLink={informations[language].figmaLink} 
+  nextProject="/projects/Better"
+  />;
 }
 
 export default Ecomiam;

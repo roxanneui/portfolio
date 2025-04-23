@@ -3,9 +3,13 @@ import "./ProjectPage.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import { LanguageContext } from '../context/LanguageContext';
+import arrowLeft from "../FlecheGauche.png";
+import arrowRight from "../FlecheDroite.png";
 
-export default function ProjectPage({ title, description, skills, images, figmaLink }) {
-  const { language } = useContext(LanguageContext);
+
+export default function ProjectPage({ title, description, skills, images, figmaLink, prevProject, nextProject}) {
+  console.log({ title, description, skills, images, figmaLink, prevProject, nextProject });
+
 
   const content = {
     fr: {
@@ -24,14 +28,14 @@ export default function ProjectPage({ title, description, skills, images, figmaL
           <h1 className="project-title-size">{title}</h1>
           <p className="project-description">{description}</p>
 
-          {/* Étape 3 : Lien Figma */}
-          {figmaLink && (
+          
+          {/* {figmaLink && (
             <p className="figma-link">
               <a href={figmaLink} target="_blank" rel="noopener noreferrer">
                 {content[language].figmaText}
               </a>
             </p>
-          )}
+          )} */}
 
           <div className="skill-pills">
             {skills.map((skill, index) => (
@@ -51,6 +55,23 @@ export default function ProjectPage({ title, description, skills, images, figmaL
           ))}
         </div>
       </div>
+        
+      <div className="project-navigation">
+      <div className="project-navigation">
+        {prevProject && (
+          <a href={prevProject} className="nav-image-button nav-left">
+            <img src={arrowLeft} alt="Projet précédent" />
+          </a>
+       )}
+        {nextProject && (
+          <a href={nextProject} className="nav-image-button nav-right">
+            <img src={arrowRight} alt="Projet suivant" />
+          </a>
+        )}
+      </div>
+
+      </div>
+
       
       <Footer />
     </>
