@@ -25,9 +25,13 @@ function Header() {
   }, []);
 
   const navText = {
-    fr: ['Galerie', 'Carnet', 'Contact'],
-    en: ['Gallery', 'Notebook', 'Contact'],
+    fr: ['Carnet', 'Contact'],
+    en: ['Sktechbook', 'Contact'],
   };
+  // const navText = {
+  //   fr: ['Galerie', 'Carnet', 'Contact'],
+  //   en: ['Gallery', 'Notebook', 'Contact'],
+  // };
 
   return (
     <header className={`header ${showHeader ? 'visible' : 'hidden'} redirection`}>
@@ -37,9 +41,9 @@ function Header() {
         </Link>
       </div>
       <nav>
-        <Link to="/gallery">{navText[language][0]}</Link>
-        <Link to="/carnet">{navText[language][1]}</Link>
-        <Link to="/contact">{navText[language][2]}</Link>
+        {/* <Link to="/gallery">{navText[language][0]}</Link> */}
+        <Link to="/carnet">{navText[language][0]}</Link>
+        <Link to="/contact">{navText[language][1]}</Link>
       </nav>
     </header>
   );

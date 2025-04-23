@@ -6,6 +6,7 @@ import { LanguageContext } from './context/LanguageContext';
 import NameIntro from './components/NameIntro';
 import EyeIntro from './components/EyeIntro';
 
+
 function App() {
   const [hasLoaded, setHasLoaded] = useState(false); // Gère l'activation de l'animation du texte après le chargement
   const [isIntroDone, setIsIntroDone] = useState(false); // Ajout de l'état pour gérer la fin de l'intro
@@ -41,13 +42,13 @@ function App() {
   const content = {
     fr: {
       greeting: 'Bonjour / Hi !',
-      intro: `Actuellement étudiante en Design<br />
-      Graphique à Paris, je recherche une alternance<br />
-       afin de me spécialiser en <br />
-      UI/UX design dès septembre 2025,<br/>
+      intro: `Actuellement étudiante en design<br />
+      graphique à Paris, je recherche une<br />
+      alternance afin de me spécialiser<br />
+      en UI UX Design dès septembre,<br/>
       au rythme de 3 jours en entreprise<br/>
-      et 2 jours en formation et temps plein<br/>
-      pendant les vacances scolaires.`,
+      et 2 jours en formation et temps<br/>
+      plein pendant les vacances scolaires.`,
       button: 'English pls',
       cv: 'Télécharger mon CV',
       linkedin: 'Mon LinkedIn',
@@ -72,7 +73,7 @@ function App() {
 
     { img: './Ecomiam/Ecomiammockup2.1.png', title: 'Ecomiam',
       tags: { fr: ['Conception UI', 'Identité Visuelle'], en: ['UI Design', 'Visual Identity'] },
-      color: '#a41744', pageName: 'wwwoman'  },
+      color: '#a41744', pageName: 'ecomiam' },
       
     { img: './public/Better/better1.png', title: 'Better',
       tags: { fr: ['Identité Visuelle', 'Packaging'], en: ['Visual Identity', 'Packaging'] },
@@ -118,7 +119,7 @@ function App() {
 
             <div className="links">
               <div className="link">
-                <a href="/path/to/CV.pdf" className="cv-link" download>
+                <a href="./RoxanneLANDRYCV.pdf" className="cv-link" download>
                   {content[language].cv}
                 </a>
               </div>
@@ -136,9 +137,6 @@ function App() {
           </>
       </main>
 
-      <div className="scroll-invite">
-        <div className="arrow-down">↓</div>
-      </div>
 
       <div className="project-section">
         <div className="project-section-title">

@@ -6,18 +6,19 @@
 }
 
 .left-column {
+  border: 2px solid red;
   width: 33%;
   position: sticky;
-  top: 6rem; /* pour ne pas être sous le header */
+  top: 14rem; /* pour ne pas être sous le header */
   align-self: flex-start;
-  height: fit-content;
+  height: 100%;
   z-index: 2;
   /* background-color: white; garde le fond lisible même si images passent à droite */
   padding-right: 1rem;
 }
 
 .project-title {
-  font-size: 2.5rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
@@ -56,3 +57,28 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   height: auto;
 }
+
+.figma-link a {
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: 8px 16px;
+  
+  color: #000000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.1s ease;
+  border-radius: 9999px;
+  border: 2px solid #000000;
+}
+
+.figma-link a:hover {
+  transform: translateY(-2px);
+  background-color: #a482d1;
+  color: #000000;
+}
+
+.figma-link a:active {
+  transform: translateY(0);
+}
+

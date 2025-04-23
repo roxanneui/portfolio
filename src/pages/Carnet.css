@@ -1,15 +1,16 @@
 .carnet-page {
     position: relative;
     overflow: hidden;
+    background-color :black;
   }
   
-  .custom-cursor {
+  /* .custom-cursor {
     position: fixed;
     top: 0;
     left: 0;
     width: 40px;
     height: 40px;
-    background-color: rgba(187, 139, 224, 0.3); /* violet transparent */
+    background-color: rgba(187, 139, 224, 0.3);
     border: 2px solid #a482d1;
     border-radius: 50%;
     pointer-events: none;
@@ -18,4 +19,16 @@
     z-index: 1000;
     backdrop-filter: blur(2px);
   }
+   */
+
+   .gallery-item {
+    width: 300px;      /* ou un % si tu veux du responsive */
+    height: auto;      /* conserve les proportions */
+    border-radius: 12px;
+    
+  }
   
+  .gallery-item:hover {
+    transform: translateY(2px);
+    transition: 1s ease ease-in-out;
+  }

@@ -1,42 +1,9 @@
-// import React from "react";
-// import "./ProjectPage.css";
-// import Header from "./Header";
-// import Footer from "./Footer";
-
-// export default function ProjectPage({ title, description, skills, images }) {
-//   return (
-//     <>
-//       <Header />
-//       <div className="project-page">
-//         <div className="project-content">
-//             <div className="project-text">
-//                 <h1>{title}</h1>
-//                 <p>{description}</p>
-//                 <div className="skills">
-//                     {skills.map((skill, index) => (
-//                         <span key={index} className="skill-pill">{skill}</span>
-//             ))}
-//         </div>
-//         </div>
-
-//         <div className="project-images">
-//             {images.map((image, index) => (
-//                 <img key={index} src={image} alt={`Projet ${title} ${index + 1}`} />
-//         ))}
-//             </div>
-//         </div>
-//     </div>
-//       <Footer />
-//     </>
-//   );
-// }
-
 import React from "react";
 import "./ProjectPage.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
-export default function ProjectPage({ title, description, skills, images }) {
+export default function ProjectPage({ title, description, skills, images, figmaLink }) {
   return (
     <>
       <Header />
@@ -44,6 +11,16 @@ export default function ProjectPage({ title, description, skills, images }) {
         <div className="left-column">
           <h1 className="project-title">{title}</h1>
           <p className="project-description">{description}</p>
+
+          {/* Étape 3 : Lien Figma */}
+          {figmaLink && (
+            <p className="figma-link">
+              <a href={figmaLink} target="_blank" rel="noopener noreferrer">
+                Voir le projet sur Figma
+              </a>
+            </p>
+          )}
+
           <div className="skill-pills">
             {skills.map((skill, index) => (
               <span key={index} className="pill">{skill}</span>
@@ -62,6 +39,7 @@ export default function ProjectPage({ title, description, skills, images }) {
           ))}
         </div>
       </div>
+      
       <Footer />
     </>
   );
