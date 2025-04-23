@@ -75,11 +75,11 @@ function App() {
       tags: { fr: ['Conception UI', 'Identité Visuelle'], en: ['UI Design', 'Visual Identity'] },
       color: '#a41744', pageName: 'ecomiam' },
       
-    { img: './public/Better/better1.png', title: 'Better',
+    { img: './Better/Better1.png', title: 'Better',
       tags: { fr: ['Identité Visuelle', 'Packaging'], en: ['Visual Identity', 'Packaging'] },
       color: '#298040', pageName: 'better' },
 
-    { img: './public/LesCheminsDeLaNature/lCDLN1.png', title: 'Les Chemins de la Nature',
+    { img: './LesCheminsDeLaNature/lCDLN1.png', title: 'Les Chemins de la Nature',
       tags: { fr: ['Edition', 'Workshop'], en: ['Editorial', 'Workshop'] },
       color: '#b4ce94', pageName: 'lescheminsdelanature' },
 
@@ -141,7 +141,7 @@ function App() {
       <div className="project-section">
         <div className="project-section-title">
           {content[language].projects}
-          <span className="blinking-cursor">|</span>
+          <span className="blinking-cursor"> |</span>
         </div>
         <section className="projects">
           {projects.map((proj, i) => (

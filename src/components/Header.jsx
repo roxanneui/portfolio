@@ -26,7 +26,7 @@ function Header() {
 
   const navText = {
     fr: ['Carnet', 'Contact'],
-    en: ['Sktechbook', 'Contact'],
+    en: ['Sketchbook', 'Contact'],
   };
   // const navText = {
   //   fr: ['Galerie', 'Carnet', 'Contact'],

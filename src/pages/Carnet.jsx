@@ -1,12 +1,10 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useContext } from 'react'
 import './Carnet.css'
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { motion } from "framer-motion";
-
-
-
+import { LanguageContext } from '../context/LanguageContext';
 
 export default function Carnet() {
   
@@ -26,12 +24,22 @@ export default function Carnet() {
   //     window.removeEventListener('mousemove', moveCursor)
   //   }
   // }, [])
+  const { language } = useContext(LanguageContext);
+  const content = {
+    fr: {
+      carnetText: "Carnet",
+    },
+    en: {
+      carnetText: "Sketchbook",
+    },
+  };
+
 
   return (
       <>
       <Header />
       <main className="gallery" style={{ padding: '2rem' }}>
-        <h1>Carnet</h1>
+        <h1>{content[language].carnetText}</h1>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}

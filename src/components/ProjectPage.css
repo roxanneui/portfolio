@@ -6,10 +6,9 @@
 }
 
 .left-column {
-  border: 2px solid red;
   width: 33%;
   position: sticky;
-  top: 14rem; /* pour ne pas être sous le header */
+  top: 5rem; /* pour ne pas être sous le header */
   align-self: flex-start;
   height: 100%;
   z-index: 2;
@@ -17,8 +16,8 @@
   padding-right: 1rem;
 }
 
-.project-title {
-  font-size: 1.1rem;
+h1.project-title-size {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
