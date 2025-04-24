@@ -22,8 +22,8 @@ function Better() {
   }  
   const images = [
     "/Better/Better1.png",
-    "/Better/Better2.png",
-    "/Better/Better4.mp4"
+    "/Better/Better4.mp4",
+    "/Better/Better2.png"
   ];
 
   return <ProjectPage

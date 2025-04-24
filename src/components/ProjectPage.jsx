@@ -35,14 +35,33 @@ export default function ProjectPage({ title, description, skills, images, figmaL
         </div>
 
         <div className="right-column">
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Projet ${title} ${index + 1}`}
-              className="project-image"
-            />
-          ))}
+          {images.map((image, index) => {
+            if (image.endsWith('.png') || image.endsWith('.jpg') || image.endsWith('.jpeg')) {
+              return (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`Projet ${title} ${index + 1}`}
+                  className="project-image"
+                />
+              );
+            } else if (image.endsWith('.mp4')) {
+              return (
+                <video
+                  key={index}
+                  src={image}
+                  controls
+                  className="project-video"
+                  autoPlay
+                  loop
+                  muted
+                >
+                  Your browser does not support the video tag.
+                </video>
+              );
+            }
+            return null;
+          })}
           {figmaLink && (
             <p className="figma-link">
               <a href={figmaLink} target="_blank" rel="noopener noreferrer">
