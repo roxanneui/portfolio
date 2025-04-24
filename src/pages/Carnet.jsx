@@ -35,6 +35,15 @@ export default function Carnet() {
   };
 
 
+const galleryImages = [
+  { src: "./Carnet/image1.png", alt: "Better Canettes" },
+  { src: "./Carnet/image2.png", alt: "The place to B Ticket" },
+  { src: "./Carnet/image3.png", alt: "Workshop Affiche" },
+  { src: "./Carnet/image4.png", alt: "Menton Affiche" },
+  { src: "./Carnet/image5.png", alt: "Logo Cinélux" },
+];
+
+
   return (
       <>
       <Header />
@@ -49,13 +58,31 @@ export default function Carnet() {
         </motion.div>
         <motion.img
           src="./Carnet/image1.png"
-          alt="Création cool"
+          alt="Better Canettes"
           className="gallery-item"
         />
 
         <motion.img
           src="./Carnet/image2.png"
-          alt="Création 2"
+          alt="The place to B Ticket"
+          className="gallery-item"
+        />
+
+        <motion.img
+          src="./Carnet/image3.png"
+          alt="Workshop Affiche"
+          className="gallery-item"
+        />
+
+        <motion.img
+          src="./Carnet/image4.png"
+          alt="Menton Affiche"
+          className="gallery-item"
+        />
+
+        <motion.img
+          src="./Carnet/image5.png"
+          alt="Logo Cinélux"
           className="gallery-item"
         />
 

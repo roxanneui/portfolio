@@ -22,9 +22,8 @@
   font-size: 1rem;
 }
 
-/* j'en avais marre */
 .footer-note {
-  color: #B582CA;
+  color: #9E74E6;
   font-size: 0.6rem;
   margin-top: 1rem;
 }
@@ -56,5 +55,5 @@
 .footer-icon:hover {
   transform: scale(1.2);
   transform: translateY(2);
-  color: #B582CA; /* couleur hover */
+  color: #9E74E6; /* couleur hover */
 }
