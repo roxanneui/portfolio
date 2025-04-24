@@ -7,20 +7,19 @@ function Better() {
   const informations =
   {
     "fr": {
-      "title": "Better",
-      "description": "Better est une application conçue pour favoriser la gestion de sa santé mentale via des rituels positifs, un journal personnel, et des exercices interactifs.",
-      "skills": ["Identité visuelle", "UI/UX Design", "Illustration"],
+      "title": "WWWomen",
+      "description": "La mission : souligner et mettre en lumière les femmes à travers leur art, l'entrepreneuriat et bien d'autres sujets. WWWomen met en avant les femmes du monde entier de manière ludique et authentique, comme un blog à partager et une édition hebdomadaire à lire.",
+      "skills": ["Concept", "Conception UI", "Identité visuelle"],
     },
     "en": {
-      "title": "Better",
-      "description": "Better is an app designed to support mental health management through positive rituals, a personal journal, and interactive exercises.",
-      "skills": ["Visual identity", "UI/UX Design", "Illustration"],
+      "title": "WWWomen",
+      "description": "Our mission : to highlight and recognize women through their their art, entrepreuneurship and many more. wwWomen shows to the world the feminin actuality with this one-page concept, like a blog with a new update every week.",
+      "skills": ["Concept", "UI design", "Visual Identity"],
     }
   }  
   const images = [
-    "/Better/Better1.png",
-    "/Better/better2.png",
-    "/Better/better3.png"
+    "/WWWomen/wwwomen1.png",
+    "/WWWomen/wwwomen2.png"
   ];
 
   return <ProjectPage

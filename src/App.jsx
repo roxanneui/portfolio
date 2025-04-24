@@ -60,9 +60,9 @@ function App() {
       intro: `Currently studying Graphic Design<br/>
       in Paris, I'm looking for an internship<br/>
       in UI/UX Design, starting in September<br/>
-      2025 and for a year, at the rate of 3 days<br/>
-      working and 2 days at school, plus full<br/>
-      time during school vacations.`,
+      2025 and for a year, at the rate of<br/>
+      3 days working and 2 days at school,<br/>
+      plus full time during school vacations.`,
       button: 'Français',
       cv: 'Download my resume',
       linkedin: 'My LinkedIn',
@@ -77,7 +77,7 @@ function App() {
       tags: { fr: ['App Mobile', 'Environnement'], en: ['Mobile App', 'Environement'] },
       color: '#a41744', pageName: 'ecomiam' },
       
-    { img: '/portfolio/WWWomen/wwwomen1.png', title: 'WWWomen',
+    { img: '/portfolio/WWWomen/wwwomen3.png', title: 'WWWomen',
       tags: { fr: ['One Page Web', 'Droits des femmes'], en: ['One Page Web', 'Women rights'] },
       color: '#a41744', pageName: 'wwwomen'  },
 
