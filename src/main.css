@@ -144,7 +144,6 @@
     margin-right: 2rem;
     margin-left: 2rem;
     transition: background-color 0.8s ease;
-    padding-bottom: 2rem;
   }
 
   .project {
@@ -277,4 +276,35 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.see-all-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.all-projects {
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: 8px 16px;
+  
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.1s ease;
+  border-radius: 9999px;
+  border: 2px solid #fff;
+}
+
+.all-projects:hover {
+  transform: translateY(-2px);
+  background-color: #9E74E6;
+  color: #fff;
+}
+
+.all-projects:active {
+  transform: translateY(0);
 }

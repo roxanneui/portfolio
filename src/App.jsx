@@ -53,6 +53,7 @@ function App() {
       cv: 'Télécharger mon CV',
       linkedin: 'Mon LinkedIn',
       projects: '/Projets UI UX',
+      allProjects: 'Voir tous mes projets',
     },
     en: {
       greeting: 'Hi / Bonjour !',
@@ -66,6 +67,7 @@ function App() {
       cv: 'Download my resume',
       linkedin: 'My LinkedIn',
       projects: '/UI UX Projects',
+      allProjects: 'See all my projects',
     },
   };
 
@@ -168,6 +170,11 @@ function App() {
             </div>
           ))}
         </section>
+        <div className="see-all-projects">
+          <Link to="/carnet" className="all-projects">
+            {content[language].allProjects}
+          </Link>
+        </div>
       </div>
 
       <Footer />
