@@ -5,7 +5,7 @@ import './main.css';
 import { LanguageContext } from './context/LanguageContext';
 import NameIntro from './components/NameIntro';
 import EyeIntro from './components/EyeIntro';
-
+import { Link } from 'react-router-dom';
 
 function App() {
   const [hasLoaded, setHasLoaded] = useState(false); // Gère l'activation de l'animation du texte après le chargement
@@ -52,7 +52,7 @@ function App() {
       button: 'English pls',
       cv: 'Télécharger mon CV',
       linkedin: 'Mon LinkedIn',
-      projects: '/Projets web',
+      projects: '/Projets',
     },
     en: {
       greeting: 'Hi / Bonjour !',
@@ -65,23 +65,23 @@ function App() {
       button: 'Français',
       cv: 'Download my resume',
       linkedin: 'My LinkedIn',
-      projects: '/Web projects',
+      projects: '/Projects',
     },
   };
 
   const projects = [
 
-    { img: './Ecomiam/Ecomiammockup2.1.png', title: 'Ecomiam',
+    { img: '/portfolio/Ecomiam/Ecomiammockup2.1.png', title: 'Ecomiam',
       tags: { fr: ['App Mobile', 'Environnement'], en: ['Mobile App', 'Environement'] },
       color: '#a41744', pageName: 'ecomiam' },
 
-    { img: './WWWoman/wwwoman1.png', title: 'WWWoman',
-        tags: { fr: ['One Page Web', 'Droits de femmes'], en: ['One Page Web', 'Woman rights'] },
-        color: '#a41744', pageName: 'wwwoman'  },
-      
-    { img: './Better/Better1.png', title: 'Better Designs',
+    { img: '/portfolio/LesCheminsDeLaNature/lCDLN1.png', title: 'Les Chemins de la Nature',
       tags: { fr: ['One Page Web', 'Environnement'], en: ['One Page Web', 'Environement'] },
-      color: '#298040', pageName: 'better' },
+      color: '#b4ce94', pageName: 'lescheminsdelanature' },
+
+    { img: '/portfolio/WWWoman/wwwoman1.png', title: 'WWWoman',
+      tags: { fr: ['One Page Web', 'Droits de femmes'], en: ['One Page Web', 'Woman rights'] },
+      color: '#a41744', pageName: 'wwwoman'  },
   ];
 
   // useEffect(() => {
@@ -115,7 +115,7 @@ function App() {
 
             <div className="links">
               <div className="link">
-                <a href="./RoxanneLANDRYCV.pdf" className="cv-link" download>
+                <a href="/portfolio/RoxanneLANDRYCV.pdf" className="cv-link" download>
                   {content[language].cv}
                 </a>
               </div>
@@ -141,32 +141,31 @@ function App() {
         </div>
         <section className="projects">
           {projects.map((proj, i) => (
-            <>
             <div className="project" key={i}>
-              <img
-                src={proj.img}
-                alt={proj.title}
-                className="project-image"
-                onMouseEnter={() => setHoveredProject(i)}
-                onMouseLeave={() => setHoveredProject(null)}
-                onClick={() => window.location.href = `/projects/${proj.pageName}`}
-              />
+              <Link to={`/projects/${proj.pageName}`}>
+                <img
+                  src={proj.img}
+                  alt={proj.title}
+                  className="project-image"
+                  onMouseEnter={() => setHoveredProject(i)}
+                  onMouseLeave={() => setHoveredProject(null)}
+                />
+              </Link>
               <div className="project-title">{proj.title}</div>
-            {proj.tags && proj.tags[language] && (
-              <div className="project-tags">
-                {proj.tags[language].map((tag, index) => (
-                  <span
-                    key={index}
-                    className="project-tag"
-                    style={{ transitionDelay: `${index * 100}ms` }}
-                  >
-                    {tag}
-                  </span>
-                ))} 
-              </div>
-            )}
+              {proj.tags && proj.tags[language] && (
+                <div className="project-tags">
+                  {proj.tags[language].map((tag, index) => (
+                    <span
+                      key={index}
+                      className="project-tag"
+                      style={{ transitionDelay: `${index * 100}ms` }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
-            </>
           ))}
         </section>
       </div>

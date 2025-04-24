@@ -17,9 +17,9 @@ import { LanguageProvider } from "./context/LanguageContext";
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <LanguageProvider>
-      <Router>
+      <Router basename="/portfolio">
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route index element={<App />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/carnet" element={<Carnet />} />
           <Route path="/contact" element={<Contact />} />

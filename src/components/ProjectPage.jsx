@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import { LanguageContext } from '../context/LanguageContext';
 import arrowLeft from "../FlecheGauche.png";
 import arrowRight from "../FlecheDroite.png";
-
+import { Link } from 'react-router-dom';
 
 export default function ProjectPage({ title, description, skills, images, figmaLink, prevProject, nextProject}) {
   console.log({ title, description, skills, images, figmaLink, prevProject, nextProject });
@@ -36,6 +36,7 @@ export default function ProjectPage({ title, description, skills, images, figmaL
 
         <div className="right-column">
           {images.map((image, index) => {
+            image = `/portfolio${image}`;
             if (image.endsWith('.png') || image.endsWith('.jpg') || image.endsWith('.jpeg')) {
               return (
                 <img
@@ -50,7 +51,6 @@ export default function ProjectPage({ title, description, skills, images, figmaL
                 <video
                   key={index}
                   src={image}
-                  controls
                   className="project-video"
                   autoPlay
                   loop
@@ -64,9 +64,9 @@ export default function ProjectPage({ title, description, skills, images, figmaL
           })}
           {figmaLink && (
             <p className="figma-link">
-              <a href={figmaLink} target="_blank" rel="noopener noreferrer">
+              <Link to={figmaLink} target="_blank" rel="noopener noreferrer">
                 {content[language].figmaText}
-              </a>
+              </Link>
             </p>
           )}
         </div>
@@ -75,14 +75,14 @@ export default function ProjectPage({ title, description, skills, images, figmaL
         
       <div className="project-navigation">
         {prevProject && (
-          <a href={prevProject} className="nav-image-button nav-left">
+          <Link to={prevProject} className="nav-image-button nav-left">
             <img src={arrowLeft} alt="Projet précédent" />
-          </a>
+          </Link>
         )}
         {nextProject && (
-          <a href={nextProject} className="nav-image-button nav-right">
+          <Link to={nextProject} className="nav-image-button nav-right">
             <img src={arrowRight} alt="Projet suivant" />
-          </a>
+          </Link>
         )}
       </div>
 

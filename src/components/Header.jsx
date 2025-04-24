@@ -28,16 +28,12 @@ function Header() {
     fr: ['Carnet', 'Contact'],
     en: ['Sketchbook', 'Contact'],
   };
-  // const navText = {
-  //   fr: ['Galerie', 'Carnet', 'Contact'],
-  //   en: ['Gallery', 'Notebook', 'Contact'],
-  // };
 
   return (
     <header className={`header ${showHeader ? 'visible' : 'hidden'} redirection`}>
       <div className="logo-container">
         <Link to="/">
-          <img src="/Logo1.png" alt="Logo" className="logo" />
+          <img src="/portfolio/Logo1.png" alt="Logo" className="logo" />
         </Link>
       </div>
       <nav>
