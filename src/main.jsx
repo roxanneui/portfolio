@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 import Ecomiam from "./pages/projects/Ecomiam";
 import Better from "./pages/projects/Better";
 import LesCheminsDeLaNature from "./pages/projects/LesCheminsDeLaNature";
-import WWWoman from "./pages/projects/WWWoman";
+import WWWomen from "./pages/projects/WWWomen";
 
 import "./main.css";
 import { LanguageProvider } from "./context/LanguageContext";
@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/projects/ecomiam" element={<Ecomiam />} />
           <Route path="/projects/better" element={<Better />} />
           <Route path="/projects/lescheminsdelanature" element={<LesCheminsDeLaNature />} />
-          <Route path="/projects/wwwoman" element={<WWWoman />} />
+          <Route path="/projects/wwwomen" element={<WWWomen />} />
         </Routes>
       </Router>
     </LanguageProvider>

@@ -24,7 +24,7 @@ function Gallery() {
         <div className="projects" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <Link to="/projects/better">Projet Better</Link>
           <Link to="/projects/lescheminsdelanature">Les Chemins de la Nature</Link>
-          <Link to="/projects/wwwoman">WWWoman</Link>
+          <Link to="/projects/wwwomen">WWWomen</Link>
         </div>
       </main>
       <Footer />

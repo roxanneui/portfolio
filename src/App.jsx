@@ -52,7 +52,7 @@ function App() {
       button: 'English pls',
       cv: 'Télécharger mon CV',
       linkedin: 'Mon LinkedIn',
-      projects: '/Projets',
+      projects: '/Projets UI UX',
     },
     en: {
       greeting: 'Hi / Bonjour !',
@@ -65,7 +65,7 @@ function App() {
       button: 'Français',
       cv: 'Download my resume',
       linkedin: 'My LinkedIn',
-      projects: '/Projects',
+      projects: '/UI UX Projects',
     },
   };
 
@@ -74,14 +74,14 @@ function App() {
     { img: '/portfolio/Ecomiam/Ecomiammockup2.1.png', title: 'Ecomiam',
       tags: { fr: ['App Mobile', 'Environnement'], en: ['Mobile App', 'Environement'] },
       color: '#a41744', pageName: 'ecomiam' },
+      
+    { img: '/portfolio/WWWomen/wwwomen1.png', title: 'WWWomen',
+      tags: { fr: ['One Page Web', 'Droits des femmes'], en: ['One Page Web', 'Women rights'] },
+      color: '#a41744', pageName: 'wwwomen'  },
 
-    { img: '/portfolio/LesCheminsDeLaNature/lCDLN1.png', title: 'Les Chemins de la Nature',
+    { img: '/portfolio/Better/Better1.png', title: 'Better Designs',
       tags: { fr: ['One Page Web', 'Environnement'], en: ['One Page Web', 'Environement'] },
-      color: '#b4ce94', pageName: 'lescheminsdelanature' },
-
-    { img: '/portfolio/WWWoman/wwwoman1.png', title: 'WWWoman',
-      tags: { fr: ['One Page Web', 'Droits de femmes'], en: ['One Page Web', 'Woman rights'] },
-      color: '#a41744', pageName: 'wwwoman'  },
+      color: '#b4ce94', pageName: 'Better' },
   ];
 
   // useEffect(() => {
