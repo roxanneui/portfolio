@@ -9,12 +9,12 @@ function Better() {
     "fr": {
       "title": "Better",
       "description": "Better est une application conçue pour favoriser la gestion de sa santé mentale via des rituels positifs, un journal personnel, et des exercices interactifs.",
-      "skills": ["Identité visuelle", "UI/UX Design", "Illustration"]
+      "skills": ["Identité visuelle", "UI/UX Design", "Illustration"],
     },
     "en": {
       "title": "Better",
       "description": "Better is an app designed to support mental health management through positive rituals, a personal journal, and interactive exercises.",
-      "skills": ["Visual identity", "UI/UX Design", "Illustration"]
+      "skills": ["Visual identity", "UI/UX Design", "Illustration"],
     }
   }  
   const images = [

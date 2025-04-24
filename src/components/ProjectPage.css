@@ -17,7 +17,7 @@
 }
 
 h1.project-title-size {
-  font-size: 1.8rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -48,6 +48,7 @@ h1.project-title-size {
   flex-direction: column;
   gap: 1.5rem;
   overflow: hidden;
+  justify-content: center;
 }
 
 .project-image {
@@ -55,6 +56,10 @@ h1.project-title-size {
   border-radius: 0.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   height: auto;
+}
+
+.figma-link {
+  text-align: center;
 }
 
 .figma-link a {
@@ -82,6 +87,7 @@ h1.project-title-size {
 }
 
 .project-navigation {
+  display: flex;
   position: relative;
   width: 100%;
   height: 80px; /* Donne une vraie hauteur aux flèches */
