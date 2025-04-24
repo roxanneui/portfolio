@@ -145,15 +145,17 @@ function App() {
           {projects.map((proj, i) => (
             <div className="project" key={i}>
               <Link to={`/projects/${proj.pageName}`}>
-                <img
-                  src={proj.img}
-                  alt={proj.title}
-                  className="project-image"
-                  onMouseEnter={() => setHoveredProject(i)}
-                  onMouseLeave={() => setHoveredProject(null)}
-                />
+                <div className="image-container">
+                  <img
+                    src={proj.img}
+                    alt={proj.title}
+                    className="project-image"
+                    onMouseEnter={() => setHoveredProject(i)}
+                    onMouseLeave={() => setHoveredProject(null)}
+                  />
+                  <div className="project-title">{proj.title}</div>
+                </div>
               </Link>
-              <div className="project-title">{proj.title}</div>
               {proj.tags && proj.tags[language] && (
                 <div className="project-tags">
                   {proj.tags[language].map((tag, index) => (
