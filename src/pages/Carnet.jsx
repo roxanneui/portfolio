@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import { motion } from "framer-motion";
 import { LanguageContext } from '../context/LanguageContext';
 
-export default function Carnet() {
+function Carnet() {
   
   // const cursorRef = useRef(null)
 
@@ -76,3 +76,4 @@ const galleryImages = [
   );
 }
 
+export default Carnet;

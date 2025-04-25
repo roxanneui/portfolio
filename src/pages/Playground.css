@@ -1,0 +1,44 @@
+ .playground-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #fff6e6;
+  }
+  
+  .playground-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .draggable-image {
+    width: 150px;
+    height: auto;
+    cursor: grab;
+    user-select: none;
+    z-index: 2;
+  }
+  
+  .zoom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .zoomed-image {
+    max-width: 80vw;
+    max-height: 80vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 10px;
+  }
+  

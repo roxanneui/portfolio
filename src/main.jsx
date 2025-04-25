@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import App from "./App";
 import Carnet from "./pages/Carnet";
+import Playground from "./pages/Playground";
+
 import Ecomiam from "./pages/projects/Ecomiam";
 import Better from "./pages/projects/Better";
 import LesCheminsDeLaNature from "./pages/projects/LesCheminsDeLaNature";
@@ -23,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/projects/better" element={<Better />} />
           <Route path="/projects/lescheminsdelanature" element={<LesCheminsDeLaNature />} />
           <Route path="/projects/wwwomen" element={<WWWomen />} />
+          <Route path="/playground" element={<Playground />} />
         </Routes>
       </Router>
     </LanguageProvider>
