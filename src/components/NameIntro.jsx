@@ -6,7 +6,7 @@ function NameIntro() {
     <div className="name-intro">
       <div className="name-intro-content">
         <span className="name">Roxanne Landry</span>
-        <img src="/portfolio/Fleche1.png" alt="Scroll Down" className="scroll-arrow" />
+        <img src="/portfolio/Fleche1.png" href="#about" alt="Scroll Down" className="scroll-arrow" />
       </div>
     </div>
   );

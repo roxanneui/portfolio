@@ -22,8 +22,9 @@ function Ecomiam() {
   }  
   const images = [
     "/Ecomiam/Ecomiammockup2.1.png",
-    "/Ecomiam/Ecomiammockup1.png",
-    "/Ecomiam/Eco.png"
+    '/Ecomiam/Ecomiam1.png',
+    "/Ecomiam/Ecomiam2.png",
+    "/Ecomiam/Ecomiammockup1.png"
   ];
 
   return <ProjectPage

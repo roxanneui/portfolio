@@ -100,7 +100,8 @@ function App() {
     <>
       <Header showHeader={showHeader} />
       <NameIntro />
-      <main className="homepage">
+      <section id="about">
+        <main className="homepage">
         
           <>
             <div className="lang-block">
@@ -133,7 +134,8 @@ function App() {
               </div>
             </div>
           </>
-      </main>
+        </main>
+      </section>
 
 
       <div className="project-section">
