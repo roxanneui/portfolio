@@ -33,8 +33,6 @@ function Presentation() {
       button: 'English pls',
       cv: 'Télécharger mon CV',
       linkedin: 'Mon LinkedIn',
-      projects: '/Projets UI UX',
-      allProjects: 'Voir tous mes projets',
     },
     en: {
       greeting: 'Hi / Bonjour !',
@@ -47,17 +45,13 @@ function Presentation() {
       button: 'Français',
       cv: 'Download my resume',
       linkedin: 'My LinkedIn',
-      projects: '/UI UX Projects',
-      allProjects: 'See all my projects',
     },
   };
 
   return (
     <>
-      <section id="about">
+      <section id="about" className='presentation-container'>
         <main className="homepage">
-        
-          <>
             <div className="lang-block">
               <h1 className={hasLoaded ? 'fade-in' : ''}>{content[language].greeting}</h1>
               <button onClick={toggleLanguage} className="lang-btn">
@@ -87,7 +81,6 @@ function Presentation() {
                 </a>
               </div>
             </div>
-          </>
         </main>
       </section>
     </>

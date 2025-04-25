@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import "./ProjectPage.css";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -19,6 +19,10 @@ export default function ProjectPage({ title, description, skills, images, figmaL
       figmaText: "View the project on Figma",
     },
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);  
 
   return (
     <>

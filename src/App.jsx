@@ -29,7 +29,7 @@ function App() {
       <NameIntro />
       <Presentation />
       <Projects />
-      <Footer />
+      <Footer isLineDisplayed={false} />
       {/* <EyeIntro onIntroEnd={handleIntroEnd} /> */}
     </>
   );

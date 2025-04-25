@@ -1,8 +1,10 @@
-.carnet-page {
+.carnet {
     position: relative;
     overflow: hidden;
-    background-color :black;
-  }
+    background-color: #fff6e6;
+    padding: 2rem;
+    padding-top: 6rem;
+}
   
   /* .custom-cursor {
     position: fixed;

@@ -47,7 +47,7 @@ const galleryImages = [
   return (
       <>
       <Header />
-      <main className="gallery" style={{ padding: '2rem' }}>
+      <main className="carnet">
         <h1>{content[language].carnetText}</h1>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

@@ -1,3 +1,7 @@
+.presentation-container {
+    background-color: #fff6e6;
+}
+
 .homepage {
     padding: 4rem 2rem;
     padding-bottom: 0;
@@ -5,6 +9,8 @@
     margin: 0;
     font-family: "Poppins", sans-serif;
     justify-content: left;
+    background-color: #fff6e6;
+    padding-bottom: 4rem;
 }
 
 .lang-block {
@@ -15,6 +21,11 @@
     margin-bottom: 2rem;
 }
 
+.lang-block h1 {
+    margin: 0;
+    white-space: nowrap;
+}
+  
 .lang-btn {
     font-size: 15px;
     font-weight: 500;
@@ -22,7 +33,7 @@
     cursor: pointer;
     border-radius: 999px;
     position: relative;
-    transform: translateY(-5px);
+    margin-left: 10px;
 }
 
 .button_top {
@@ -49,7 +60,6 @@
 
 .links {
     margin-top: 3rem;
-    margin-bottom: 4rem;
 }
 
 .link {

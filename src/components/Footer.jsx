@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 import React, { useContext } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
 
-function Footer() {
+function Footer({ isLineDisplayed = true }) {
   const { language } = useContext(LanguageContext);
   const content = {
     fr: {
@@ -19,7 +19,7 @@ function Footer() {
   };
 
   return (
-    <footer className="footer">
+    <footer className="footer" style={{ borderTop: isLineDisplayed ? '2px solid black' : '' }}>
       <div className="footer-left">
         <h2>{content[language].thankYou}</h2>
         <p className="footer-rights">© 2025 Roxanne Landry. {content[language].rights}</p>
