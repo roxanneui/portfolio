@@ -1,0 +1,151 @@
+.project-section {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.8s ease;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.project-section-title {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 30px;
+    color: #FFF6E6;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.projects {
+    background: #000000;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 par ligne */
+    grid-gap: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    transition: background-color 0.8s ease;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.project-title {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    color: #FFF6E6;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project:hover .project-image {
+    opacity: 0.6;
+}
+
+.project:hover .project-title {
+    opacity: 1;
+}
+
+.project:hover .project-tag {
+    opacity: 1;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.project-tag {
+    padding: 0.4rem 0.8rem;
+    background-color: transparent;
+    border: 2px solid #FFF6E6;
+    color: #FFF6E6;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project:hover .project-tag {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.blinking-cursor {
+    font-size: 1.5rem;
+    color: #FFF6E6;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.see-all-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.all-projects {
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.1s ease;
+    border-radius: 9999px;
+    border: 2px solid #fff;
+}
+
+.all-projects:hover {
+    transform: translateY(-2px);
+    background-color: #9E74E6;
+    color: #fff;
+}
+
+.all-projects:active {
+    transform: translateY(0);
+}

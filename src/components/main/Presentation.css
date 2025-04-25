@@ -1,0 +1,73 @@
+.homepage {
+    padding: 4rem 2rem;
+    padding-bottom: 0;
+    max-width: 1200px; /*max largeur en x*/
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    justify-content: left;
+}
+
+.lang-block {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.lang-btn {
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 999px;
+    position: relative;
+    transform: translateY(-5px);
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 999px;
+    padding: 0.5em 1.2em;
+    background: #fff6e6;
+    color: #000000;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+.lang-btn:hover .button_top {
+    transform: translateY(-0.33em);
+    background: #9E74E6;
+}
+
+.lang-btn:active .button_top {
+    transform: translateY(0);
+}
+
+.links {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.link {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.cv-link, .linkedin-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.cv-link:hover, .linkedin-link:hover {
+    color: #9E74E6;
+}
