@@ -45,7 +45,7 @@ const galleryImages = [
 
 
   return (
-      <>
+    <>
       <Header />
       <main className="carnet">
         <h1>{content[language].carnetText}</h1>
@@ -54,45 +54,25 @@ const galleryImages = [
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-        <h2></h2>
+          <h2></h2>
         </motion.div>
-        <motion.img
-          src="./Carnet/image1.png"
-          alt="Better Canettes"
-          className="gallery-item"
-        />
 
-        <motion.img
-          src="./Carnet/image2.png"
-          alt="The place to B Ticket"
-          className="gallery-item"
-        />
-
-        <motion.img
-          src="./Carnet/image3.png"
-          alt="Workshop Affiche"
-          className="gallery-item"
-        />
-
-        <motion.img
-          src="./Carnet/image4.png"
-          alt="Menton Affiche"
-          className="gallery-item"
-        />
-
-        <motion.img
-          src="./Carnet/image5.png"
-          alt="Logo Cinélux"
-          className="gallery-item"
-        />
-
-
+        {galleryImages.map((image, index) => (
+          <motion.img
+            key={index}
+            src={image.src}
+            alt={image.alt}
+            className="gallery-item"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+          />
+        ))}
       </main>
       <Footer />
 
       {/* <div className="custom-cursor" ref={cursorRef}></div> */}
     </>
-    
   );
 }
 
