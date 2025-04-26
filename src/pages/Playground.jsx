@@ -21,8 +21,8 @@ export default function Playground() {
     useEffect(() => {
       const generateRandomPositions = () =>
         projects.map(() => ({
-          top: `${Math.random() * 70 + 10}%`,
-          left: `${Math.random() * 70 + 10}%`,
+          top: `${Math.random() * 70}%`,
+          left: `${Math.random() * 70}%`,
         }));
       setPositions(generateRandomPositions());
     }, []);
@@ -50,17 +50,22 @@ export default function Playground() {
                   top: positions[index]?.top,
                   left: positions[index]?.left,
                 }}
+                onDragStart={() => {
+                  dragState.current.isDragging = true;
+                }}
+                onDragEnd={() => {
+                  dragState.current.isDragging = false;
+                }}
                 onPointerDown={() => (dragState.current.isDragging = false)}
-                onDragStart={() => (dragState.current.isDragging = true)}
                 onPointerUp={() => {
                   if (!dragState.current.isDragging) {
                     setZoomedImage(project);
                   }
                 }}
+                onDragStartCapture={(e) => e.preventDefault()}
               />
             ))}
           </div>
-  
           {zoomedImage && (
             <div className="zoom-overlay" onClick={() => setZoomedImage(null)}>
               <img src={zoomedImage.src} alt={zoomedImage.alt} className="zoomed-image" />

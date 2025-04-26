@@ -53,7 +53,7 @@ function Presentation() {
       <section id="about" className='presentation-container'>
         <main className="homepage">
             <div className="lang-block">
-              <h1 className={hasLoaded ? 'fade-in' : ''}>{content[language].greeting}</h1>
+              <h1 className="greetings">{content[language].greeting}</h1>
               <button onClick={toggleLanguage} className="lang-btn">
                 <span className="button_top">{content[language].button}</span>
               </button>

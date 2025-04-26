@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
 import { LanguageContext } from '../context/LanguageContext';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Header.css';
 
 function Header() {
@@ -38,7 +38,7 @@ function Header() {
       </div>
       <nav>
         {/* <Link to="/gallery">{navText[language][0]}</Link> */}
-        <Link to="/#projects">{navText[language][0]}</Link>
+        <Link smooth to="/#projects">{navText[language][0]}</Link>
         <Link to="/playground">{navText[language][2]}</Link>
         {/* <Link to="/contact">{navText[language][1]}</Link> */}
       </nav>

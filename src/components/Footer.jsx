@@ -37,9 +37,6 @@ function Footer({ isLineDisplayed = true }) {
           <a href="mailto:roxannelandry.pro@gmail.com">
             <FaEnvelope className="footer-icon" />
           </a>
-          <a href="tel:+330767756467">
-            <FaPhone className="footer-icon" />
-          </a>
         </div>
       </div>
     </footer>

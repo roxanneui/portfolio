@@ -5,6 +5,8 @@
     transition: background-color 0.8s ease;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    margin: 0;
+    padding: 0;
 }
 
 .project-section-title {
@@ -148,4 +150,16 @@
 
 .all-projects:active {
     transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+    .project-title {
+        font-size: 1.5rem;
+    }
+    .project-tag {
+        font-size: 0.8rem;
+    }
 }

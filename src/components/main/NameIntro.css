@@ -13,6 +13,10 @@
   background-color: #fff6e6;
 }
 
+.name {
+  font-size: clamp(4rem, 12vw, 5rem);
+}
+
 .name-intro-content {
   margin-top: auto;
   display: flex;
@@ -22,8 +26,8 @@
 
 .scroll-arrow {
   justify-content: right;
-  width: 99px;
-  height: 93px;
+  width: clamp(4rem, 12vw, 5rem);
+  height: auto;
   animation: bounce 2s ease-in-out infinite;
   z-index: 10;
   margin-right: 10vw;
@@ -36,5 +40,30 @@
   }
   50% {
     transform: translateY(10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: clamp(4rem, 12vw, 5rem);
+  }
+  .name-intro-content {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+  .scroll-arrow {
+    width: clamp(4rem, 12vw, 5rem);
+    height: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .name {
+    font-size: clamp(3rem, 12vw, 4rem);
+  }
+  .scroll-arrow {
+    width: clamp(3rem, 12vw, 4rem);
   }
 }
