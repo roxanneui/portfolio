@@ -9,11 +9,11 @@ function Projects() {
   const content = {
     fr: {
       projects: '/Projets UI UX',
-      allProjects: 'Voir tous mes projets',
+      allProjects: 'Autres créations',
     },
     en: {
       projects: '/UI UX Projects',
-      allProjects: 'See all my projects',
+      allProjects: 'Other creations',
     },
   };
 
