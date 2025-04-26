@@ -34,7 +34,7 @@ function Ecomiam() {
   skills={informations[language].skills}
   images={images} 
   figmaLink={informations[language].figmaLink} 
-  nextProject="/projects/Better"
+  nextProject="/projects/WWWomen"
   />;
 }
 

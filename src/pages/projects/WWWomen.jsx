@@ -26,7 +26,9 @@ function Better() {
   title={informations[language].title}
   description={informations[language].description}
   skills={informations[language].skills}
-  images={images} />;
+  images={images}
+  prevProject="/projects/Ecomiam"
+  nextProject="/projects/Better"/>;
 }
 
 export default Better;

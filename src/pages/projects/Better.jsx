@@ -33,7 +33,6 @@ function Better() {
   images={images}
   figmaLink={informations[language].figmaLink} 
   prevProject="/projects/Ecomiam"
-  nextProject="/projects/LesCheminsDeLaNature"
   />;
   
 }
