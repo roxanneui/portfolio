@@ -81,7 +81,7 @@ function Projects() {
           ))}
         </section>
         <div className="see-all-projects">
-          <Link to="/carnet" className="all-projects">
+          <Link to="/creations" className="all-projects">
             {content[language].allProjects}
           </Link>
         </div>

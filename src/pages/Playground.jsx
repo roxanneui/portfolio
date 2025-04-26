@@ -10,6 +10,10 @@ const projects = [
   { src: './Carnet/image3.png', alt: 'Workshop Affiche' },
   { src: './Carnet/image4.png', alt: 'Menton Affiche' },
   { src: './Carnet/image5.png', alt: 'Logo Cinélux' },
+  { src: './Carnet/image6.png', alt: 'Logo Écomiam' },
+  { src: './Carnet/image7.png', alt: 'Portrait' },
+  { src: './Carnet/image8.png', alt: 'RL Charte' },
+  { src: './Carnet/image9.png', alt: 'Motif' },
 ];
 
 export default function Playground() {

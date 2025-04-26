@@ -25,7 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/projects/better" element={<Better />} />
           <Route path="/projects/lescheminsdelanature" element={<LesCheminsDeLaNature />} />
           <Route path="/projects/wwwomen" element={<WWWomen />} />
-          <Route path="/playground" element={<Playground />} />
+          <Route path="/creations" element={<Playground />} />
         </Routes>
       </Router>
     </LanguageProvider>
