@@ -13,7 +13,7 @@ function Projects() {
     },
     en: {
       projects: '/UI UX Projects',
-      allProjects: 'Other creations',
+      allProjects: 'Other creationsgit',
     },
   };
 
