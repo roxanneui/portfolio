@@ -26,7 +26,7 @@ function Footer({ isLineDisplayed = true }) {
       </div>
 
       <div className="footer-right">
-        <p className="footer-contact-title">{content[language].contactTitle}</p>
+        <h2 className="footer-contact-title">{content[language].contactTitle}</h2>
         <div className="footer-icons">
           <a href="https://www.instagram.com/roxanne.ui" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="footer-icon" />

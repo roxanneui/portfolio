@@ -13,7 +13,6 @@
 
 .footer-left h2 {
   font-size: 1.2rem;
-  font-weight: bold;
   margin-bottom: 1rem;
 }
 
@@ -29,7 +28,6 @@
 }
 
 .footer-contact-title {
-  font-weight: bold;
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
@@ -48,5 +46,5 @@
 
 .footer-icon:hover {
   transform: translateY(-4px);
-  color: #ffffff; /* couleur hover */
+  color: #ffffff;
 }
