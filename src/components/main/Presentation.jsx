@@ -66,7 +66,7 @@ function Presentation() {
 
             <div className="links">
               <div className="link">
-                <a href="/portfolio/RoxanneLANDRYCV.pdf" className="cv-link" download>
+                <a href="/portfolio/RoxanneLANDRYCVS.pdf" className="cv-link" download>
                   {content[language].cv}
                 </a>
               </div>
