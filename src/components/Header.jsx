@@ -25,8 +25,8 @@ function Header() {
   }, []);
 
   const navText = {
-    fr: ['Carnet', 'Playground'],
-    en: ['Sketchbook', 'Playground'],
+    fr: ['Projets', 'Carnet', 'Playground'],
+    en: ['Projects', 'Sketchbook', 'Playground'],
   };
 
   return (
@@ -38,8 +38,8 @@ function Header() {
       </div>
       <nav>
         {/* <Link to="/gallery">{navText[language][0]}</Link> */}
-        <Link to="/carnet">{navText[language][0]}</Link>
-        <Link to="/playground">{navText[language][1]}</Link>
+        <Link to="/#projects">{navText[language][0]}</Link>
+        <Link to="/playground">{navText[language][2]}</Link>
         {/* <Link to="/contact">{navText[language][1]}</Link> */}
       </nav>
     </header>

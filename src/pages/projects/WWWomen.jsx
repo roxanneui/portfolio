@@ -19,7 +19,7 @@ function Better() {
   }  
   const images = [
     "/WWWomen/wwwomen1.png",
-    "/WWWomen/wwwomen2.png"
+    "/WWWomen/wwwomen.png"
   ];
 
   return <ProjectPage

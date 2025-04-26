@@ -44,7 +44,7 @@ function Projects() {
 
   return (
     <>
-      <div className="project-section">
+      <div id='projects' className="project-section">
         <div className="project-section-title">
           {content[language].projects}
           <span className="blinking-cursor"> |</span>
