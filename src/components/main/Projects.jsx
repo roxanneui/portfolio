@@ -1,19 +1,22 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './Projects.css';
 import { LanguageContext } from '../../context/LanguageContext';
 import { Link } from 'react-router-dom';
 
 function Projects() {
   const { language } = useContext(LanguageContext); // language, toggleLanguage proviennent de LanguageContext
+  const [selectedProject, setSelectedProject] = useState(1);
 
   const content = {
     fr: {
-      projects: '/Projets UI UX',
+      webProjects: 'Projets Web',
+      otherProjects: 'Autres projets',
       allProjects: 'Autres créations',
     },
     en: {
-      projects: '/UI UX Projects',
-      allProjects: 'Other creationsgit',
+      webProjects: 'Web Projects',
+      otherProjects: 'Other projects',
+      allProjects: 'Other creations',
     },
   };
 
@@ -42,13 +45,39 @@ function Projects() {
   //   }
   // }, [hoveredProject]);
 
+  useEffect(() => {
+    const projectsElement1 = document.getElementById("projects1");
+    const projectsElement2 = document.getElementById("projects2");
+    if (projectsElement1 && projectsElement2) {
+      if (selectedProject === 1) {
+        projectsElement1.style.backgroundColor = "#000000";
+        projectsElement1.style.color = "#acff86";
+        projectsElement2.style.backgroundColor = "#acff86";
+        projectsElement2.style.color = "#000000";
+      } else {
+        projectsElement1.style.backgroundColor = "#acff86";
+        projectsElement1.style.color = "#000000";
+        projectsElement2.style.backgroundColor = "#000000";
+        projectsElement2.style.color = "#acff86";
+      }
+    }
+  }, [selectedProject]);
+
   return (
     <>
       <div id='projects' className="project-section">
-        <div className="project-section-title">
+        <div className="projects-selection" id="about">
+          <button onClick={() => setSelectedProject(1)} className="projects-button" id="projects1">
+            <span className="projects-button-text">{content[language].webProjects}</span>
+          </button>
+          <button onClick={() => setSelectedProject(2)} className="projects-button" id="projects2">
+            <span className="projects-button-text">{content[language].otherProjects}</span>
+          </button>
+        </div>
+        {/* <div className="project-section-title">
           {content[language].projects}
           <span className="blinking-cursor"> |</span>
-        </div>
+        </div> */}
         <section className="projects">
           {projects.map((proj, i) => (
             <div className="project" key={i}>
@@ -58,8 +87,6 @@ function Projects() {
                     src={proj.img}
                     alt={proj.title}
                     className="project-image"
-                    onMouseEnter={() => setHoveredProject(i)}
-                    onMouseLeave={() => setHoveredProject(null)}
                   />
                   <div className="project-title">{proj.title}</div>
                 </div>

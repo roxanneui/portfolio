@@ -1,5 +1,7 @@
 .presentation-container {
-    background-color: #fff6e6;
+  padding-top: 5rem;
+  background-color: #fff6e6;
+  z-index: -3;
 }
 
 .homepage {
@@ -9,7 +11,9 @@
     font-family: "Poppins", sans-serif;
     background-color: #fff6e6;
     padding-bottom: 4rem;
-}
+    z-index: 2;
+    position: relative;
+  }
 
 .paragraphs {
     display: flex;
@@ -122,4 +126,38 @@
   .greetings {
     font-size: 2.5rem;
   }
+}
+
+.lang-selection {
+  display: flex;
+  background-color: #9747FF;
+  height: 6rem;
+  z-index: 0;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.lang-button {
+  background-color: #fff6e6;
+  border-radius: 20px;
+  z-index: 1;
+  transform: translateY(1rem);
+  height: 5rem;
+  width: 10rem;
+  position: relative;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff6e6;
+}
+
+.lang-button-text {
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 800;
+  transform: translateY(-1rem);
+  padding-left: 1rem;
 }

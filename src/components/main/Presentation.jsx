@@ -7,19 +7,6 @@ function Presentation() {
   const [hasLoaded, setHasLoaded] = useState(false); // Gère l'activation de l'animation du texte après le chargement
   const { language, toggleLanguage } = useContext(LanguageContext); // language, toggleLanguage proviennent de LanguageContext
 
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      setShowHeader(currentScrollY < lastScrollY || currentScrollY < 50);
-      lastScrollY = currentScrollY;
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const content = {
     fr: {
       greeting: 'Bonjour / Hi !',
@@ -58,16 +45,40 @@ function Presentation() {
     },
   };
 
+  useEffect(() => {
+    const langElement1 = document.getElementById("lang1");
+    const langElement2 = document.getElementById("lang2");
+    if (langElement1 && langElement2) {
+      if (language === "fr") {
+        langElement1.style.backgroundColor = "#fff6e6";
+        langElement2.style.backgroundColor = "#acff86";
+      } else {
+        langElement1.style.backgroundColor = "#acff86";
+        langElement2.style.backgroundColor = "#fff6e6";
+      }
+    }
+  }, [language]);
+
   return (
     <>
-      <section id="about" className='presentation-container'>
+      <section className='presentation-container'>
+        <div className="lang-selection" id="about">
+          <button onClick={toggleLanguage} className="lang-button" id="lang1">
+            <span className="lang-button-text">Bonjour !</span>
+          </button>
+          <button onClick={toggleLanguage} className="lang-button" id="lang2">
+            <span className="lang-button-text">Hi !</span>
+          </button>
+        </div>
         <main className="homepage">
+            {/* 
             <div className="lang-block">
               <h1 className="greetings">{content[language].greeting}</h1>
               <button onClick={toggleLanguage} className="lang-btn">
                 <span className="button_top">{content[language].button}</span>
               </button>
             </div>
+            */}
 
             <div className="paragraphs">
             <p

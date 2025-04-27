@@ -29,7 +29,7 @@ function App() {
       <Header />
       <NameIntro />
       <Presentation />
-      <PorteDocu1 />
+      {/* <PorteDocu1 /> */}
       <Projects />
       <Footer isLineDisplayed={false} />
       {/* <EyeIntro onIntroEnd={handleIntroEnd} /> */}
