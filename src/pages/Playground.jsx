@@ -15,7 +15,7 @@ const projects = [
   { src: './Carnet/image8.png', alt: 'RL Charte' },
   { src: './Carnet/image10.png', alt: 'Motif Vanadia' },
   { src: './Carnet/image11.png', alt: 'Affiche Vanadia' },
-  { src: './Carnet/image12.png', alt: 'Boite tisanes infusées au Citron de Menton' },
+  { src: './Carnet/image12.png', alt: 'Affiche lalaland' },
   { src: './Carnet/image13.png', alt: 'Affiche avec mots destructurés' },
   { src: './Carnet/image14.png', alt: 'Proposition logo Panzani' },
   { src: './Carnet/image15.png', alt: 'Boite de thés de noel Théaura' },

@@ -27,16 +27,25 @@ export default function ProjectPage({ title, description, skills, images, figmaL
   return (
     <>
       <Header />
-      <div className="project-page">
-        <div className="left-column">
-          <h1 className="project-title-size">{title}</h1>
-          <p className="project-description">{description}</p>
-          <div className="skill-pills">
-            {skills.map((skill, index) => (
-              <span key={index} className="pill">{skill}</span>
-            ))}
-          </div>
+    <div className="project-page">
+      <div className="left-column">
+        <h1 className="project-title-size">{title}</h1>
+        
+        <p className="project-description">
+          {description.split('\n').map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
+        </p>
+
+        <div className="skill-pills">
+          {skills.map((skill, index) => (
+            <span key={index} className="pill">{skill}</span>
+          ))}
         </div>
+      </div>
 
         <div className="right-column">
           {images.map((image, index) => {
