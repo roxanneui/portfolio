@@ -9,8 +9,24 @@
   font-weight: 800;
   font-style: normal;
   position: relative;
-  padding-left: 30px;
+  padding-left: 2rem;
   background-color: #fff6e6;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto; /* Tu peux ajuster cette hauteur selon ce que tu préfères */
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Centre l'image horizontalement */
+  padding-right: 2rem;
+  padding-top: 6rem;
+}
+
+.intro-image {
+  width: 100%; /* Rendre l'image aussi large que l'espace disponible */
+  height: auto; /* Garder la proportion de l'image */
 }
 
 .name {

@@ -37,7 +37,7 @@ h1.project-title-size {
 
 .pill {
   padding: 0.4rem 0.8rem;
-  background-color: #9E74E6;
+  background-color: #9747FF;
   color: white;
   border-radius: 999px;
   font-size: 0.9rem;
@@ -80,7 +80,7 @@ h1.project-title-size {
 
 .figma-link a:hover {
   transform: translateY(-2px);
-  background-color: #9E74E6;
+  background-color: #9747FF;
   color: #000000;
 }
 

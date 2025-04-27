@@ -4,6 +4,13 @@ import './NameIntro.css';
 function NameIntro() {
   return (
     <div className="name-intro">
+        <div className="image-container">
+            <img 
+              src="./imageintro.png" // Remplace par le chemin de ton image
+              alt="Image en grand" 
+              className="intro-image" 
+            />
+          </div>
       <div className="name-intro-content">
         <span className="name">Roxanne Landry</span>
         <img

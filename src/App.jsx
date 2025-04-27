@@ -6,6 +6,7 @@ import NameIntro from './components/main/NameIntro';
 import Presentation from './components/main/Presentation';
 import Projects from './components/main/Projects';
 import EyeIntro from './components/EyeIntro';
+import PorteDocu1 from './components/main/PorteDocu1';
 
 function App() {
   const [hasLoaded, setHasLoaded] = useState(false); // Gère l'activation de l'animation du texte après le chargement
@@ -28,6 +29,7 @@ function App() {
       <Header />
       <NameIntro />
       <Presentation />
+      <PorteDocu1 />
       <Projects />
       <Footer isLineDisplayed={false} />
       {/* <EyeIntro onIntroEnd={handleIntroEnd} /> */}

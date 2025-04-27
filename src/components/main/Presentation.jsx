@@ -23,25 +23,35 @@ function Presentation() {
   const content = {
     fr: {
       greeting: 'Bonjour / Hi !',
-      intro: `Actuellement étudiante en design<br />
-      graphique à Paris, je recherche une<br />
-      alternance afin de me spécialiser<br />
-      en UI UX Design dès septembre,<br/>
-      au rythme de 3 jours en entreprise<br/>
-      et 2 jours en formation et temps<br/>
-      plein pendant les vacances scolaires.`,
+      intro: `Moi c'est Roxanne, actuellement étudiante<br />
+      en Design Graphique à Paris, je recherche<br />
+      une alternance afin de me spécialiser en<br />
+      UI UX Design dès septembre 2025.`,
+      secondIntro: `Je suis convaincue de pouvoir me démarquer<br/>
+      dans le milieu du design digital en utilisant mes<br/>
+      compétences en Design Graphique apprises à<br/>
+      Brassart et ma passion innée pour les technologies.<br/>
+      J'apsire à apporter, non seulement des interfaces<br/>
+      esthétiques, mais aussi des expériences utilisateurs<br/>
+      uniques.`,
       button: 'English pls',
       cv: 'Télécharger mon CV',
       linkedin: 'Mon LinkedIn',
     },
     en: {
       greeting: 'Hi / Bonjour !',
-      intro: `Currently studying Graphic Design<br/>
-      in Paris, I'm looking for an internship<br/>
-      in UI/UX Design, starting in September<br/>
-      2025 and for a year, at the rate of<br/>
-      3 days working and 2 days at school,<br/>
-      plus full time during school vacations.`,
+      intro: `My name is Roxanne, currently<br/>
+      a Graphic Design student in Paris,<br/>
+      I am looking for an internship in<br/>
+      UI/UX Design, starting in<br/>
+      September 2025.`,
+      secondIntro: `I am convince that i can stand out<br/>
+      in digital design thanks to my<br/>
+      Graphic Design skills i learned in<br/>
+      Brassart and also my forever<br/>
+      passion for technologies. I aspire<br/>
+      not only to bring pleasant interfaces,<br/>
+      but also user experiences to life.`,
       button: 'Français',
       cv: 'Download my resume',
       linkedin: 'My LinkedIn',
@@ -59,10 +69,17 @@ function Presentation() {
               </button>
             </div>
 
+            <div className="paragraphs">
             <p
-              className={hasLoaded ? 'fade-in' : ''}
+              className={hasLoaded ? 'fade-in paragraph-left' : 'paragraph-left'}
               dangerouslySetInnerHTML={{ __html: content[language].intro }}
             ></p>
+
+            <p
+              className="paragraph-right"
+              dangerouslySetInnerHTML={{ __html: content[language].secondIntro }}
+            ></p>
+          </div>
 
             <div className="links">
               <div className="link">

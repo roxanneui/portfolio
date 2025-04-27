@@ -18,7 +18,7 @@ const projects = [
   { src: './Carnet/image12.png', alt: 'Affiche lalaland' },
   { src: './Carnet/image13.png', alt: 'Affiche avec mots destructurés' },
   { src: './Carnet/image14.png', alt: 'Proposition logo Panzani' },
-  { src: './Carnet/image15.png', alt: 'Boite de thés de noel Théaura' },
+  // { src: './Carnet/image15.png', alt: 'Boite de thés de noel Théaura' },
   { src: './Carnet/image16.png', alt: 'Mockup pour proposition de logo Protection Civile' },
 ];
 
