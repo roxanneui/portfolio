@@ -1,48 +1,48 @@
-import { useState, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import './PorteDocu1.css';
 
 function PorteDocu1() {
   const [pageTurned, setPageTurned] = useState(false);
+  const [hideFirstPage, setHideFirstPage] = useState(false);
   const ref = useRef(null);
-  const isInView = useInView(ref, { margin: '-100px' }); // Détecte le scroll
+  const isInView = useInView(ref, { margin: '-100px' });
+
+  useEffect(() => {
+    if (isInView) {
+      const timer = setTimeout(() => {
+        setHideFirstPage(true);
+      }, 1200); // attend 1.2s (la durée de l'animation)
+      return () => clearTimeout(timer);
+    }
+  }, [isInView]);
 
   return (
     <div className="porte-document-container" ref={ref}>
-      <div className="first-page-wrapper">
+      {/* Feuille blanche qui tombe */}
+      {!hideFirstPage && (
         <motion.div
-        className="first-page"
-        initial={{ rotateX: 0, y: 0 }}
-        animate={isInView ? { rotateX: 100, y: "100vh", opacity: 0 } : { rotateX: 0, y: 0, opacity: 1 }}
-        transition={{ duration: 1.2, ease: "easeInOut" }}
+          className="first-page"
+          initial={{ y: 0, rotateX: 0 }}
+          animate={{ y: isInView ? "100vh" : 0, rotateX: isInView ? 80 : 0 }}
+          transition={{ duration: 1.2, ease: "easeInOut" }}
         />
-    </div>
+      )}
 
       {/* Porte-document */}
       <div className="porte-document">
-        {/* Languettes */}
+        {/* Languettes en haut à droite */}
         <div className="tabs">
-          <button className="tab tab-left">
-            Première
-          </button>
-          <button
-            className="tab tab-right"
-            onClick={() => setPageTurned(true)}
-          >
-            Tourner
-          </button>
+          <button className="tab" onClick={() => setPageTurned(false)}>Première</button>
+          <button className="tab" onClick={() => setPageTurned(true)}>Tourner</button>
         </div>
 
-        {/* Contenu central */}
+        {/* Contenu du document */}
         <div className="document-content">
           {pageTurned ? (
-            <div className="new-page">
-              <img src="/tonimage2.png" alt="Nouvelle page" />
-            </div>
+            <img src="/tonimage2.png" alt="Nouvelle page" className="page-image" />
           ) : (
-            <div className="current-page">
-              <img src="/tonimage1.png" alt="Première page" />
-            </div>
+            <img src="/tonimage1.png" alt="Première page" className="page-image" />
           )}
         </div>
       </div>

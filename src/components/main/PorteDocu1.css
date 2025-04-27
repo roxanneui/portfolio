@@ -1,81 +1,65 @@
+/* Container principal */
 .porte-document-container {
     position: relative;
-    height: 120vh;
-    background-color: #fff6e6;
+    width: 100%;
+    height: 100vh; /* pleine hauteur de l'écran */
+    background-color: #f0f0f0; /* gris clair pour le fond */
     overflow: hidden;
   }
   
-  .first-page-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Cache ce qui dépasse */
-    pointer-events: none; /* Empêche d'interagir avec */
-  }
-  
+  /* Feuille qui tombe */
   .first-page {
-    position: absolute; /* Changement ici */
+    position: absolute;
     top: 0;
-    left: 50%;
-    width: 60vw;
-    height: 90vh;
-    background: #ffffff;
-    transform: translateX(-50%);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-    border-radius: 10px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    transform-origin: top center;
     z-index: 10;
   }
   
-  
+  /* Porte-document */
   .porte-document {
     position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
     width: 80%;
     max-width: 800px;
-    margin: 0 auto;
-    background: #ffffff;
-    border: 2px solid #000;
+    background-color: #fff9e5; /* couleur légère comme un papier */
+    border: 2px solid #d2b48c;
     border-radius: 8px;
-    padding: 3rem 2rem 2rem 2rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 50px 20px 20px;
     z-index: 1;
-    margin-top: 10vh;
   }
   
+  /* Languettes */
   .tabs {
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
     position: absolute;
-    top: -2.5rem;
-    left: 1rem;
+    top: -20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
   }
   
   .tab {
-    background: #9E74E6;
-    color: white;
-    padding: 0.7rem 1.2rem;
+    background-color: #d2b48c;
     border: none;
-    border-radius: 8px 8px 0 0;
-    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px 6px 0 0;
     cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-    transition: background 0.3s;
+    font-weight: bold;
   }
   
-  .tab:hover {
-    background: #7c5cc4;
-  }
-  
+  /* Contenu du porte-document */
   .document-content {
-    margin-top: 2rem;
     text-align: center;
   }
   
-  .document-content img {
-    width: 100%;
-    max-width: 600px;
+  .page-image {
+    max-width: 100%;
     height: auto;
-    border-radius: 5px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-radius: 4px;
   }
   
