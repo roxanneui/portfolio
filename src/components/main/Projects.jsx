@@ -51,14 +51,14 @@ function Projects() {
     if (projectsElement1 && projectsElement2) {
       if (selectedProject === 1) {
         projectsElement1.style.backgroundColor = "#000000";
-        projectsElement1.style.color = "#acff86";
-        projectsElement2.style.backgroundColor = "#acff86";
+        projectsElement1.style.color = "#fff6e6";
+        projectsElement2.style.backgroundColor = "#9747FF";
         projectsElement2.style.color = "#000000";
       } else {
-        projectsElement1.style.backgroundColor = "#acff86";
+        projectsElement1.style.backgroundColor = "#9747FF";
         projectsElement1.style.color = "#000000";
         projectsElement2.style.backgroundColor = "#000000";
-        projectsElement2.style.color = "#acff86";
+        projectsElement2.style.color = "#fff6e6";
       }
     }
   }, [selectedProject]);

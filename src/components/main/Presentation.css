@@ -140,7 +140,7 @@
 }
 
 .lang-button {
-  background-color: #fff6e6;
+  /* background-color: #fff6e6; */
   border-radius: 20px;
   z-index: 1;
   transform: translateY(1rem);
@@ -151,11 +151,15 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: #fff6e6;
+  transition: transform 0.3s ease;
+}
+
+.lang-button:hover {
+  transform: translateY(-0.01rem); /* Déplacement de -2px en Y */
 }
 
 .lang-button-text {
-  color: #000000;
+  /* color: #fff6e6; */
   font-size: 1.2rem;
   font-weight: 800;
   transform: translateY(-1rem);

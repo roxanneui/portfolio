@@ -48,13 +48,18 @@ function Presentation() {
   useEffect(() => {
     const langElement1 = document.getElementById("lang1");
     const langElement2 = document.getElementById("lang2");
+  
     if (langElement1 && langElement2) {
       if (language === "fr") {
-        langElement1.style.backgroundColor = "#fff6e6";
-        langElement2.style.backgroundColor = "#acff86";
+        langElement1.style.backgroundColor = "#fff6e6"; // beige
+        langElement1.style.color = "#000000"; // violet
+        langElement2.style.backgroundColor = "#000000"; // noir
+        langElement2.style.color = "#ffffff"; // blanc pour bien voir sur noir
       } else {
-        langElement1.style.backgroundColor = "#acff86";
-        langElement2.style.backgroundColor = "#fff6e6";
+        langElement1.style.backgroundColor = "#000000"; // noir
+        langElement1.style.color = "#ffffff"; // blanc pour bien voir sur noir
+        langElement2.style.backgroundColor = "#fff6e6"; // beige
+        langElement2.style.color = "#000000"; // violet pour bien voir sur beige
       }
     }
   }, [language]);
