@@ -4,7 +4,7 @@ import './NameIntro.css';
 function NameIntro() {
   return (
     <div className="name-intro">
-        <div className="image-container">
+        <div className="intro-image-container">
             <img 
               src="./imageintro.png" // Remplace par le chemin de ton image
               alt="" 

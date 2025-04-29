@@ -13,14 +13,14 @@
     padding-bottom: 4rem;
     z-index: 2;
     position: relative;
-    padding-top: 10rem;
+    padding-top: 6rem;
   }
 
 .paragraphs {
     display: flex;
     flex-direction: column;
     gap: 10rem; /* espace entre les deux paragraphes */
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
   }
   
 .purple {
@@ -161,7 +161,7 @@
 }
 
 .lang-button:hover {
-  transform: translateY(-0.01rem); /* Déplacement de -2px en Y */
+  transform: translateY(0.5rem);
 }
 
 .lang-button-text {
