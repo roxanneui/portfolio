@@ -13,14 +13,20 @@
     padding-bottom: 4rem;
     z-index: 2;
     position: relative;
+    padding-top: 10rem;
   }
 
 .paragraphs {
     display: flex;
     flex-direction: column;
     gap: 10rem; /* espace entre les deux paragraphes */
+    padding-bottom: 8rem;
   }
   
+.purple {
+  color: #9747FF;
+}
+
   .paragraph-left {
     text-align: left;
     max-width: 1600px; /* tu peux ajuster */

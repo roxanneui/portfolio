@@ -12,14 +12,14 @@ function Presentation() {
       greeting: 'Bonjour / Hi !',
       intro: `Moi c'est Roxanne, actuellement étudiante<br />
       en Design Graphique à Paris, je recherche<br />
-      une alternance afin de me spécialiser en<br />
-      UI UX Design dès septembre 2025.`,
+      une <span class="purple">alternance</span> afin de me spécialiser en<br />
+      <span class="purple">UI UX Design</span> dès septembre 2025.`,
       secondIntro: `Je suis convaincue de pouvoir me démarquer<br/>
       dans le milieu du design digital en utilisant mes<br/>
       compétences en Design Graphique apprises à<br/>
       Brassart et ma passion innée pour les technologies.<br/>
-      J'apsire à apporter, non seulement des interfaces<br/>
-      esthétiques, mais aussi des expériences utilisateurs<br/>
+      J'apsire à apporter, non seulement des <span class="purple">interfaces<br/>
+      esthétiques</span>, mais aussi des <span class="purple">expériences utilisateurs</span><br/>
       uniques.`,
       button: 'English pls',
       cv: 'Télécharger mon CV',
@@ -29,16 +29,16 @@ function Presentation() {
       greeting: 'Hi / Bonjour !',
       intro: `My name is Roxanne, currently<br/>
       a Graphic Design student in Paris,<br/>
-      I am looking for an internship in<br/>
-      UI/UX Design, starting in<br/>
+      I am looking for an <span class="purple">internship</span> in<br/>
+      <span class="purple">UI/UX Design</span>, starting in<br/>
       September 2025.`,
       secondIntro: `I am convince that i can stand out<br/>
       in digital design thanks to my<br/>
       Graphic Design skills i learned in<br/>
       Brassart and also my forever<br/>
       passion for technologies. I aspire<br/>
-      not only to bring pleasant interfaces,<br/>
-      but also user experiences to life.`,
+      not only to bring <span class="purple">pleasant interfaces</span>,<br/>
+      but also <span class="purple">user experiences</span> to life.`,
       button: 'Français',
       cv: 'Download my resume',
       linkedin: 'My LinkedIn',
@@ -54,10 +54,10 @@ function Presentation() {
         langElement1.style.backgroundColor = "#fff6e6"; // beige
         langElement1.style.color = "#000000"; // violet
         langElement2.style.backgroundColor = "#000000"; // noir
-        langElement2.style.color = "#ffffff"; // blanc pour bien voir sur noir
+        langElement2.style.color = "#fff6e6"; // blanc pour bien voir sur noir
       } else {
         langElement1.style.backgroundColor = "#000000"; // noir
-        langElement1.style.color = "#ffffff"; // blanc pour bien voir sur noir
+        langElement1.style.color = "#fff6e6"; // blanc pour bien voir sur noir
         langElement2.style.backgroundColor = "#fff6e6"; // beige
         langElement2.style.color = "#000000"; // violet pour bien voir sur beige
       }
@@ -68,10 +68,10 @@ function Presentation() {
     <>
       <section className='presentation-container'>
         <div className="lang-selection" id="about">
-          <button onClick={toggleLanguage} className="lang-button" id="lang1">
+          <button onClick={language === "en" ? toggleLanguage : ''} className="lang-button" id="lang1">
             <span className="lang-button-text">Bonjour !</span>
           </button>
-          <button onClick={toggleLanguage} className="lang-button" id="lang2">
+          <button onClick={language === "fr" ? toggleLanguage : ''} className="lang-button" id="lang2">
             <span className="lang-button-text">Hi !</span>
           </button>
         </div>

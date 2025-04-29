@@ -79,7 +79,7 @@ function Projects() {
           <span className="blinking-cursor"> |</span>
         </div> */}
         <section className="projects">
-          {projects.map((proj, i) => (
+          {selectedProject === 1 && projects.map((proj, i) => (
             <div className="project" key={i}>
               <Link to={`/projects/${proj.pageName}`}>
                 <div className="image-container">

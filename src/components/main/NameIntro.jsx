@@ -7,7 +7,7 @@ function NameIntro() {
         <div className="image-container">
             <img 
               src="./imageintro.png" // Remplace par le chemin de ton image
-              alt="Image en grand" 
+              alt="" 
               className="intro-image" 
             />
           </div>
