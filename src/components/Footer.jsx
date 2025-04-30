@@ -8,12 +8,12 @@ function Footer({ isLineDisplayed = true }) {
   const content = {
     fr: {
       thankYou: 'Merci de votre curiosité !',
-      rights: 'Tous droits réservés',
+      rights: '(designé et codé par moi) Tous droits réservés',
       contactTitle: 'Envie d\'échanger ?',
     },
     en: {
       thankYou: 'Thanks for your curiosity!',
-      rights: 'All rights reserved',
+      rights: '(dev and design by me) All rights reserved',
       contactTitle: 'Want to chat?',
     },
   };
