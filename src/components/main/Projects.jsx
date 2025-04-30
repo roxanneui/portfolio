@@ -12,11 +12,13 @@ function Projects() {
       webProjects: 'Projets Web',
       otherProjects: 'Autres projets',
       allProjects: 'Autres créations',
+      inProgress: 'En cours de développement',
     },
     en: {
       webProjects: 'Web Projects',
       otherProjects: 'Other projects',
       allProjects: 'Other creations',
+      inProgress: 'Work in progress',
     },
   };
 
@@ -65,8 +67,8 @@ function Projects() {
 
   return (
     <>
-      <div id='projects' className="project-section">
-        <div className="projects-selection" id="about">
+      <div className="project-section">
+        <div className="projects-selection" id='projects'>
           <button onClick={() => setSelectedProject(1)} className="projects-button" id="projects1">
             <span className="projects-button-text">{content[language].webProjects}</span>
           </button>
@@ -74,10 +76,6 @@ function Projects() {
             <span className="projects-button-text">{content[language].otherProjects}</span>
           </button>
         </div>
-        {/* <div className="project-section-title">
-          {content[language].projects}
-          <span className="blinking-cursor"> |</span>
-        </div> */}
         <section className="projects">
           {selectedProject === 1 && projects.map((proj, i) => (
             <div className="project" key={i}>
@@ -107,6 +105,11 @@ function Projects() {
             </div>
           ))}
         </section>
+        {selectedProject === 2 &&
+          <div className="work-in-progress">
+            <h1>{content[language].inProgress}</h1>
+          </div>
+        }
         <div className="see-all-projects">
           <Link to="/creations" className="all-projects">
             {content[language].allProjects}
