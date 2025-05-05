@@ -7,6 +7,8 @@ import Presentation from './components/main/Presentation';
 import Projects from './components/main/Projects';
 import EyeIntro from './components/EyeIntro';
 import PorteDocu1 from './components/main/PorteDocu1';
+import ScrollSection from './components/main/ScrollSection'; // ajuste le chemin si besoin
+
 
 function App() {
   const [hasLoaded, setHasLoaded] = useState(false); // Gère l'activation de l'animation du texte après le chargement
@@ -31,6 +33,7 @@ function App() {
       <Presentation />
       {/* <PorteDocu1 /> */}
       <Projects />
+      <ScrollSection />
       <Footer isLineDisplayed={false} />
       {/* <EyeIntro onIntroEnd={handleIntroEnd} /> */}
     </>

@@ -1,0 +1,32 @@
+/* src/components/ScrollSection.css */
+
+.scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .scroll-content {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .scroll-project {
+    min-width: 80vw;
+    height: 60vh;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
