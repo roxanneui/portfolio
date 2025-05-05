@@ -23,6 +23,9 @@ function Ecomiam() {
   const images = [
     "/Ecomiam/Ecomiammockup2.1.png",
     '/Ecomiam/Ecomiam1.png',
+    "/Ecomiam/EcomiamEva.png",
+    "/Ecomiam/EcomiamEmpathyEva.png",
+    "/Ecomiam/Wireframing.jpg",
     "/Ecomiam/Ecomiam2.png",
     "/Ecomiam/Ecomiammockup1.png"
   ];
