@@ -7,7 +7,7 @@ function Projects() {
   const [selectedProject, setSelectedProject] = useState('Ecomiam');
   const { language } = useContext(LanguageContext); // Pour obtenir la langue actuelle
 
-  const projects = ['Ecomiam', 'GaiaCo', 'Better', 'WWWoman'];
+  const projects = ['Ecomiam', 'GaiaCo', 'Better', 'WWWomen'];
 
   const galleryImages = {
     Ecomiam: [
@@ -25,7 +25,7 @@ function Projects() {
       { url: '/portfolio/Better/Better2.png', title: '', id: 2 },
       { url: '/portfolio/Better/Better3.png', title: '', id: 3 },
     ],
-    WWWoman: [
+    WWWomen: [
       { url: '/portfolio/WWWomen/wwwomen3.png', title: '', id: 1 },
       { url: '/portfolio/WWWomen/wwwomen2.png', title: '', id: 2 },
       { url: '/portfolio/WWWomen/wwwomen1.png', title: '', id: 3 },
@@ -76,7 +76,7 @@ function Projects() {
       'figmaLink': 'https://www.figma.com/design/Cr5pwZu2O7ilInBK7Qr9m7/LANDRY_Roxanne_BetterDesignsOnePage?node-id=0-1&t=7EM33MOIYHd3Y5Zu-1'
     }
     },
-    WWWoman: {
+    WWWomen: {
       "fr": {
         "title": "WWWomen",
         "description": "La mission : souligner et mettre en lumière les femmes à travers leur art, l'entrepreneuriat et bien d'autres sujets. WWWomen met en avant les femmes du monde entier de manière ludique et authentique, comme un blog à partager et une édition hebdomadaire à lire.",
