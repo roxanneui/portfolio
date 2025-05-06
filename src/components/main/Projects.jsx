@@ -9,6 +9,11 @@ function Projects() {
 
   const projects = ['Ecomiam', 'GaiaCo', 'Better', 'WWWomen'];
 
+  const figmaLink = {
+    "en": "View figma",
+    "fr": "Voir le figma"
+  }
+
   const galleryImages = {
     Ecomiam: [
       { url: '/portfolio/Ecomiam/Ecomiammockup2.1.png', title: '', id: 1 },
@@ -124,18 +129,18 @@ function Projects() {
         <h2>{projectDetails[selectedProject] && projectDetails[selectedProject][language]?.title}</h2>
         <p>{projectDetails[selectedProject] && projectDetails[selectedProject][language]?.description}</p>
 
-        <div className="project-skills">
-          <ul>
+        <div className="project-specifications">
+          <div className="project-skill-pills">
             {projectDetails[selectedProject] && projectDetails[selectedProject][language]?.skills?.map((skill, index) => (
-              <li key={index}>{skill}</li>
+              <span key={index} className="project-pill">{skill}</span>
             ))}
-          </ul>
-        </div>
+          </div>
 
-        <div className="project-figma">
-          <a href={projectDetails[selectedProject]?.[language]?.figmaLink} target="_blank" rel="noopener noreferrer">
-            
-          </a>
+          <div className="project-figma">
+            <a href={projectDetails[selectedProject]?.[language]?.figmaLink} target="_blank" rel="noopener noreferrer">
+              {figmaLink[language]}
+            </a>
+          </div>
         </div>
       </div>
 

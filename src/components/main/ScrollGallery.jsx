@@ -5,14 +5,8 @@ import './ScrollGallery.css';
 
 const ScrollGallery = ({ images }) => {
   return (
-    <div className="example-container">
-      {/* <div className="scroll-message">
-        <span>Scroll down</span>
-      </div> */}
+    <div>
       <HorizontalScrollCarousel images={images} />
-      {/* <div className="scroll-message">
-        <span>Scroll up</span>
-      </div> */}
     </div>
   );
 };
@@ -23,7 +17,7 @@ const HorizontalScrollCarousel = ({ images }) => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ['1%', '-95%']);
+  const x = useTransform(scrollYProgress, [0, 1], ['1%', '-10%']);
 
   return (
     <section ref={targetRef} className="carousel-section">
