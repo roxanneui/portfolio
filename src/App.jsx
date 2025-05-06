@@ -7,7 +7,8 @@ import Presentation from './components/main/Presentation';
 import Projects from './components/main/Projects';
 import EyeIntro from './components/EyeIntro';
 import PorteDocu1 from './components/main/PorteDocu1';
-import ScrollSection from './components/main/ScrollSection'; // ajuste le chemin si besoin
+import ScrollGallery from './components/main/ScrollGallery'; // ajuste le chemin si besoin
+import './tailwind.css';
 
 
 function App() {
@@ -31,9 +32,9 @@ function App() {
       <Header />
       <NameIntro />
       <Presentation />
-      {/* <PorteDocu1 /> */}
+      {/* <PorteDocu1 /> cc*/}
       <Projects />
-      <ScrollSection />
+      {/* <ScrollGallery /> */}
       <Footer isLineDisplayed={false} />
       {/* <EyeIntro onIntroEnd={handleIntroEnd} /> */}
     </>
