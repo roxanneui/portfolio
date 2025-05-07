@@ -5,6 +5,7 @@
   background-color: #9747FF;
   height: 10rem;
   gap: 2rem;
+  color: white;
 }
 
 .footer-left {
@@ -40,7 +41,7 @@
 
 .footer-icon {
   font-size: 2rem;
-  color: #000000;
+  color: #ffffff;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 

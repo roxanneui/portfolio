@@ -19,6 +19,7 @@ function Projects() {
       { url: '/portfolio/Ecomiam/Ecomiammockup2.1.png', title: '', id: 1 },
       { url: '/portfolio/Ecomiam/Ecomiam1.png', title: '', id: 2 },
       { url: '/portfolio/Ecomiam/EcomiamEva.png', title: '', id: 3 },
+      { url: '/portfolio/Ecomiam/EcomiamEmpathyEva.png', title: '', id: 3 },
     ],
     GaiaCo: [
       { url: '/portfolio/GaiaCo/ProblemeSolution.png', title: '', id: 1 },
@@ -31,9 +32,9 @@ function Projects() {
       { url: '/portfolio/Better/Better3.png', title: '', id: 3 },
     ],
     WWWomen: [
+      { url: '/portfolio/WWWomen/wwwomen1.png', title: '', id: 3 },
       { url: '/portfolio/WWWomen/wwwomen3.png', title: '', id: 1 },
       { url: '/portfolio/WWWomen/wwwomen2.png', title: '', id: 2 },
-      { url: '/portfolio/WWWomen/wwwomen1.png', title: '', id: 3 },
     ],
   };
 
@@ -57,14 +58,12 @@ function Projects() {
       fr: {
         title: "GaiaCo — Application de gestion des relations",
         description: "Créer un espace personnel vivant, pour se souvenir des gens qu’on rencontre dans sa vie, voir les liens émerger, et revaloriser ses relations. GaiaCo permet de mieux comprendre son réseau personnel, d'explorer des opportunités et de maintenir des relations authentiques.",
-        skills: ["Recherche UX", "Responsive Design", "Interface UI", "Data Visualization",],
-        figmaLink: 'https://www.figma.com/design/Cr5pwZu2O7ilInBK7Qr9m7/LANDRY_Roxanne_GaiaCo?node-id=0-1&t=7EM33MOIYHd3Y5Zu-1',  
+        skills: ["Recherche UX", "Responsive Design", "Interface UI", "Data Visualization",],  
       },
       en: {
         title: "GaiaCo — Relationship Management App",
         description: "Create a personal living space to remember the people we meet in life, see the connections emerge, and revitalize relationships. GaiaCo helps you understand your personal network better, explore opportunities, and maintain authentic relationships.",
         skills: ["UX research", "Responsive Design", "Conception UI", "Data Visualization",],
-        figmaLink: 'https://www.figma.com/design/Cr5pwZu2O7ilInBK7Qr9m7/LANDRY_Roxanne_GaiaCo?node-id=0-1&t=7EM33MOIYHd3Y5Zu-1',
         }
     },
     Better: {
@@ -136,11 +135,14 @@ function Projects() {
             ))}
           </div>
 
+          {projectDetails[selectedProject]?.[language]?.figmaLink && (
           <div className="project-figma">
-            <a href={projectDetails[selectedProject]?.[language]?.figmaLink} target="_blank" rel="noopener noreferrer">
-              {figmaLink[language]}
+            <a href={projectDetails[selectedProject][language].figmaLink} target="_blank" rel="noopener noreferrer">
+            {figmaLink[language]}
             </a>
           </div>
+          )}
+
         </div>
       </div>
 
