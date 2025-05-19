@@ -1,18 +1,24 @@
 import React from 'react';
 import './NameIntro.css';
+import { LanguageContext } from '../../context/LanguageContext';
 
 function NameIntro() {
+  const { language } = React.useContext(LanguageContext);
+
+  const text = {
+    fr: ['Roxanne', 'Landry', 'Web design - UX design - Graphisme - Direction artistique', 'Mon univers'],
+    en: ['Roxanne', 'Landry', 'Web design - UX design - Graphism - Artistic direction', 'My universe'],
+  };
+
+
   return (
     <div className="name-intro">
-        <div className="intro-image-container">
-            <img 
-              src="./imageintro.png" // Remplace par le chemin de ton image
-              alt="" 
-              className="intro-image" 
-            />
-          </div>
-      <div className="name-intro-content">
-        <span className="name">Roxanne Landry</span>
+      <div className='name'>
+        <h1>{text[language][0].toUpperCase()}</h1>
+        <h1>{text[language][1].toUpperCase()}</h1>
+      </div>
+      <h2>{text[language][2]}</h2>
+      <div className='discover'>
         <img
           src="/portfolio/Fleche1.png"
           alt="Scroll Down"
@@ -25,6 +31,7 @@ function NameIntro() {
             section?.scrollIntoView({ behavior: "smooth" });
           }}
         />
+        <p>{text[language][3]}</p>
       </div>
     </div>
   );

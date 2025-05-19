@@ -1,0 +1,85 @@
+.name-intro {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: calc(100vh - 5rem);
+  font-size: 7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  position: relative;
+  padding-left: 2rem;
+  background-color: #fff6e6;
+}
+
+.intro-image-container {
+  position: relative;
+  width: 100%;
+  height: auto; /* Tu peux ajuster cette hauteur selon ce que tu préfères */
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Centre l'image horizontalement */
+  padding-right: 2rem;
+  padding-top: 6rem;
+}
+
+.intro-image {
+  width: 100%; /* Rendre l'image aussi large que l'espace disponible */
+  height: auto; /* Garder la proportion de l'image */
+}
+
+.name {
+  font-size: clamp(4rem, 12vw, 5rem);
+}
+
+.name-intro-content {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.scroll-arrow {
+  justify-content: right;
+  width: clamp(4rem, 12vw, 5rem);
+  height: auto;
+  animation: bounce 2s ease-in-out infinite;
+  z-index: 10;
+  margin-right: 10vw;
+}
+
+/* Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: clamp(4rem, 12vw, 5rem);
+  }
+  .name-intro-content {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+  .scroll-arrow {
+    width: clamp(4rem, 12vw, 5rem);
+    height: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .name {
+    font-size: clamp(3rem, 12vw, 4rem);
+  }
+  .scroll-arrow {
+    width: clamp(3rem, 12vw, 4rem);
+  }
+}

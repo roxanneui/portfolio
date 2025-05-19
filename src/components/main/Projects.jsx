@@ -146,6 +146,10 @@ function Projects() {
         </div>
       </div>
 
+      <div className="main-image-container">
+        <img src={galleryImages[selectedProject][0].url} alt="Main visual" className="main-image" />
+      </div>
+
       <ScrollGallery images={galleryImages[selectedProject]} />
     </div>
   );

@@ -4,41 +4,78 @@ import './Presentation.css';
 import { LanguageContext } from '../../context/LanguageContext';
 
 function Presentation() {
-  const [hasLoaded, setHasLoaded] = useState(false); // Gère l'activation de l'animation du texte après le chargement
   const { language, toggleLanguage } = useContext(LanguageContext); // language, toggleLanguage proviennent de LanguageContext
 
   const content = {
     fr: {
-      greeting: 'Bonjour / Hi !',
-      intro: `Moi c'est Roxanne, actuellement étudiante<br />
-      en Design Graphique à Paris, je recherche<br />
-      une <span class="purple">alternance</span> afin de me spécialiser en<br />
-      <span class="purple">UI UX Design</span> dès septembre 2025.`,
-      secondIntro: `Je suis convaincue de pouvoir me démarquer<br/>
-      dans le milieu du design digital en utilisant mes<br/>
-      compétences en Design Graphique apprises à<br/>
-      Brassart et ma passion innée pour les technologies.<br/>
-      J'apsire à apporter, non seulement des <span class="purple">interfaces<br/>
-      esthétiques</span>, mais aussi des <span class="purple">expériences utilisateurs</span><br/>
-      uniques.`,
+      introTitle: 'Qui suis-je ?',
+      intro: `Du Canada à Paris, j'ai choisi de venir<br />
+      me former en design dans des écoles<br />
+      exigeantes et auprès d'équipes<br />
+      inspirantes. Le design digital me<br />
+      passionne parce qu'il mele le<br />
+      gaphisme, l'utilité et les technologies<br />
+      de demain. J'ai une vraie culture<br />
+      visuelle, un goût pour les idées, et<br />
+      l'envie de toujours mieux comprendre<br />
+      les utilisateurs et leurs besoins.`,
+      secondIntroTitle: 'Mon parcours',
+      secondIntro: `Je commence ma spécialisation UI/UX<br/>
+      design, et je cherche à passer à<br/>
+      l'action. Fini les projets fictifs : je veux<br/>
+      participer à des vrais projets, aux côtés<br/>
+      de professionnels, pour apprendre sur<br/>
+      le terrian. J'ai déjà acquis des bases<br/>
+      solides (HTML, CSS, Figma, desgin<br/>
+      thinking, prototypage), mais c'est dans<br/>
+      la réalité que je veux affiner ma pratique.`,
+      thirdIntroTitle: 'Mes objectifs',
+      thirdIntro: `Ce que je cherche, c'est un cadre<br/>
+      bienveillant mais exigeant, dans<br/>
+      lequel je pourrais évoluer, poser des<br/>
+      questions, apprendre de mes erreurs<br/>
+      et progressser pas à pas. J'ai envie de<br/>
+      construire des expériences utiles<br/>
+      humaines, et d'évoluer avec des gens<br/>
+      qui aiment ce qu'ils font.`,
+
       button: 'English pls',
       cv: 'Télécharger mon CV',
       linkedin: 'Mon LinkedIn',
     },
     en: {
-      greeting: 'Hi / Bonjour !',
-      intro: `My name is Roxanne, currently<br/>
-      a Graphic Design student in Paris,<br/>
-      I am looking for an <span class="purple">internship</span> in<br/>
-      <span class="purple">UI/UX Design</span>, starting in<br/>
-      September 2025.`,
-      secondIntro: `I am convince that i can stand out<br/>
-      in digital design thanks to my<br/>
-      Graphic Design skills i learned in<br/>
-      Brassart and also my forever<br/>
-      passion for technologies. I aspire<br/>
-      not only to bring <span class="purple">pleasant interfaces</span>,<br/>
-      but also <span class="purple">user experiences</span> to life.`,
+      introTitle: 'Who am I?',
+      intro: `From Canada to Paris, I chose to come<br />
+      train in design in demanding schools<br />
+      and with inspiring teams. Digital design<br />
+      fascinates me because it combines<br />
+      graphics, utility and the technologies<br />
+      of tomorrow. I have a real visual<br />
+      culture, a taste for ideas, and the<br />
+      desire to always better understand<br />
+      users and their needs.`,
+      secondIntroTitle: 'My background',
+      secondIntro: `I am starting my UI/UX design<br />
+      specialization, and I am looking to<br />
+      take action. No more fictitious<br />
+      projects: I want to participate in<br />
+      real projects, alongside<br />
+      professionals, to learn on the<br />
+      ground. I have already acquired<br />
+      solid foundations (HTML, CSS, Figma,<br />
+      design thinking, prototyping), but it<br />
+      is in reality that I want to refine<br />
+      my practice.`,
+      thirdIntroTitle: 'My goals',
+      thirdIntro: `What I am looking for is a<br />
+      benevolent but demanding framework,<br />
+      in which I could evolve, ask<br />
+      questions, learn from my mistakes<br />
+      and progress step by step. I want to<br />
+      build useful and human experiences
+      and evolve with people who love<br />
+      what they do.`,
+
       button: 'Français',
       cv: 'Download my resume',
       linkedin: 'My LinkedIn',
@@ -68,33 +105,40 @@ function Presentation() {
     <>
       <section className='presentation-container'>
         <div className="lang-selection" id="about">
-          <button onClick={language === "en" ? toggleLanguage : ''} className="lang-button" id="lang1">
+          <button onClick={language === "en" ? toggleLanguage : undefined} className="lang-button" id="lang1">
             <span className="lang-button-text">Bonjour !</span>
           </button>
-          <button onClick={language === "fr" ? toggleLanguage : ''} className="lang-button" id="lang2">
+          <button onClick={language === "fr" ? toggleLanguage : undefined} className="lang-button" id="lang2">
             <span className="lang-button-text">Hi !</span>
           </button>
         </div>
         <main className="homepage">
-            {/* 
-            <div className="lang-block">
-              <h1 className="greetings">{content[language].greeting}</h1>
-              <button onClick={toggleLanguage} className="lang-btn">
-                <span className="button_top">{content[language].button}</span>
-              </button>
+
+          <div className="paragraphs">
+            
+            <div>
+              <h2 className="paragraph-title purple" style={{ textAlign: 'left' }}>{content[language].introTitle.toUpperCase()}</h2>
+              <p
+                className="paragraph-left"
+                dangerouslySetInnerHTML={{ __html: content[language].intro }}
+              ></p>
             </div>
-            */}
 
-            <div className="paragraphs">
-            <p
-              className={hasLoaded ? 'fade-in paragraph-left' : 'paragraph-left'}
-              dangerouslySetInnerHTML={{ __html: content[language].intro }}
-            ></p>
+            <div>
+              <h2 className="paragraph-title purple" style={{ textAlign: 'right' }}>{content[language].secondIntroTitle.toUpperCase()}</h2>
+              <p
+                className="paragraph-right"
+                dangerouslySetInnerHTML={{ __html: content[language].secondIntro }}
+              ></p>
+            </div>
 
-            <p
-              className="paragraph-right"
-              dangerouslySetInnerHTML={{ __html: content[language].secondIntro }}
-            ></p>
+            <div>
+              <h2 className="paragraph-title purple" style={{ textAlign: 'left' }}>{content[language].thirdIntroTitle.toUpperCase()}</h2>
+              <p
+                className='paragraph-left'
+                dangerouslySetInnerHTML={{ __html: content[language].thirdIntro }}
+              ></p>
+            </div>
           </div>
 
             <div className="links">

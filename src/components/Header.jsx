@@ -25,24 +25,30 @@ function Header() {
   }, []);
 
   const navText = {
-    fr: ['Projets', 'Carnet', 'Créations'],
-    en: ['Projects', 'Sketchbook', 'Creations'],
+    fr: ['Projets', 'Créations'],
+    en: ['Projects', 'Creations'],
   };
 
   return (
-    <header className={`header ${showHeader ? 'visible' : 'hidden'} redirection`}>
-      <div className="logo-container">
-        <Link to="/">
-          <img src="/portfolio/Logo1.png" alt="Logo" className="logo" />
-        </Link>
+    <div>
+      <div className="header-background" style={{ opacity: showHeader ? 1 : 0 }}>
+        <div className="buttons-background">
+        </div>
       </div>
-      <nav>
-        {/* <Link to="/gallery">{navText[language][0]}</Link> */}
-        <Link to="/#projects">{navText[language][0]}</Link>
-        <Link to="/creations">{navText[language][2]}</Link>
-        {/* <Link to="/contact">{navText[language][1]}</Link> */}
-      </nav>
-    </header>
+      <header className={`header ${showHeader ? 'visible' : 'hidden'}`}>
+        <div className="logo-container">
+          <Link to="/">
+            <img src="/portfolio/Logo1.png" alt="Logo" className="logo" />
+          </Link>
+        </div>
+        <div className='nav-container'>
+          <nav className='nav-links'>
+            <Link to="/#projects">{navText[language][0]}</Link>
+            <Link to="/creations">{navText[language][1]}</Link>
+          </nav>
+        </div>
+      </header>
+    </div>
   );
 }
 
