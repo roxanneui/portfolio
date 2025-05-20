@@ -6,8 +6,8 @@ function NameIntro() {
   const { language } = React.useContext(LanguageContext);
 
   const text = {
-    fr: ['Roxanne', 'Landry', 'Web design - UX design - Graphisme - Direction artistique', 'Mon univers'],
-    en: ['Roxanne', 'Landry', 'Web design - UX design - Graphism - Artistic direction', 'My universe'],
+    fr: ['Roxanne', 'Landry', 'UI/UX design - Graphisme - Direction artistique', 'Mon univers créatif'],
+    en: ['Roxanne', 'Landry', 'UI/UX design - Graphic Design - Art direction', 'My creative space'],
   };
 
 

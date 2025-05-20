@@ -13,8 +13,8 @@ function Presentation() {
       me former en design dans des écoles<br />
       exigeantes et auprès d'équipes<br />
       inspirantes. Le design digital me<br />
-      passionne parce qu'il mele le<br />
-      gaphisme, l'utilité et les technologies<br />
+      passionne parce qu'il mêle le<br />
+      graphisme, l'utilité et les technologies<br />
       de demain. J'ai une vraie culture<br />
       visuelle, un goût pour les idées, et<br />
       l'envie de toujours mieux comprendre<br />
@@ -25,7 +25,7 @@ function Presentation() {
       l'action. Fini les projets fictifs : je veux<br/>
       participer à des vrais projets, aux côtés<br/>
       de professionnels, pour apprendre sur<br/>
-      le terrian. J'ai déjà acquis des bases<br/>
+      le terrain. J'ai déjà acquis des bases<br/>
       solides (HTML, CSS, Figma, desgin<br/>
       thinking, prototypage), mais c'est dans<br/>
       la réalité que je veux affiner ma pratique.`,

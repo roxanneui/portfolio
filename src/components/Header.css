@@ -16,7 +16,7 @@
 .buttons-background {
   top: 0;
   right: 0;
-  width: 20rem;
+  width: 30rem;
   height: 4.5rem;
   background-color: #fff6e6;
   z-index: -1;
@@ -76,12 +76,12 @@
     display: inline-block;
     transition: all 0.1s ease;
     position: relative;
-    border: 2px solid #000000;
+    /* border: 2px solid #000000; */
   }
 
   .header nav a:hover{
     transform: translateY(-2px);
-    background-color: #9747FF;
+    /* background-color: #9747FF; */
     color: #000000;
   }
 
