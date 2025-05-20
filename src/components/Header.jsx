@@ -43,8 +43,8 @@ function Header() {
         </div>
         <div className='nav-container'>
           <nav className='nav-links'>
-            <Link to="/#about">{navText[language][0]}</Link>
-            <Link to="/#projects">{navText[language][1]}</Link>
+            <Link smooth to="/#about">{navText[language][0]}</Link>
+            <Link smooth to="/#projects">{navText[language][1]}</Link>
             <Link to="/creations">{navText[language][2]}</Link>
           </nav>
         </div>
