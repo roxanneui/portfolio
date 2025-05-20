@@ -46,35 +46,35 @@ function Presentation() {
     en: {
       introTitle: 'Who am I?',
       intro: `From Canada to Paris, I chose to come<br />
-      train in design in demanding schools<br />
-      and with inspiring teams. Digital design<br />
-      fascinates me because it combines<br />
-      graphics, utility and the technologies<br />
-      of tomorrow. I have a real visual<br />
-      culture, a taste for ideas, and the<br />
-      desire to always better understand<br />
-      users and their needs.`,
+      study graphic design in demanding<br />
+      schools and along inspiring teams.<br />
+      Digital designfascinates me because<br />
+      it combines creativity, usefulness and<br />
+      tomorrow's technologies. I have<br />
+      a taste for innovation, and the<br />
+      constant drive to better understand<br />
+      technologies, the users and needs.`,
       secondIntroTitle: 'My background',
       secondIntro: `I am starting my UI/UX design<br />
-      specialization, and I am looking to<br />
-      take action. No more fictitious<br />
+      specialization, and I am ready to<br />
+      take action. No more fictional<br />
       projects: I want to participate in<br />
-      real projects, alongside<br />
+      the real ones, alongside<br />
       professionals, to learn on the<br />
       ground. I have already acquired<br />
-      solid foundations (HTML, CSS, Figma,<br />
-      design thinking, prototyping), but it<br />
-      is in reality that I want to refine<br />
-      my practice.`,
+      solid foundations (HTML, CSS,<br />
+      Figma, design thinking,<br />
+      prototyping). but is in reality that<br />
+      I want to refine my practice.`,
       thirdIntroTitle: 'My goals',
-      thirdIntro: `What I am looking for is a<br />
-      benevolent but demanding framework,<br />
-      in which I could evolve, ask<br />
-      questions, learn from my mistakes<br />
-      and progress step by step. I want to<br />
-      build useful and human experiences
-      and evolve with people who love<br />
-      what they do.`,
+      thirdIntro: `What I am looking for is a supportive<br />
+      yet challenging environment in which<br />
+      I could evolve, ask questions, learn<br />
+      from my mistakes and progress in<br />
+      a team. I want to build useful and<br />
+      human-centered experiences and<br />
+      evolve with people who are<br />
+      passionate about what they do.`,
 
       button: 'Français',
       cv: 'Download my resume',

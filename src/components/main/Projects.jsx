@@ -17,24 +17,26 @@ function Projects() {
   const galleryImages = {
     Ecomiam: [
       { url: '/portfolio/Ecomiam/Ecomiammockup2.1.png', title: '', id: 1 },
-      { url: '/portfolio/Ecomiam/Ecomiam1.png', title: '', id: 2 },
+      { url: '/portfolio/Ecomiam/Wireframing2.png', title: '', id: 2 },
       { url: '/portfolio/Ecomiam/EcomiamEva.png', title: '', id: 3 },
-      { url: '/portfolio/Ecomiam/EcomiamEmpathyEva.png', title: '', id: 3 },
+      // { url: '/portfolio/Ecomiam/EcomiamEmpathyEva.png', title: '', id: 3 },
+      { url: '/portfolio/Ecomiam/Ecomiam3.png', title: '', id: 4 },
     ],
     GaiaCo: [
-      { url: '/portfolio/GaiaCo/ProblemeSolution.png', title: '', id: 1 },
-      { url: '/portfolio/GaiaCo/PersonaLaura.png', title: '', id: 2 },
-      { url: '/portfolio/GaiaCo/Wire1.png', title: '', id: 3 },
+      { url: '/portfolio/GaiaCo/Logo.png', title: '', id: 1 },
+      { url: '/portfolio/GaiaCo/ProblemeSolution.png', title: '', id: 2 },
+      { url: '/portfolio/GaiaCo/PersonaLaura.png', title: '', id: 3 },
+      { url: '/portfolio/GaiaCo/Wire1.png', title: '', id: 4 },
     ],
     Better: [
       { url: '/portfolio/Better/Better1.png', title: '', id: 1 },
-      { url: '/portfolio/Better/Better2.png', title: '', id: 2 },
-      { url: '/portfolio/Better/Better3.png', title: '', id: 3 },
+      { url: '/portfolio/Better/Better5.png', title: '', id: 2 },
+      { url: '/portfolio/Better/Better4.mp4', title: '', id: 2 },
     ],
     WWWomen: [
+      { url: '/portfolio/WWWomen/wwwomen4.png', title: '', id: 1 },
+      { url: '/portfolio/WWWomen/wwwomen3.png', title: '', id: 2 },
       { url: '/portfolio/WWWomen/wwwomen1.png', title: '', id: 3 },
-      { url: '/portfolio/WWWomen/wwwomen3.png', title: '', id: 1 },
-      { url: '/portfolio/WWWomen/wwwomen2.png', title: '', id: 2 },
     ],
   };
 
