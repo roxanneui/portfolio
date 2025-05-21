@@ -2,12 +2,14 @@ import React, { useEffect, useState, useContext } from 'react';
 import './Projects.css';
 import ScrollGallery from './ScrollGallery';
 import { LanguageContext } from '../../context/LanguageContext';
+import ProjectAccordion from './ProjectAccordion';
 
 function Projects() {
   const [selectedProject, setSelectedProject] = useState('Ecomiam');
   const { language } = useContext(LanguageContext); // Pour obtenir la langue actuelle
 
   const projects = ['Ecomiam', 'GaiaCo', 'Better', 'WWWomen'];
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   const figmaLink = {
     "en": "View figma",
@@ -108,53 +110,68 @@ function Projects() {
           el.style.color = "#000000";
         }
       }
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 768);
+      };
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
     });
   }, [selectedProject]);
 
   return (
-    <div className="project-section">
-      <div className="projects-selection" id="projects">
-        {projects.map((name) => (
-          <button
-            key={name}
-            onClick={() => setSelectedProject(name)}
-            className="projects-button"
-            id={`projects-${name}`}
-          >
-            <span className="projects-button-text">{name}</span>
-          </button>
-        ))}
-      </div>
-
-      <div className="project-info">
-        <h2>{projectDetails[selectedProject] && projectDetails[selectedProject][language]?.title}</h2>
-        <p>{projectDetails[selectedProject] && projectDetails[selectedProject][language]?.description}</p>
-
-        <div className="project-specifications">
-          <div className="project-skill-pills">
-            {projectDetails[selectedProject] && projectDetails[selectedProject][language]?.skills?.map((skill, index) => (
-              <span key={index} className="project-pill">{skill}</span>
-            ))}
-          </div>
-
-          {projectDetails[selectedProject]?.[language]?.figmaLink && (
-          <div className="project-figma">
-            <a href={projectDetails[selectedProject][language].figmaLink} target="_blank" rel="noopener noreferrer">
-            {figmaLink[language]}
-            </a>
-          </div>
-          )}
-
+  <div className="project-section">
+    {isMobile ? (
+      projects.map((proj, idx) => (
+        <ProjectAccordion key={idx} title={proj.title}>
+          <p>{proj.description}</p>
+          <img src={proj.image} alt={proj.title} />
+        </ProjectAccordion>
+      ))
+    ) : (
+      <>
+        <div className="projects-selection" id="projects">
+          {projects.map((name) => (
+            <button
+              key={name}
+              onClick={() => setSelectedProject(name)}
+              className="projects-button"
+              id={`projects-${name}`}
+            >
+              <span className="projects-button-text">{name}</span>
+            </button>
+          ))}
         </div>
-      </div>
 
-      <div className="main-image-container">
-        <img src={galleryImages[selectedProject][0].url} alt="Main visual" className="main-image" />
-      </div>
+        <div className="project-info">
+          <h2>{projectDetails[selectedProject] && projectDetails[selectedProject][language]?.title}</h2>
+          <p>{projectDetails[selectedProject] && projectDetails[selectedProject][language]?.description}</p>
 
-      <ScrollGallery images={galleryImages[selectedProject]} />
-    </div>
-  );
+          <div className="project-specifications">
+            <div className="project-skill-pills">
+              {projectDetails[selectedProject] && projectDetails[selectedProject][language]?.skills?.map((skill, index) => (
+                <span key={index} className="project-pill">{skill}</span>
+              ))}
+            </div>
+
+            {projectDetails[selectedProject]?.[language]?.figmaLink && (
+              <div className="project-figma">
+                <a href={projectDetails[selectedProject][language].figmaLink} target="_blank" rel="noopener noreferrer">
+                  {figmaLink[language]}
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div className="main-image-container">
+          <img src={galleryImages[selectedProject][0].url} alt="Main visual" className="main-image" />
+        </div>
+
+        <ScrollGallery images={galleryImages[selectedProject]} />
+      </>
+    )}
+  </div>
+);
 }
 
 export default Projects;
