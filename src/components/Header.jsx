@@ -5,6 +5,7 @@ import './Header.css';
 
 function Header() {
   const [showHeader, setShowHeader] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language } = useContext(LanguageContext);
 
   let lastScroll = window.scrollY;
@@ -31,21 +32,42 @@ function Header() {
 
   return (
     <div>
-      <div className="header-background" style={{ opacity: showHeader ? 1 : 0 }}>
-        <div className="buttons-background">
-        </div>
+      <div className="header-background">
+        <div className="buttons-background"></div>
       </div>
+
       <header className={`header ${showHeader ? 'visible' : 'hidden'}`}>
         <div className="logo-container">
           <Link to="/">
             <img src="/portfolio/Logo1.png" alt="Logo" className="logo" />
           </Link>
         </div>
+
+        {/* Hamburger button for mobile */}
+        <button className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <img
+            src={isMenuOpen ? '/portfolio/burger-bar.png' : '/portfolio/burger-bar.png'}
+            alt="Menu"
+            className="hamburger-icon"
+            style={{ width: '45px', height: '45px' }}
+          />
+        </button>
+
+        {/* Desktop nav */}
         <div className='nav-container'>
           <nav className='nav-links'>
             <Link smooth to="/#about">{navText[language][0]}</Link>
             <Link smooth to="/#projects">{navText[language][1]}</Link>
             <Link to="/creations">{navText[language][2]}</Link>
+          </nav>
+        </div>
+
+        {/* Mobile nav */}
+        <div className={`mobile-menu ${isMenuOpen ? 'open' : ''} ${showHeader ? 'visible' : 'hidden'}`}>
+          <nav className='mobile-nav-links'>
+            <Link smooth to="/#about" onClick={() => setIsMenuOpen(false)}>{navText[language][0]}</Link>
+            <Link smooth to="/#projects" onClick={() => setIsMenuOpen(false)}>{navText[language][1]}</Link>
+            <Link to="/creations" onClick={() => setIsMenuOpen(false)}>{navText[language][2]}</Link>
           </nav>
         </div>
       </header>
