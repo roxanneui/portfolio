@@ -6,6 +6,7 @@
 
 .homepage {
     padding: 4rem 2rem;
+    padding-bottom: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
     background-color: #fff6e6;
@@ -17,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 0;
   }
   
 .purple {
@@ -27,12 +28,14 @@
   .paragraph-left {
     text-align: left;
     line-height: 1.1;
+    font-size: 2rem;
   }
   
   .paragraph-right {
     text-align: right;
     align-self: flex-end;
     line-height: 1.1;
+    font-size: 2rem;
   }
   
   .paragraph-title {
@@ -114,36 +117,24 @@
     color: #9747FF;
 }
 
-
-@media (max-width: 768px) {
-  .lang-block {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .lang-btn {
-    font-size: 1rem;
-  }
-
-  .greetings {
-    font-size: 2.5rem;
-  }
-}
-  
-@media (max-width: 540px) {
-  .greetings {
-    font-size: 2.5rem;
-  }
+.lang-button-text {
+  /* color: #fff6e6; */
+  font-size: 1.2rem;
+  font-weight: 800;
+  transform: translateY(-1rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .lang-selection {
   display: flex;
   background-color: #9747FF;
-  height: 6rem;
+  height: 5rem;
   z-index: 0;
   gap: 1rem;
   padding-top: 2rem;
   padding-left: 2rem;
+  padding-right: 2rem;
   position: relative;
 }
 
@@ -151,7 +142,7 @@
   /* background-color: #fff6e6; */
   border-radius: 20px;
   z-index: 1;
-  transform: translateY(1rem);
+  transform: translateY(0rem);
   height: 5rem;
   width: 10rem;
   position: relative;
@@ -166,14 +157,6 @@
   transform: translateY(0.5rem);
 }
 
-.lang-button-text {
-  /* color: #fff6e6; */
-  font-size: 1.2rem;
-  font-weight: 800;
-  transform: translateY(-1rem);
-  padding-left: 1rem;
-}
-
 .main-image {
   width: 90%;
   height: 90vh;
@@ -186,4 +169,78 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .lang-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lang-btn {
+    font-size: 1rem;
+  }
+
+  .greetings {
+    font-size: 2.5rem;
+  }
+
+  .paragraph-right {
+    font-size: 1.5rem;
+  }
+
+  .paragraph-left {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .paragraph-right {
+    font-size: 1.3rem;
+  }
+  .paragraph-left {
+    font-size: 1.3rem;
+  }
+  .cv-link, .linkedin-link {
+    font-size: 1.2rem;
+  }
+  .lang-button-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .paragraph-right {
+    font-size: 1.2rem;
+  }
+  .paragraph-left {
+    font-size: 1.2rem;
+  }
+  .cv-link, .linkedin-link {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .paragraph-right {
+    font-size: 1rem;
+  }
+  .paragraph-left {
+    font-size: 1rem;
+  }
+  .cv-link, .linkedin-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .paragraph-right {
+    font-size: 0.9rem;
+  }
+  .paragraph-left {
+    font-size: 0.9rem;
+  }
+  .cv-link, .linkedin-link {
+    font-size: 0.8rem;
+  }
 }

@@ -11,6 +11,7 @@ import ScrollGallery from './components/main/ScrollGallery'; // ajuste le chemin
 import './tailwind.css';
 
 
+
 function App() {
   const [hasLoaded, setHasLoaded] = useState(false); // Gère l'activation de l'animation du texte après le chargement
   const [isIntroDone, setIsIntroDone] = useState(false); // Ajout de l'état pour gérer la fin de l'intro
@@ -26,6 +27,20 @@ function App() {
   const handleIntroEnd = () => {
     setIsIntroDone(true); // L'animation de l'intro est terminée
   };
+
+  useEffect(() => {
+    const handleWheel = (e) => {
+      if (window.scrollY === 0 && e.deltaY < 0) {
+        e.preventDefault(); // Block scroll-up when already at top
+      }
+    };
+
+    window.addEventListener('wheel', handleWheel, { passive: false });
+
+    return () => {
+      window.removeEventListener('wheel', handleWheel);
+    };
+  }, []);
 
   return (
     <>

@@ -168,17 +168,6 @@
         font-size: 0.8rem;
     }
 }
-
-.projects-selection {
-    display: flex;
-    background-color: #fff6e6;
-    height: 6rem;
-    z-index: 0;
-    gap: 1rem;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    position: relative;
-  }
   
   .projects-button {
     /* background-color: #000000; */
@@ -187,6 +176,7 @@
     transform: translateY(1rem);
     height: 5rem;
     width: 16rem;
+    min-width: 12rem;
     position: relative;
     border: 2px solid transparent;
     display: flex;
@@ -204,6 +194,7 @@
     font-weight: 800;
     transform: translateY(-1rem);
     padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .work-in-progress {
@@ -303,4 +294,23 @@
     text-decoration: underline;
     color: #fff;
     font-weight: 500;
+    padding-right: 2rem;
   }
+
+
+.projects-selection {
+    display: flex;
+    background-color: #fff6e6;
+    height: 6rem;
+    z-index: 0;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
