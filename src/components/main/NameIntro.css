@@ -1,25 +1,29 @@
 .name-intro {
+  padding-top: 12rem;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
   flex-direction: column;
-  width: 100%;
-  height: calc(100vh - 5rem);
+  justify-content: center;
+  align-items: flex-start;
   background-color: #fff6e6;
-  min-height: 30rem;
   padding-left: 2rem;
+  padding-right: 2rem;
   padding-bottom: 2rem;
   color: #9747FF;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
+
 .name-intro h1 {
-  font-size: 13rem;
+  font-size: clamp(3rem, 10vw, 13rem);
   font-weight: 800;
   font-family: "Poppins", sans-serif;
   line-height: 1;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  word-break: break-word;
 }
+
 
 .name-intro h2 {
   font-family: "Poppins", sans-serif;
@@ -34,6 +38,10 @@
 
 .name {
   gap: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .discover {
@@ -58,4 +66,102 @@
   50% {
     transform: translateY(10px);
   }
+}
+
+@media (max-width: 1024px) {
+  .name-intro h1 {
+    font-size: 8rem;
+  }
+   .discover {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap; /* interdit le retour à la ligne */
+    gap: 0.5rem;       /* espace entre flèche et texte */
+    margin: 0;          /* supprime marges gênantes */
+    word-break: break-word;
+  }
+}
+
+/* 🔽 Corrections pour les petits écrans (mobile) uniquement */
+@media screen and (max-width: 768px) {
+   
+  .name-intro {
+    margin-right: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    height: auto;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .name-intro h1 {
+    font-size: 3.5rem;
+    word-break: break-word;
+  }
+
+  .name-intro h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .name-intro p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    max-width: 90%;
+  }
+
+  .discover {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap; /* interdit le retour à la ligne */
+    gap: 0.5rem;       /* espace entre flèche et texte */
+    margin: 0;          /* supprime marges gênantes */
+    word-break: break-word;
+  }
+
+
+@media (max-width: 480px) {
+  .name-intro h1 {
+    font-size: clamp(3rem, 10vw, 13rem);
+  }
+
+  .name-intro {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    margin-right : 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .name-intro {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    margin-right : 0px;
+  }
+  .name-intro h1 {
+    font-size: clamp(2.5rem, 9vw, 6rem);
+  
+  }
+
+  .name-intro h2 {
+    font-size: 1.2rem;
+  }
+
+  .name-intro p {
+    font-size: 1rem;
+  }
+   .discover {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap; /* interdit le retour à la ligne */
+    gap: 0.5rem;       /* espace entre flèche et texte */
+    margin: 0;          /* supprime marges gênantes */
+    word-break: break-word;
+  }
+}
+
 }
