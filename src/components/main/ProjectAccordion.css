@@ -1,22 +1,55 @@
 .accordion-item {
-  border-bottom: 1px solid #ccc;
-  padding: 0.5rem;
 }
 
 .accordion-header {
   background: none;
   border: none;
   font-size: 1.1rem;
-  width: 100%;
+  width: 60%;
   text-align: left;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
   padding: 0.5rem 0;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding-left: 0.5rem;
+}
+
+.accordion-header-background {
+  background-color: #000;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+}
+
+.accordion-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #fff;
 }
 
 .accordion-content {
-  padding: 0.5rem 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  color: #fff
+}
+
+.accordion-content.open {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.accordion-content p {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 .project-list {
