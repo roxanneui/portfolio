@@ -7,7 +7,7 @@ function NameIntro() {
 
   const text = {
     fr: ['Roxanne', 'Landry', 'UI/UX design - Graphisme - Direction artistique', `En recherche d'alternance pour septembre 2025`],
-    en: ['Roxanne', 'Landry', 'UI/UX design - Graphic Design - Art direction', 'Needing an internship for september 2025'],
+    en: ['Roxanne', 'Landry', 'UI/UX design - Graphic Design - Art direction', 'Searching for an internship starting september 2025'],
   };
 
 

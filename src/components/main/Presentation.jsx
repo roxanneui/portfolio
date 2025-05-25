@@ -9,35 +9,27 @@ function Presentation() {
   const content = {
     fr: {
       introTitle: 'Qui suis-je ?',
-      intro: `Du Canada à Paris, j'ai choisi de venir<br />
-      me former en design dans des écoles<br />
-      exigeantes et auprès d'équipes<br />
-      inspirantes. Le design digital me<br />
-      passionne parce qu'il mêle le<br />
-      graphisme, l'utilité et les technologies<br />
-      de demain. J'ai une vraie culture<br />
-      visuelle, un goût pour les idées, et<br />
-      l'envie de toujours mieux comprendre<br />
-      les utilisateurs et leurs besoins.`,
-      secondIntroTitle: 'Mon parcours',
-      secondIntro: `Je commence ma spécialisation UI/UX<br/>
-      design, et je cherche à passer à<br/>
-      l'action. Fini les projets fictifs : je veux<br/>
-      participer à des vrais projets, aux côtés<br/>
-      de professionnels, pour apprendre sur<br/>
-      le terrain. J'ai déjà acquis des bases<br/>
-      solides (HTML, CSS, Figma, desgin<br/>
-      thinking, prototypage), mais c'est dans<br/>
-      la réalité que je veux affiner ma pratique.`,
-      thirdIntroTitle: 'Mes objectifs',
-      thirdIntro: `Ce que je cherche, c'est un cadre<br/>
-      bienveillant mais exigeant, dans<br/>
-      lequel je pourrais évoluer, poser des<br/>
-      questions, apprendre de mes erreurs<br/>
-      et progressser pas à pas. J'ai envie de<br/>
-      construire des expériences utiles<br/>
-      humaines, et d'évoluer avec des gens<br/>
-      qui aiment ce qu'ils font.`,
+      intro: `Passionée par les technologies et<br />
+      les arts visuels, j'ai commencé mon<br />
+      parcours en design graphique à<br />
+      Brassart, où j'ai appris à donner<br />
+      forme aux idées et à explorer<br />
+      la direction artistique. Aujourd'hui,<br />
+      je me spécialise en UI/UX à Itecom<br />
+      pour allier design et expérience<br />
+      utilisateur. Curieuse et investie,<br />
+      j'aime tester et comprendre les outils<br />
+      digitaux et réfléchir à l'application<br />
+      du design dans notre quotidien digital.<br />
+      Je suis prête à mettre mes<br />
+      compétences et ma créativité au<br />
+      service de projets concrets et à<br />
+      progresser dans une équipe de<br />
+      professionels passionés.`,
+      secondIntroTitle: '',
+      secondIntro: ``,
+      thirdIntroTitle: '',
+      thirdIntro: ``,
 
       button: 'English pls',
       cv: 'Télécharger mon CV',
@@ -45,36 +37,24 @@ function Presentation() {
     },
     en: {
       introTitle: 'Who am I?',
-      intro: `From Canada to Paris, I chose to come<br />
-      study graphic design in demanding<br />
-      schools and along inspiring teams.<br />
-      Digital designfascinates me because<br />
-      it combines creativity, usefulness and<br />
-      tomorrow's technologies. I have<br />
-      a taste for innovation, and the<br />
-      constant drive to better understand<br />
-      technologies, the users and needs.`,
-      secondIntroTitle: 'My background',
-      secondIntro: `I am starting my UI/UX design<br />
-      specialization, and I am ready to<br />
-      take action. No more fictional<br />
-      projects: I want to participate in<br />
-      the real ones, alongside<br />
-      professionals, to learn on the<br />
-      ground. I have already acquired<br />
-      solid foundations (HTML, CSS,<br />
-      Figma, design thinking,<br />
-      prototyping). but is in reality that<br />
-      I want to refine my practice.`,
-      thirdIntroTitle: 'My goals',
-      thirdIntro: `What I am looking for is a supportive<br />
-      yet challenging environment in which<br />
-      I could evolve, ask questions, learn<br />
-      from my mistakes and progress in<br />
-      a team. I want to build useful and<br />
-      human-centered experiences and<br />
-      evolve with people who are<br />
-      passionate about what they do.`,
+      intro: `Passionate about technology and<br />
+      visual arts, I began my journey in<br />
+      graphic design at Brassart, where I<br />
+      learned to bring ideas to life and<br />
+      explore art direction. Today, I'm<br />
+      specializing in UI/UX at Itecom to<br />
+      combine design with user experience.<br />
+      Curious and dedicated, I enjoy testing<br />
+      and understanding digital tools and<br />
+      thinking about how design applies to<br />
+      our digital daily lives. I'm ready to put<br />
+      my skills and creativity into the real-<br />
+      world projects and grow within a <br />
+      team of passionate professionals.`,
+      secondIntroTitle: '',
+      secondIntro: `.`,
+      thirdIntroTitle: '',
+      thirdIntro: ``,
 
       button: 'Français',
       cv: 'Download my resume',
