@@ -9,22 +9,22 @@ function Presentation() {
   const content = {
     fr: {
       introTitle: 'Qui suis-je ?',
-      intro: `Passionée par les technologies et<br />
-      les arts visuels, j'ai commencé mon<br />
-      parcours en design graphique à<br />
-      Brassart, où j'ai appris à donner<br />
-      forme aux idées et à explorer<br />
-      la direction artistique. Aujourd'hui,<br />
-      je me spécialise en UI/UX à Itecom<br />
-      pour allier design et expérience<br />
-      utilisateur. Curieuse et investie,<br />
-      j'aime tester et comprendre les outils<br />
-      digitaux et réfléchir à l'application<br />
-      du design dans notre quotidien digital.<br />
-      Je suis prête à mettre mes<br />
-      compétences et ma créativité au<br />
-      service de projets concrets et à<br />
-      progresser dans une équipe de<br />
+      intro: `Passionée par les technologies et
+      les arts visuels, j'ai commencé mon
+      parcours en design graphique à
+      Brassart, où j'ai appris à donner
+      forme aux idées et à explorer
+      la direction artistique. Aujourd'hui,
+      je me spécialise en UI/UX à Itecom
+      pour allier design et expérience
+      utilisateur. Curieuse et investie,
+      j'aime tester et comprendre les outils
+      digitaux et réfléchir à l'application
+      du design dans notre quotidien digital.
+      Je suis prête à mettre mes
+      compétences et ma créativité au
+      service de projets concrets et à
+      progresser dans une équipe de
       professionels passionés.`,
       secondIntroTitle: '',
       secondIntro: ``,
@@ -37,19 +37,19 @@ function Presentation() {
     },
     en: {
       introTitle: 'Who am I?',
-      intro: `Passionate about technology and<br />
-      visual arts, I began my journey in<br />
-      graphic design at Brassart, where I<br />
-      learned to bring ideas to life and<br />
-      explore art direction. Today, I'm<br />
-      specializing in UI/UX at Itecom to<br />
-      combine design with user experience.<br />
-      Curious and dedicated, I enjoy testing<br />
-      and understanding digital tools and<br />
-      thinking about how design applies to<br />
-      our digital daily lives. I'm ready to put<br />
-      my skills and creativity into the real-<br />
-      world projects and grow within a <br />
+      intro: `Passionate about technology and
+      visual arts, I began my journey in
+      graphic design at Brassart, where I
+      learned to bring ideas to life and
+      explore art direction. Today, I'm
+      specializing in UI/UX at Itecom to
+      combine design with user experience.
+      Curious and dedicated, I enjoy testing
+      and understanding digital tools and
+      thinking about how design applies to
+      our digital daily lives. I'm ready to put
+      my skills and creativity into the real-
+      world projects and grow within a 
       team of passionate professionals.`,
       secondIntroTitle: '',
       secondIntro: `.`,

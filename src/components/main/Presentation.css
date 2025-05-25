@@ -29,6 +29,7 @@
     text-align: left;
     line-height: 1.1;
     font-size: 2rem;
+    max-width: 1300px;
   }
   
   .paragraph-right {
