@@ -20,7 +20,7 @@ function Projects() {
     Ecomiam: {
       images: [
         { url: '/portfolio/Ecomiam/Ecomiammockup2.1.png', title: '', id: 1 },
-        { url: '/portfolio/Ecomiam/Wireframing2.png', title: '', id: 2 },
+        { url: '/portfolio/Ecomiam/Ecomiam1.png', title: '', id: 2 },
         { url: '/portfolio/Ecomiam/EcomiamEva.png', title: '', id: 3 },
         { url: '/portfolio/Ecomiam/Ecomiam3.png', title: '', id: 4 },
       ],
