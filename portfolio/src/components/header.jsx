@@ -6,7 +6,7 @@ import linkedinIcon from "../assets/Linkedin.png";
 import cvIcon from "../assets/Cv.png";
 import mailIcon from "../assets/Mail.png";
 
-function Header() {
+function Header({ setActiveSection }) {
   return (
     <header className="site-header">
       <div className="logo-section">
@@ -15,9 +15,9 @@ function Header() {
 
       <nav className="nav-section">
         <ul>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#a-propos">À propos</a></li>
-          <li><a href="#journal">Journal</a></li>
+          <li><a href="#projets" onClick={() => setActiveSection("projets")}>Projets</a></li>
+          <li><a href="#a-propos" onClick={() => setActiveSection("apropos")}>À propos</a></li>
+          <li><a href="#journal" onClick={() => setActiveSection("journal")}>Journal</a></li>
         </ul>
       </nav>
 
