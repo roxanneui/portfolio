@@ -25,7 +25,6 @@ function Header({ setActiveSection }) {
 
       <div className="bottom-section">
         <div className="icon-links">
-          <a href="tel:+33123456789"><FaPhoneFlip size={24} title="Téléphone" /></a>
           <a href="https://www.linkedin.com/in/tonprofil" target="_blank" rel="noreferrer"><FaLinkedinIn size={24} title="LinkedIn" /></a>
           <a href="/ton-cv.pdf" download><FaFileDownload size={24} title="CV" /></a>
           <a href="mailto:email@exemple.com"><IoMailUnread size={24} title="Email" /></a>

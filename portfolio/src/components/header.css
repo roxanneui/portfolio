@@ -25,6 +25,8 @@
   width: 100%;
   gap: 20px;
   padding: var(--top-padding);
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .top-section {

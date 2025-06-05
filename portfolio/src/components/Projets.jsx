@@ -6,12 +6,12 @@ const Projets = () => {
   const [selectedFilter, setSelectedFilter] = useState(null);
 
   const projects = [
-    { title: "Écomiam", image: "#d9d9d9", tag: "UI UX" },
-    { title: "GaiaCo", image: "#d9d9d9", tag: "Direction Artistique" },
-    { title: "WWWomen", image: "#d9d9d9", tag: "Design graphique" },
-    { title: "Michel et Colette", image: "#d9d9d9", tag: "UI UX" },
-    { title: "Motif", image: "#d9d9d9", tag: "Direction Artistique" },
-    { title: "Better", image: "#d9d9d9", tag: "Design graphique" },
+    { title: "Écomiam", image: "./Ecomiam/Ecomiammockup2.1.png", tag: "UI UX" },
+    { title: "GaiaCo", image: "./GaiaGo/Logo.png", tag: "UI UX" },
+    { title: "WWWomen", image: "./wwwomen/wwwomen.png", tag: "UI UX" },
+    { title: "Michel et Colette", image: "#d9d9d9", tag: "Direction Artistique" },
+    { title: "Motif", image: "#d9d9d9", tag: "Design Graphique" },
+    { title: "Better", image: "#d9d9d9", tag: "UI UX" },
   ];
 
   const filteredProjects = selectedFilter
