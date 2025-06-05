@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "./components/header";
+import Header from "./components/Header";
 import Projets from "./components/Projets";
 import Apropos from "./components/APropos";
 import Journal from "./components/Journal";
@@ -22,9 +22,11 @@ function App() {
 
   return (
     <>
-      <Header setActiveSection={setActiveSection} />
-      <div className="main-content">
-        {renderSection()}
+      <div className="main-container">
+        <Header setActiveSection={setActiveSection} />
+        <div className="content-wrapper">
+          {renderSection()}
+        </div>
       </div>
     </>
   );

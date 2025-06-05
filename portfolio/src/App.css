@@ -1,22 +1,10 @@
-body, html, #root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: white;
-  font-family: sans-serif;
-}
-
-.app-container {
+.main-container {
   display: flex;
-  height: 100vh;
+  flex-direction: row;
+  height: 100%;
 }
 
-.main-content {
-  margin-left: 120px; /* 100px (header) + 20px de marge de sécurité */
-  padding: 2rem;
-}
-
-
-.content-section {
-  max-width: 800px;
+.content-wrapper {
+  flex-grow: 1;
+  overflow-y: auto;
 }

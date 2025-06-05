@@ -1,16 +1,38 @@
 .site-header {
+  width: var(--header-width);
+  height: 100vh;
+  background-color: var(--background-color);
+  border-right: 1px solid #ccc;
+}
+
+.header-container {
   position: fixed;
-  top: 2rem;
-  left: 2rem;
-  bottom: 2rem;
-  width: 100px;
+  width: var(--header-width);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  background-color: white;
-  border-radius: 20px;
-  padding: 1rem 0;
+  align-items: center;
+  background-color: var(--background-color);
+  border-right: 1px solid #ccc;
+}
+
+.top-section,
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding: var(--top-padding);
+}
+
+.top-section {
+  padding-bottom: 20px;
+}
+
+.bottom-section {
+  padding-top: 20px;
 }
 
 .logo-section {
@@ -25,34 +47,38 @@
   height: auto;
 }
 
-.nav-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
-
-.nav-section li {
-  margin: 1rem 0;
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .nav-section a {
   text-decoration: none;
   color: black;
-  font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-.bottom-section {
+.nav-section a:hover {
+  color: var(--purple-color);
+}
+
+.icon-links {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .icon-links a {
-  display: block;
-  margin-bottom: 1rem;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.icon-links a:hover {
+  color: var(--purple-color);
 }
 
 .icon-links img {
@@ -61,7 +87,6 @@
 }
 
 .language-toggle button {
-  margin-top: 1rem;
   background: none;
   border: none;
   font-size: 12px;
