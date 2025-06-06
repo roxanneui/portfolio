@@ -3,23 +3,37 @@ import "./Header.css";
 import logo from "/assets/Logo.png";
 
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaPhoneFlip } from "react-icons/fa6";
 import { FaFileDownload } from "react-icons/fa";
 import { IoMailUnread } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
-function Header({ setActiveSection }) {
+function Header() {
   return (
-    <header className="site-header">
-      <div className="header-container">
+    <div className="header-container">
       <div className="top-section">
         <div className="logo-section">
           <img src={logo} alt="Logo" className="logo" />
         </div>
 
         <nav className="nav-section">
-          <a href="#projets" onClick={() => setActiveSection("projets")}>Projets</a>
-          <a href="#a-propos" onClick={() => setActiveSection("apropos")}>À propos</a>
-          <a href="#journal" onClick={() => setActiveSection("journal")}>Journal</a>
+          <NavLink
+            to="/projets"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            Projets
+          </NavLink>
+          <NavLink
+            to="/a-propos"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            À propos
+          </NavLink>
+          <NavLink
+            to="/journal"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            Journal
+          </NavLink>
         </nav>
       </div>
 
@@ -34,8 +48,7 @@ function Header({ setActiveSection }) {
           <button>EN</button> 
         </div>
       </div>
-      </div>
-    </header>
+    </div>
   );
 }
 

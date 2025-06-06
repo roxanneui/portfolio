@@ -7,4 +7,5 @@
 .content-wrapper {
   flex-grow: 1;
   overflow-y: auto;
+  margin-left: var(--header-width);
 }

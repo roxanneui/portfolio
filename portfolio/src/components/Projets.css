@@ -43,6 +43,15 @@
   grid-row-gap: 50px;
   padding-left: 20px;
   padding-right: 20px;
+
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1600px) {
+  .projets-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .projet-card {
@@ -55,6 +64,16 @@
   aspect-ratio: 16 / 9; 
   background-color: #d9d9d9;
   transition: opacity 0.3s ease;
+}
+
+.projet-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: auto;
 }
 
 .projet-card:hover .projet-image-placeholder {

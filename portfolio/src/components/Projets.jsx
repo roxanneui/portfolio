@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import './Projets.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Projets = () => {
   const filters = ["UI UX", "Direction Artistique", "Design graphique"];
   const [selectedFilter, setSelectedFilter] = useState(null);
+  const navigate = useNavigate();
 
   const projects = [
-    { title: "Écomiam", image: "./Ecomiam/Ecomiammockup2.1.png", tag: "UI UX" },
-    { title: "GaiaCo", image: "./GaiaGo/Logo.png", tag: "UI UX" },
-    { title: "WWWomen", image: "./wwwomen/wwwomen.png", tag: "UI UX" },
-    { title: "Michel et Colette", image: "#d9d9d9", tag: "Direction Artistique" },
-    { title: "Motif", image: "#d9d9d9", tag: "Design Graphique" },
-    { title: "Better", image: "#d9d9d9", tag: "UI UX" },
+    { title: "Écomiam", image: "./Ecomiam/Ecomiammockup2.1.png", tag: "UI UX", page: "ecomiam" },
+    { title: "GaiaCo", image: "./GaiaGo/Logo.png", tag: "UI UX", page: "wwwomen" },
+    { title: "WWWomen", image: "./wwwomen/wwwomen.png", tag: "UI UX", page: "wwwomen" },
+    { title: "Michel et Colette", image: "#d9d9d9", tag: "Direction Artistique", page: "" },
+    { title: "Motif", image: "#d9d9d9", tag: "Design Graphique", page: "" },
+    { title: "Better", image: "#d9d9d9", tag: "UI UX", page: "" },
   ];
 
   const filteredProjects = selectedFilter
@@ -41,12 +43,27 @@ const Projets = () => {
       {/* Projects Grid Section */}
       <div className="projets-grid">
         {filteredProjects.map((project, index) => (
-          <div key={index} className="projet-card">
+          <div
+            key={index}
+            className="projet-card"
+            onClick={() => {
+              if (project.page) {
+                navigate(`/projets/${project.page}`);
+              }
+            }}
+            style={{ cursor: project.page ? 'pointer' : 'default' }}
+          >
             <div 
               className="projet-image-placeholder" 
               style={{ backgroundColor: project.image }}
               aria-label={project.title}
-            ></div>
+            >
+              <img
+                src="./WWWomen/wwwomen.png"
+                alt={project.title}
+                className="projet-image"
+              />
+            </div>
             <p className="projet-title">{project.title}</p>
           </div>
         ))}

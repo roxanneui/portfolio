@@ -1,0 +1,31 @@
+.project-page-container {
+  padding: 40px 60px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.project-header {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.project-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-page-container {
+    padding: 25px;
+  }
+  .project-header h1 {
+    font-size: 2.2rem;
+  }
+}
