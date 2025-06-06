@@ -14,11 +14,11 @@
 
 .filter-button {
   background-color: transparent;
-  color: #333;
-  border: 1.5px solid #333;
+  color: #000000;
+  border: 1.5px solid #000000;
   padding: 8px 20px;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
 
   border-radius: 50px;
@@ -28,8 +28,8 @@
 
 .filter-button:hover,
 .filter-button.active {
-  background-color: #333;
-  color: #F8F5F2;
+  background-color: #9E74E6;
+  color: #000000;
 }
 
 
@@ -82,9 +82,9 @@
 
 /* Project title styling */
 .projet-title {
-  color: #333;
+  color: #000000;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 15px; /* Space between image and title */
   margin-bottom: 0;
   text-align: left; /* Aligns text to the left */

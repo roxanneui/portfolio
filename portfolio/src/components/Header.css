@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--background-color);
-  border-right: 1px solid #ccc;
+  border-right: 2px solid #ccc;
 }
 
 .top-section,
@@ -53,15 +53,16 @@
   text-decoration: none;
   color: black;
   font-size: 16px;
+  font-weight: 700;
 }
 
 .nav-section a:hover {
   color: var(--purple-color);
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-section a.active-link {
   color: var(--purple-color);
-  font-weight: bold;
 }
 
 .icon-links {
@@ -79,6 +80,8 @@
 
 .icon-links a:hover {
   color: var(--purple-color);
+  transition: all 0.2s ease-in-out;
+  
 }
 
 .icon-links img {

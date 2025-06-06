@@ -7,6 +7,10 @@ import Journal from "./components/Journal";
 
 import WWWomen from "./components/projets/WWWomen";
 import Ecomiam from "./components/projets/Ecomiam";
+import GaiaCo from "./components/projets/GaiaCo";
+import MichelEtColette from "./components/projets/MichelEtColette";
+import Motif from "./components/projets/Motif";
+import Better from "./components/projets/Better";
 
 import "./App.css";
 
@@ -23,6 +27,10 @@ function App() {
             
             <Route path="/projets/wwwomen" element={<WWWomen />} />
             <Route path="/projets/ecomiam" element={<Ecomiam />} />
+            <Route path="/projets/gaiaco" element={<GaiaCo />} />
+            <Route path="/projets/micheletcolette" element={<MichelEtColette />} />
+            <Route path="/projets/motif" element={<Motif />} />
+            <Route path="/projets/better" element={<Better />} />
             
             <Route path="/a-propos" element={<Apropos />} />
             <Route path="/journal" element={<Journal />} />

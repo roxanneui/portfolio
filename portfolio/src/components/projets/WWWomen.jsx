@@ -5,34 +5,34 @@ import './ProjectPage.css';
 const WWWomen = () => {
   const section1Texts = [
     {
-      title: 'Le Défi',
-      text: 'L\'objectif était de créer une plateforme inspirante pour mettre en lumière les réussites des femmes dans le domaine de la technologie, un secteur souvent sous-représenté.'
+      title: 'Le Concept',
+      text: 'L\'objectif était de créer une plateforme inspirante pour mettre en lumière les réussites des femmes.'
     },
     {
-      title: 'Notre Approche',
-      text: 'Nous avons opté pour un design épuré et une expérience utilisateur intuitive, centrée sur des histoires personnelles et des parcours professionnels authentiques.'
+      title: 'Mon Approche',
+      text: 'À partir du concept graphique de souligner le travail de femme, j\'ai créer une charte graphique avant de designer la mise en page du site. Je me suis appuyé sur les lois de gestalt notamment la loi de la proximité et la loi de la similarité pour organiser le contenu.'
     }
   ];
 
   const section1Images = [
     {
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071',
-      title: 'Atelier de Collaboration'
+      image: '../WWWomen/wwwomen3.png',
+      title: 'Accueil du site'
     },
     {
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070',
-      title: 'Session de Brainstorming'
+      image: '../WWWomen/wwwomen4.png',
+      title: 'Mockup tablette'
     },
     {
-      image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2070',
-      title: 'Wireframing et Prototypage'
+      image: '../WWWomen/CharteGraphique.png',
+      title: 'Charte Graphique'
     }
   ];
 
-  const section2Texts = [
+   const section2Images = [
     {
-      title: 'Le Résultat',
-      text: 'WWWomen est devenue une communauté florissante, offrant des ressources, du mentorat et une visibilité accrue pour des milliers de femmes, stimulant ainsi la diversité et l\'innovation dans le secteur.'
+      image: '../WWWomen/wwwomen1.png',
+      title: 'Mockup Ordinateur'
     }
   ];
 
@@ -41,12 +41,12 @@ const WWWomen = () => {
     <div className="project-page-container">
       <div className="project-header">
         <h1>WWWomen</h1>
-        <p>Une plateforme pour célébrer et connecter les femmes dans la tech.</p>
+        <p>Un site one-page pour célébrer et connecter les femmes</p>
       </div>
 
       <Section textData={section1Texts} imageData={section1Images} />
 
-      <Section textData={section2Texts} />
+      <Section imageData={section2Images}/>
     </div>
   );
 };

@@ -7,7 +7,7 @@
 .project-header {
   margin-bottom: 40px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #000000;
 }
 
 .project-header h1 {
@@ -17,7 +17,7 @@
 
 .project-header p {
   font-size: 1.2rem;
-  color: #666;
+  color: #000000;
 }
 
 /* Responsive adjustments */

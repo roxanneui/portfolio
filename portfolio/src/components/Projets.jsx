@@ -9,11 +9,11 @@ const Projets = () => {
 
   const projects = [
     { title: "Écomiam", image: "./Ecomiam/Ecomiammockup2.1.png", tag: "UI UX", page: "ecomiam" },
-    { title: "GaiaCo", image: "./GaiaCo/Logo.png", tag: "UI UX", page: "wwwomen" },
+    { title: "GaiaCo", image: "./GaiaCo/Logo.png", tag: "UI UX", page: "gaiaco" },
     { title: "WWWomen", image: "./WWWomen/wwwomen.png", tag: "UI UX", page: "wwwomen" },
-    { title: "Michel et Colette", image: "./MichelEtColette/PackRouge2.png", tag: "Direction Artistique", page: "" },
-    { title: "Motif", image: "./Motif/Motif.png", tag: "Design Graphique", page: "" },
-    { title: "Better", image: "#d9d9d9", tag: "UI UX", page: "" },
+    { title: "Michel et Colette", image: "./MichelEtColette/CharteLogo.png", tag: "Direction Artistique", page: "micheletcolette" },
+    { title: "Motif", image: "./Motif/Motif.png", tag: "Design Graphique", page: "motif" },
+    { title: "Better", image: "./Better/Better1.png", tag: "UI UX", page: "better" },
   ];
 
   const filteredProjects = selectedFilter

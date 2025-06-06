@@ -5,55 +5,70 @@ import './ProjectPage.css';
 const Ecomiam = () => {
   const section1Texts = [
     {
-      title: 'Le problème',
-      text: 'Le gaspillage alimentaire et l\'innaccessibilité aux produits vio est de plus en plus préoccupant'
-    },
-    {
-      title: 'Ma solution',
-      text: 'Créer une application mobile qui répond aux besoins de nombreuses personnes toutes conercnées par le gaspillage aliementaire et souhaitant gagner du temps'
+      title: 'La mission',
+      text: 'Réduire le gaspillage alimentaire et facilité l’accès aux produits bio. Une app pensé pour ceux qui veulent mieux gérer leur alimentation, leur temps et leur budgets.'
     },
     {
       title: 'Mon processus',
-      text: 'J\'ai pu réalisé les personnas, le wireframing. Lors de la phase de prototypage j\'ai pu itérer plusieurs fois avec mon équipe, afin d\'obtenir le meilleur résultat.'
+      text: 'J\'ai pu réalisé les personnas, participer à la création d\'un user flow, le wireframing. Lors de la phase de prototypage j\'ai pu itérer plusieurs fois avec mon équipe, afin d\'obtenir un résultat donnant la meilleur solution pour les problèmes de nos utilisateurs'
     }
   ];
 
   const section1Images = [
     {
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071',
+      image: '../Ecomiam/Ecomiammockup2.1.png',
       title: 'L\'application'
     }
   ];
 
   const section2Texts = [
     {
-      title: 'Un travail d\'équipe',
-      text: 'Ce projet blablabakabdkafhd Ce projet blablabakabdkafhd Ce projet blablabakabdkafhd Ce projet blablabakabdkafhd Ce projet blablabakabdkafhd Ce projet blablabakabdkafhd Ce projet blablabakabdkafhdCe projet blablabakabdkafhd'
+      title: '',
+      text: 'Ce projet UX for good m\'a permis de travailler en équipe. Nous avons rassembler nos forces et nos idées en faisant du brainstorm, des recherches utilisateurs, plusieurs prototypages individuels et collectifs avant de réaliser une UI finale sur Figma.'
     }
   ];
 
   const section2Images = [
     {
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070',
+      image: '../Ecomiam/EcomiamEva.png',
       title: 'Personas'
     },
     {
-      image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2070',
+      image: '../Ecomiam/Ecomiam1.png',
       title: 'User Journey'
+    }
+  ];
+
+  const section3Texts = [
+    {
+      title: '',
+      text: ''
+    }
+  ];
+  
+  const section3Images = [
+    {
+      image: '../Ecomiam/Ecomiam3.png',
+      title: 'Présentation'
+    },
+    {
+      image: '../Ecomiam/Ecomiammockup2.png',
+      title: 'Fonctionnalité rechercher'
     }
   ];
 
   return (
     <div className="project-page-container">
       <div className="project-header">
-        <h1>Ecomiam</h1>
-        <p>Une application mobile pour lutter contre le gaspillage alimentaire.</p>
+        <h1>Écomiam</h1>
+        <p>Une application éco-responsable qui lutte contre le gaspillage alimentaire</p>
       </div>
 
       <Section textData={section1Texts} imageData={section1Images} />
 
       <Section textData={section2Texts} imageData={section2Images} />
 
+      <Section textData={section3Texts} imageData={section3Images} />
     </div>
   );
 };
