@@ -9,10 +9,10 @@ const Projets = () => {
 
   const projects = [
     { title: "Écomiam", image: "./Ecomiam/Ecomiammockup2.1.png", tag: "UI UX", page: "ecomiam" },
-    { title: "GaiaCo", image: "./GaiaGo/Logo.png", tag: "UI UX", page: "wwwomen" },
-    { title: "WWWomen", image: "./wwwomen/wwwomen.png", tag: "UI UX", page: "wwwomen" },
-    { title: "Michel et Colette", image: "#d9d9d9", tag: "Direction Artistique", page: "" },
-    { title: "Motif", image: "#d9d9d9", tag: "Design Graphique", page: "" },
+    { title: "GaiaCo", image: "./GaiaCo/Logo.png", tag: "UI UX", page: "wwwomen" },
+    { title: "WWWomen", image: "./WWWomen/wwwomen.png", tag: "UI UX", page: "wwwomen" },
+    { title: "Michel et Colette", image: "./MichelEtColette/PackRouge2.png", tag: "Direction Artistique", page: "" },
+    { title: "Motif", image: "./Motif/Motif.png", tag: "Design Graphique", page: "" },
     { title: "Better", image: "#d9d9d9", tag: "UI UX", page: "" },
   ];
 
@@ -59,7 +59,7 @@ const Projets = () => {
               aria-label={project.title}
             >
               <img
-                src="./WWWomen/wwwomen.png"
+                src={project.image}
                 alt={project.title}
                 className="projet-image"
               />
