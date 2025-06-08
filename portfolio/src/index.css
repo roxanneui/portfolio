@@ -6,7 +6,8 @@
   --purple-color: #9E74E6;
   --purple-color-light: #9c27b0;
   --top-padding: 80px;
-  --background-color: #F8F5F2;
+  --left-padding: 20px;
+  --background-color: #FFF8F0;
   --header-width: 200px;
 }
 
@@ -14,5 +15,5 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
-  color: #111;
+  color: #000;
 }

@@ -1,14 +1,11 @@
-.apropos-container {
-  max-width: 1200px;
-  padding: var(--top-padding) var(--left-padding);
-  margin: 0;
-  color: #000;
+.journal-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: var(--top-padding) var(--left-padding);
 }
 
-.main-title {
+.journal-container h1 {
   font-size: 3.2rem;
   font-weight: bold;
   line-height: 1;
@@ -16,19 +13,14 @@
   padding-bottom: 3.5rem;
 }
 
-.paragraphs {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 100%;
-}
-
-.paragraph p {
-  margin-bottom: 1rem;
+.journal-container p {
+  font-size: 1rem;
   line-height: 1.5;
+  color: #000;
+  margin-bottom: 1rem;
 }
 
-.paragraph h3 {
+.journal-container h3 {
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--purple-color);

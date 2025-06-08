@@ -7,7 +7,24 @@ import { FaFileDownload } from "react-icons/fa";
 import { IoMailUnread } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
+import { useLanguage } from "../context/LanguageContext.jsx";
+
+const sectionNames = {
+  fr: {
+    projets: "Projets",
+    apropos: "À propos",
+    journal: "Journal",
+  },
+  en: {
+    projets: "Projects",
+    apropos: "About",
+    journal: "Journal",
+  },
+};
+
 function Header() {
+  const { language, toggleLanguage } = useLanguage();
+
   return (
     <div className="header-container">
       <div className="top-section">
@@ -20,19 +37,19 @@ function Header() {
             to="/projets"
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
-            Projets
+            {sectionNames[language].projets}
           </NavLink>
           <NavLink
             to="/a-propos"
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
-            À propos
+            {sectionNames[language].apropos}
           </NavLink>
           <NavLink
             to="/journal"
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
-            Journal
+            {sectionNames[language].journal}
           </NavLink>
         </nav>
       </div>
@@ -45,7 +62,9 @@ function Header() {
         </div>
 
         <div className="language-toggle">
-          <button>EN</button> 
+          <button onClick={toggleLanguage}>
+            {language === "fr" ? "FR" : "EN"}
+          </button> 
         </div>
       </div>
     </div>

@@ -14,6 +14,8 @@ import Better from "./components/projets/Better";
 
 import "./App.css";
 
+import { Navigate } from "react-router-dom";
+
 function App() {
   return (
     <>
@@ -22,7 +24,7 @@ function App() {
 
         <div className="content-wrapper">
           <Routes>
-            <Route path="/" element={<Projets />} />
+            <Route path="/" element={<Navigate to="/projets" replace />} />
             <Route path="/projets" element={<Projets />} />
             
             <Route path="/projets/wwwomen" element={<WWWomen />} />
