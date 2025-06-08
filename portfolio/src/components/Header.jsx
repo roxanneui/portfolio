@@ -39,9 +39,9 @@ function Header() {
 
       <div className="bottom-section">
         <div className="icon-links">
-          <a href="https://www.linkedin.com/in/tonprofil" target="_blank" rel="noreferrer"><FaLinkedinIn size={24} title="LinkedIn" /></a>
-          <a href="/ton-cv.pdf" download><FaFileDownload size={24} title="CV" /></a>
-          <a href="mailto:email@exemple.com"><IoMailUnread size={24} title="Email" /></a>
+          <a href="https://www.linkedin.com/in/roxanne-landry-144976289/" target="_blank" rel="noreferrer"><FaLinkedinIn size={24} title="LinkedIn" /></a>
+          <a href="/RoxanneLANDRYCVS.pdf" download><FaFileDownload size={24} title="CV" /></a>
+          <a href="mailto:roxannelandry.pro@gmail.com"><IoMailUnread size={24} title="Email" /></a>
         </div>
 
         <div className="language-toggle">
