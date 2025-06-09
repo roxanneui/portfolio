@@ -78,3 +78,30 @@
   margin: 0;
   text-align: left;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content-section,
+.section-row,
+.text-block,
+.image-card {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Optional: stagger animation for child elements */
+.section-row .text-block {
+  animation-delay: 0.2s;
+}
+.section-row .image-card {
+  animation-delay: 0.4s;
+}

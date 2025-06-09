@@ -24,7 +24,13 @@ const content = {
         images: [
           { image: '../WWWomen/wwwomen3.png', title: 'Accueil du site' },
           { image: '../WWWomen/wwwomen4.png', title: 'Mockup tablette' },
+        ],
+      },
+      {
+        texts: [],
+        images: [
           { image: '../WWWomen/CharteGraphique.png', title: 'Charte Graphique' },
+          { image: '../WWWomen/wwwomen2.png', title: 'Charte Graphique' },
         ],
       },
       {
