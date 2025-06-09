@@ -63,7 +63,7 @@ function Header() {
 
         <div className="language-toggle">
           <button onClick={toggleLanguage}>
-            {language === "fr" ? "FR" : "EN"}
+            {language === "fr" ? "EN" : "FR"}
           </button> 
         </div>
       </div>
