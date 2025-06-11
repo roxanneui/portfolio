@@ -96,3 +96,47 @@
   cursor: pointer;
   color: black;
 }
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Base styles for the sidebar */
+.header-container {
+  position: fixed;
+  width: var(--header-width);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  z-index: 998;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Mobile view: hidden by default */
+@media (max-width: 768px) {
+  .header-container {
+    transform: translateX(-100%);
+    width: 250px;
+  }
+
+  .header-container.open {
+    transform: translateX(0);
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+}
