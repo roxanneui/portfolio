@@ -24,7 +24,19 @@ const Section = ({ textData = [], imageData = [] }) => {
           {imageData.map((item, index) => (
             <div key={index} className="image-card">
               <div className="image-placeholder">
-                <img src={item.image} alt={item.title} />
+                {item.image && item.image.toLowerCase().endsWith('.mp4') ? (
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  >
+                    <source src={item.image} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ) : (
+                  <img src={item.image} alt={item.title} />
+                )}
               </div>
               <p className="image-title">{item.title}</p>
             </div>

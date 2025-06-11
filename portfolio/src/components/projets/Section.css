@@ -17,7 +17,6 @@
   margin-top: 50px;
 }
 
-
 /* --- Text Block Styling --- */
 
 .text-block {
@@ -55,13 +54,20 @@
   aspect-ratio: 16 / 9;
   background-color: #e9e9e9;
   margin-bottom: 15px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .image-card .image-placeholder img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
+}
+
+.image-card .image-placeholder video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
   display: block;
 }
 
@@ -71,4 +77,31 @@
   font-weight: 500;
   margin: 0;
   text-align: left;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content-section,
+.section-row,
+.text-block,
+.image-card {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Optional: stagger animation for child elements */
+.section-row .text-block {
+  animation-delay: 0.2s;
+}
+.section-row .image-card {
+  animation-delay: 0.4s;
 }

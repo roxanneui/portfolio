@@ -7,19 +7,19 @@ const content = {
     {
       title: "À la recherche d'une alternance dès septembre 2025 !",
       contents: [
-        "Animée par la passion des technologies et des arts visuels, j'ai débuté en design graphique, où j'ai appris à concrétiser des idées et à explorer la direction artistique. Aujourd'hui, je me spécialise en UI/UX pour associer design et expérience utilisateur. Dès septembre, j'intégrerai une formation bac +3 à ITECOM Paris. Curieuse et impliquée, j'aime expérimenter, comprendre les outils digitaux et réfléchir à l'impact du design dans notre quotidien numérique. Je prépare actuellement la certification Google UX Design et me réjouis d'approfondir l’UX, notamment les questions d’accessibilité ! Je développe chaque jour mes compétences clés de future UI/UX designer. Prête à mettre ma créativité au service de projets concrets, j’aspire à évoluer au sein d’une équipe passionnée !"
+        "Passionée par les technologies et les arts visuels, j'ai commencé mon parcours en design graphique, où j'ai appris à donner forme aux idées et à explorer la direction artistique. Aujourd'hui, je me spécialise en UI/UX pour allier design et expérience utilisateur. Je serai en formation bac +3 à ITECOM Paris dès septembre. Curieuse et investie, j'aime tester, comprendre les outils digitaux et réfléchir à l'application du design dans notre quotidien digital. Je prépare présentement la certification Google UX design. Je suis ravie de me former plus en profondeur à l’UX, notamment au notions d’accessibilité ! Je renforce mes compétences clées de future UI UX designer tout les jours. Je suis prête à mettre mes compétences et ma créativité au service de problématiques concrètes. J’ai envie de progresser dans une équipe de passionnés !"
       ]
     },
     {
       title: "Une passionnée de technologies",
       contents: [
-        "Depuis toujours, je m'intéresse aux possibilités infinies offertes par le digital : jeux vidéo, programmation, réseaux sociaux, webdesign, IA... J’ai envie de créer, d’innover et de contribuer à l’univers numérique ! Comprendre comment les utilisateurs interagissent avec la technologie et imaginer de nouvelles solutions me motive. Formée à l’intégration web (HTML, CSS, JS) dès le lycée, j’apprécie de saisir les contraintes techniques et de collaborer avec les développeurs. Pour moi, le digital, c’est aussi partager, échanger et progresser continuellement !"
+        "Depuis mon plus jeune âge, je suis curieuse des possibilités infinies des pixels. Jeux vidéos, programmation, réseaux sociaux, webdesign, IA. Je veux créer, innover et travailler avec et pour le digital ! J’ai envie de comprendre comment les humains interagissent avec la technologie et imaginer de nouvelles solutions. Formée à l’intégration web (HTML, CSS, JS) depuis le lycée, j’aime comprendre les contraintes techniques et collaborer avec les développeurs. Pour moi, le digital c’est aussi partager, échanger et progresser en permanence !"
       ]
     },
     {
-      title: "Échangeons ensemble",
+      title: "Discutons ensemble",
       contents: [
-        "Un poste, un projet, une question ou simplement envie de discuter design et digital ? N’hésitez pas à me contacter ! Je serais ravie d’échanger sur vos besoins, de partager des idées et de voir comment je peux contribuer."
+        "Un poste, un projet, une question ou simplement envie d’échanger sur le design et le digital ? N’hésitez pas à me contacter ! Je serai ravie de discuter de vos besoins, de partager des idées et de voir comment je peux contribuer."
       ]
     }
   ],
@@ -33,7 +33,7 @@ const content = {
     {
       title: "A technology enthusiast",
       contents: [
-        "Since childhood, I’ve been fascinated by the endless possibilities of digital: video games, programming, social media, web design, AI... I want to create, innovate, and contribute to the digital world! Understanding how people interact with technology and imagining new solutions inspires me. Trained in web integration (HTML, CSS, JS) since high school, I enjoy understanding technical constraints and collaborating with developers. For me, digital is also about sharing, exchanging ideas, and constantly improving!"
+        "Since I was very young, I have been curious about the endless possibilities of pixels. Video games, programming, social networks, web design, AI. I want to create, innovate, and work with and for digital technology! I want to understand how humans interact with technology and imagine new solutions. Trained in web integration (HTML, CSS, JS) since high school, I enjoy understanding technical constraints and collaborating with developers. For me, digital is also about sharing, exchanging, and continuously improving!"
       ]
     },
     {
@@ -51,8 +51,8 @@ const mainTitles = {
 };
 
 const signatures = {
-  fr: "- Roxanne Landry, étudiante en design graphique et UX UI à Paris.",
-  en: "- Roxanne Landry, graphic design and UX/UI student in Paris."
+  fr: "- Roxanne",
+  en: "- Roxanne"
 };
 
 function Apropos() {
