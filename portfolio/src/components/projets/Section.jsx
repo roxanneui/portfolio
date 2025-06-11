@@ -21,26 +21,29 @@ const Section = ({ textData = [], imageData = [] }) => {
 
       {imageData.length > 0 && (
         <div className="section-row image-row">
-          {imageData.map((item, index) => (
-            <div key={index} className="image-card">
-              <div className="image-placeholder">
-                {item.image && item.image.toLowerCase().endsWith('.mp4') ? (
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                  >
-                    <source src={item.image} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                ) : (
-                  <img src={item.image} alt={item.title} />
-                )}
+          {imageData.map((item, index) => {
+            const image = `/portfolio${item.image}`;
+            return (
+              <div key={index} className="image-card">
+                <div className="image-placeholder">
+                  {item.image && item.image.toLowerCase().endsWith('.mp4') ? (
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    >
+                      <source src={image} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <img src={image} alt={item.title} />
+                  )}
+                </div>
+                <p className="image-title">{item.title}</p>
               </div>
-              <p className="image-title">{item.title}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
     </section>

@@ -18,14 +18,14 @@ const content = {
           },
         ],
         images: [
-          { image: '../Motif/Motif.png', title: 'Motif' },
+          { image: '/Motif/Motif.png', title: 'Motif' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '../Motif/AfficheMotif.png', title: 'Affiche' },
-          { image: '../Motif/Objet.png', title: 'Objet' },
+          { image: '/Motif/AfficheMotif.png', title: 'Affiche' },
+          { image: '/Motif/Objet.png', title: 'Objet' },
         ],
       },
     ],
@@ -45,14 +45,14 @@ const content = {
           },
         ],
         images: [
-          { image: '../Motif/Motif.png', title: 'Pattern' },
+          { image: '/Motif/Motif.png', title: 'Pattern' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '../Motif/AfficheMotif.png', title: 'Poster' },
-          { image: '../Motif/Objet.png', title: 'Object' },
+          { image: '/Motif/AfficheMotif.png', title: 'Poster' },
+          { image: '/Motif/Objet.png', title: 'Object' },
         ],
       },
     ],

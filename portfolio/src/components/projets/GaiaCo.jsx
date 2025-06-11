@@ -22,15 +22,15 @@ const content = {
           },
         ],
         images: [
-          { image: '../GaiaCo/PersonaLaura.png', title: 'Premier Persona' },
-          { image: '../GaiaCo/ProblemeSolution.png', title: 'D\'une problématique à la solution' },
-          { image: '../GaiaCo/Wire1.png', title: 'Premier prototype' },
+          { image: '/GaiaCo/PersonaLaura.png', title: 'Premier Persona' },
+          { image: '/GaiaCo/ProblemeSolution.png', title: 'D\'une problématique à la solution' },
+          { image: '/GaiaCo/Wire1.png', title: 'Premier prototype' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '../GaiaCo/Logo.png', title: 'Logo évoquant le lien' },
+          { image: '/GaiaCo/Logo.png', title: 'Logo évoquant le lien' },
         ],
       },
     ],
@@ -54,15 +54,15 @@ const content = {
           },
         ],
         images: [
-          { image: '../GaiaCo/PersonaLaura.png', title: 'First Persona' },
-          { image: '../GaiaCo/ProblemeSolution.png', title: 'From problem to solution' },
-          { image: '../GaiaCo/Wire1.png', title: 'First prototype' },
+          { image: '/GaiaCo/PersonaLaura.png', title: 'First Persona' },
+          { image: '/GaiaCo/ProblemeSolution.png', title: 'From problem to solution' },
+          { image: '/GaiaCo/Wire1.png', title: 'First prototype' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '../GaiaCo/Logo.png', title: 'Logo symbolizing connection' },
+          { image: '/GaiaCo/Logo.png', title: 'Logo symbolizing connection' },
         ],
       },
     ],

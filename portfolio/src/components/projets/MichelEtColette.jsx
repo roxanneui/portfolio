@@ -18,14 +18,14 @@ const content = {
           },
         ],
         images: [
-          { image: '../MichelEtColette/CharteLogo.png', title: 'Charte du nouveau logo' },
-          { image: '../MichelEtColette/ChartePackaging.png', title: 'Détails du packaging' },
+          { image: '/MichelEtColette/CharteLogo.png', title: 'Charte du nouveau logo' },
+          { image: '/MichelEtColette/ChartePackaging.png', title: 'Détails du packaging' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '../MichelEtColette/Mockup1.png', title: 'Packaging en situation' },
+          { image: '/MichelEtColette/Mockup1.png', title: 'Packaging en situation' },
         ],
       },
     ],
@@ -45,14 +45,14 @@ const content = {
           },
         ],
         images: [
-          { image: '../MichelEtColette/CharteLogo.png', title: 'New logo guide' },
-          { image: '../MichelEtColette/ChartePackaging.png', title: 'Packaging details' },
+          { image: '/MichelEtColette/CharteLogo.png', title: 'New logo guide' },
+          { image: '/MichelEtColette/ChartePackaging.png', title: 'Packaging details' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '../MichelEtColette/Mockup1.png', title: 'Packaging in context' },
+          { image: '/MichelEtColette/Mockup1.png', title: 'Packaging in context' },
         ],
       },
     ],
