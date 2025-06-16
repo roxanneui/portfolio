@@ -9,7 +9,7 @@ const root = createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
     <LanguageProvider>
-      <BrowserRouter>
+      <BrowserRouter basename='/portfolio'>
         <App />
       </BrowserRouter>
     </LanguageProvider>

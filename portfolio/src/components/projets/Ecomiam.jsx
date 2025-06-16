@@ -23,7 +23,7 @@ const Ecomiam = () => {
             }
           ],
           images: [
-            { image: '../Ecomiam/Ecomiammockup2.1.png', title: "L'application" }
+            { image: '/Ecomiam/Ecomiammockup2.1.png', title: "L'application" }
           ]
         },
         {
@@ -34,15 +34,15 @@ const Ecomiam = () => {
             }
           ],
           images: [
-            { image: '../Ecomiam/EcomiamEva.png', title: "Personas" },
-            { image: '../Ecomiam/Ecomiam1.png', title: "User Journey" }
+            { image: '/Ecomiam/EcomiamEva.png', title: "Personas" },
+            { image: '/Ecomiam/Ecomiam1.png', title: "User Journey" }
           ]
         },
         {
           texts: [],
           images: [
-            { image: '../Ecomiam/Ecomiam3.png', title: "Présentation" },
-            { image: '../Ecomiam/Ecomiammockup2.png', title: "Fonctionnalité rechercher" }
+            { image: '/Ecomiam/Ecomiam3.png', title: "Présentation" },
+            { image: '/Ecomiam/Ecomiammockup2.png', title: "Fonctionnalité rechercher" }
           ]
         }
       ]
@@ -66,7 +66,7 @@ const Ecomiam = () => {
             }
           ],
           images: [
-            { image: '../Ecomiam/Ecomiammockup2.1.png', title: "The App" }
+            { image: '/Ecomiam/Ecomiammockup2.1.png', title: "The App" }
           ]
         },
         {
@@ -77,15 +77,15 @@ const Ecomiam = () => {
             }
           ],
           images: [
-            { image: '../Ecomiam/EcomiamEva.png', title: "Personas" },
-            { image: '../Ecomiam/Ecomiam1.png', title: "User Journey" }
+            { image: '/Ecomiam/EcomiamEva.png', title: "Personas" },
+            { image: '/Ecomiam/Ecomiam1.png', title: "User Journey" }
           ]
         },
         {
           texts: [],
           images: [
-            { image: '../Ecomiam/Ecomiam3.png', title: "Presentation" },
-            { image: '../Ecomiam/Ecomiammockup2.png', title: "Search feature" }
+            { image: '/Ecomiam/Ecomiam3.png', title: "Presentation" },
+            { image: '/Ecomiam/Ecomiammockup2.png', title: "Search feature" }
           ]
         }
       ]

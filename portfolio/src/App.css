@@ -9,3 +9,13 @@
   overflow-y: auto;
   margin-left: var(--header-width);
 }
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .content-wrapper {
+    margin-left: 0;
+  }
+}

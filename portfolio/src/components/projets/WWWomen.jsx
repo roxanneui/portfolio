@@ -22,21 +22,21 @@ const content = {
           },
         ],
         images: [
-          { image: '../WWWomen/wwwomen3.png', title: 'Accueil du site' },
-          { image: '../WWWomen/wwwomen4.png', title: 'Mockup tablette' },
+          { image: '/WWWomen/wwwomen3.png', title: 'Accueil du site' },
+          { image: '/WWWomen/wwwomen4.png', title: 'Mockup tablette' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '../WWWomen/CharteGraphique.png', title: 'Charte Graphique' },
-          { image: '../WWWomen/wwwomen2.png', title: 'Charte Graphique' },
+          { image: '/WWWomen/CharteGraphique.png', title: 'Charte Graphique' },
+          { image: '/WWWomen/wwwomen2.png', title: 'Charte Graphique' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '../WWWomen/wwwomen1.png', title: 'Mockup Ordinateur' },
+          { image: '/WWWomen/wwwomen1.png', title: 'Mockup Ordinateur' },
         ],
       },
     ],
@@ -60,15 +60,15 @@ const content = {
           },
         ],
         images: [
-          { image: '../WWWomen/wwwomen3.png', title: 'Website homepage' },
-          { image: '../WWWomen/wwwomen4.png', title: 'Tablet mockup' },
-          { image: '../WWWomen/CharteGraphique.png', title: 'Graphic identity' },
+          { image: '/WWWomen/wwwomen3.png', title: 'Website homepage' },
+          { image: '/WWWomen/wwwomen4.png', title: 'Tablet mockup' },
+          { image: '/WWWomen/CharteGraphique.png', title: 'Graphic identity' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '../WWWomen/wwwomen1.png', title: 'Desktop mockup' },
+          { image: '/WWWomen/wwwomen1.png', title: 'Desktop mockup' },
         ],
       },
     ],

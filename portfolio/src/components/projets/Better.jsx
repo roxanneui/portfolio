@@ -18,15 +18,15 @@ const content = {
           },
         ],
         images: [
-          { image: '../Better/Better1.png', title: 'Accueil du site' },
-          { image: '../Better/Better5.png', title: 'Aperçu global' },
+          { image: '/Better/Better1.png', title: 'Accueil du site' },
+          { image: '/Better/Better5.png', title: 'Aperçu global' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '../Better/BetterSam.png', title: 'Présentation de la Créatrice' },
-          { image: '../Better/Better4.mp4', title: 'Déclinaisons' },
+          { image: '/Better/BetterSam.png', title: 'Présentation de la Créatrice' },
+          { image: '/Better/Better4.mp4', title: 'Déclinaisons' },
         ],
       },
     ],
@@ -46,15 +46,15 @@ const content = {
           },
         ],
         images: [
-          { image: '../Better/Better1.png', title: 'Home Page' },
-          { image: '../Better/Better5.png', title: 'Global Overview' },
+          { image: '/Better/Better1.png', title: 'Home Page' },
+          { image: '/Better/Better5.png', title: 'Global Overview' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '../Better/BetterSam.png', title: 'Creator Presentation' },
-          { image: '../Better/Better4.mp4', title: 'Variations' },
+          { image: '/Better/BetterSam.png', title: 'Creator Presentation' },
+          { image: '/Better/Better4.mp4', title: 'Variations' },
         ],
       },
     ],
