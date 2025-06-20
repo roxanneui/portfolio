@@ -47,31 +47,45 @@ const content = {
 
   en: {
     header: {
-      title: 'Michel and Colette',
-      subtitle: 'The new savory snack brand',
+      title: 'Sockmates',
+      subtitle: 'For the love of socks',
     },
     sections: [
       {
         texts: [
           {
             title: 'The Brief',
-            text: 'One week to reimagine the Michel et Augustin brand — our aperitif companions. Colette arrives and takes charge. She wants a younger, veggie-focused audience and a modernized brand identity.',
+            text: 'Create a brand of accessories from the graphic concept to a 3D model of a pop up store for the accessories.',
           },
         ],
         images: [
-          { image: '/MichelEtColette/CharteLogo.png', title: 'New logo guide' },
-          { image: '/MichelEtColette/ChartePackaging.png', title: 'Packaging details' },
+          { image: '/Sockmates/Logo.png', title: '' },
+          { image: '/Sockmates/Explications.png', title: '' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '/MichelEtColette/Mockup1.png', title: 'Packaging in context' },
+          { image: '/Sockmates/Charte.png', title: '' },
+        ],
+      },
+      {
+        texts: [],
+        images: [
+          { image: '/Sockmates/Reserve.png', title: '' },
+          { image: '/Sockmates/Interdits.png', title: '' },
+        ],
+      },
+      {
+        texts: [],
+        images: [
+          { image: '/Sockmates/AfficheMockup.png', title: '' },
+          { image: '/Sockmates/Bar.png', title: 'First steps on blender to imagine a pop-up !' },
         ],
       },
     ],
   },
-};
+  };
 
 const Sockmates = () => {
   const { language } = useLanguage();
