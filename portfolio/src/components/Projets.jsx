@@ -18,6 +18,7 @@ const translations = {
       micheletcolette: "Michel et Colette",
       motif: "Motif",
       better: "Better",
+      sockmates: 'Sockmates',
     },
   },
   en: {
@@ -34,6 +35,7 @@ const translations = {
       micheletcolette: "Michel and Colette",
       motif: "Pattern",
       better: "Better",
+      sockmates: 'Sockmates',
     },
   },
 };
@@ -44,8 +46,7 @@ const projects = [
     tag: "uiux",
     page: "ecomiam",
   },
-  { image: "./GaiaCo/Logo.png", tag: "uiux", page: "gaiaco" },
-  { image: "./WWWomen/wwwomen.png", tag: "uiux", page: "wwwomen" },
+  { image: "./WWWomen/wwwomen1.png", tag: "uiux", page: "wwwomen" },
   {
     image: "./MichelEtColette/CharteLogo.png",
     tag: "artDirection",
@@ -53,6 +54,8 @@ const projects = [
   },
   { image: "./Motif/Motif.png", tag: "graphicDesign", page: "motif" },
   { image: "./Better/Better1.png", tag: "uiux", page: "better" },
+  { image: "./Sockmates/AfficheMockup.png", tag: "artDirection", page: "sockmates" },
+  { image: "./GaiaCo/Logo.png", tag: "uiux", page: "gaiaco" },
 ];
 
 const Projets = () => {
