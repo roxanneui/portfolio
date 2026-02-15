@@ -29,8 +29,8 @@ const content = {
       {
         texts: [],
         images: [
+          { image: '/WWWomen/wwwomen2.png'},
           { image: '/WWWomen/CharteGraphique.png', title: 'Charte Graphique' },
-          { image: '/WWWomen/wwwomen2.png', title: 'Charte Graphique' },
         ],
       },
       {
@@ -61,6 +61,7 @@ const content = {
         ],
         images: [
           { image: '/WWWomen/wwwomen3.png', title: 'Website homepage' },
+          { image: '/WWWomen/wwwomen2.png'},
           { image: '/WWWomen/wwwomen4.png', title: 'Tablet mockup' },
           { image: '/WWWomen/CharteGraphique.png', title: 'Graphic identity' },
         ],

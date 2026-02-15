@@ -5,15 +5,15 @@ import { useLanguage } from "../context/LanguageContext.jsx";
 const content = {
   fr: [
     {
-      title: "À la recherche d'une alternance dès septembre 2025 !",
+      title: "À la recherche d'une formation niveau Master dès septembre 2025 !",
       contents: [
-        "Passionée par les technologies et les arts visuels, j'ai commencé mon parcours en design graphique, où j'ai appris à donner forme aux idées et à explorer la direction artistique. Aujourd'hui, je me spécialise en UI/UX pour allier design et expérience utilisateur. Je serai en formation bac +3 à ITECOM Paris dès septembre. Curieuse et investie, j'aime tester, comprendre les outils digitaux et réfléchir à l'application du design dans notre quotidien digital. Je prépare présentement la certification Google UX design. Je suis ravie de me former plus en profondeur à l’UX, notamment au notions d’accessibilité ! Je renforce mes compétences clées de future UI UX designer tout les jours. Je suis prête à mettre mes compétences et ma créativité au service de problématiques concrètes. J’ai envie de progresser dans une équipe de passionnés !"
+        "Curieuse et passionnée par le digital, le design UI/UX et les nouvelles technologies, je souhaite intégrer un master afin de perfectionner mes compétences et me préparer aux métiers du numérique de demain."
       ]
     },
     {
-      title: "Une passionnée de technologies",
+      title: "Mon parcours",
       contents: [
-        "Depuis mon plus jeune âge, je suis curieuse des possibilités infinies des pixels. Jeux vidéos, programmation, réseaux sociaux, webdesign, IA. Je veux créer, innover et travailler avec et pour le digital ! J’ai envie de comprendre comment les humains interagissent avec la technologie et imaginer de nouvelles solutions. Formée à l’intégration web (HTML, CSS, JS) depuis le lycée, j’aime comprendre les contraintes techniques et collaborer avec les développeurs. Pour moi, le digital c’est aussi partager, échanger et progresser en permanence !"
+        "Après 2 ans en design graphique, j’ai appris à développer une sensibilité visuelle et à explorer la direction artistique. Aujourd’hui, je me spécialise en UI/UX design afin de concevoir des expériences utiles, intuitives et centrées sur l’utilisateur.Je poursuis actuellement une formation Bac+3 à ITECOM Paris. J’aime tester, comprendre et analyser les outils digitaux, tout en réfléchissant à l’impact du design dans notre quotidien numérique. Je porte un intérêt particulier aux notions d’accessibilité. Formée à l’intégration web (HTML, CSS, JavaScript) depuis le lycée, je comprends les contraintes techniques et apprécie la collaboration avec les développeurs. Le digital représente pour moi un espace d’apprentissage continu, d’expérimentation et de partage. Motivée par des projets concrets et porteurs de sens, je souhaite continuer à développer mes compétences au sein d’un master exigeant, en me préparant à intégrer des équipes pluridisciplinaires dans les métiers du numérique."
       ]
     },
     {
@@ -25,15 +25,15 @@ const content = {
   ],
   en: [
     {
-      title: "Seeking an apprenticeship from September 2025!",
+      title: "Seeking a master degree from September 2025!",
       contents: [
-        "Driven by a passion for technology and visual arts, I started out in graphic design, learning to bring ideas to life and explore art direction. Now, I’m specializing in UI/UX to blend design with user experience. This September, I’ll begin a bac +3 program at ITECOM Paris. Curious and committed, I enjoy experimenting, exploring digital tools, and considering how design shapes our digital lives. I’m currently preparing for the Google UX Design certification and look forward to deepening my knowledge of UX, especially accessibility! Every day, I strengthen my core skills as a future UI/UX designer. Ready to apply my creativity to real-world challenges, I’m eager to grow within a passionate team!"
+        "Curious and passionate about digital technologies, UI/UX design, and emerging technologies, I aim to pursue a master’s degree to refine my skills and prepare for the digital careers of tomorrow."
       ]
     },
     {
-      title: "A technology enthusiast",
+      title: "My journey",
       contents: [
-        "Since I was very young, I have been curious about the endless possibilities of pixels. Video games, programming, social networks, web design, AI. I want to create, innovate, and work with and for digital technology! I want to understand how humans interact with technology and imagine new solutions. Trained in web integration (HTML, CSS, JS) since high school, I enjoy understanding technical constraints and collaborating with developers. For me, digital is also about sharing, exchanging, and continuously improving!"
+        "After two years in graphic design, I learned how to turn ideas into visual concepts, develop a strong visual sensitivity, and explore art direction. Today, I am specializing in UI/UX design to create useful, intuitive, and user-centered experiences.I am currently completing a Bachelor’s degree (Bac+3 equivalent) at ITECOM Paris. Curious and highly engaged, I enjoy testing, understanding, and analyzing digital tools while reflecting on the impact of design in our everyday digital lives. I have a strong interest in accessibility, which I consider essential to designing responsible and inclusive interfaces.Trained in web integration (HTML, CSS, JavaScript) since high school, I understand technical constraints and value close collaboration with developers. For me, digital design is a space for continuous learning, experimentation, and knowledge sharing.Driven by meaningful, real-world projects, I aim to further develop my skills through a demanding master’s program and prepare to work within multidisciplinary teams in the digital field."
       ]
     },
     {

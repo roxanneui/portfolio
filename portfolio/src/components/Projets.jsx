@@ -12,6 +12,8 @@ const translations = {
     ],
     allProjects: "Tous les projets",
     projectTitles: {
+      talia: "Talia",
+      handisport: "Handisport",
       ecomiam: "Écomiam",
       gaiaco: "GaiaCo",
       wwwomen: "WWWomen",
@@ -29,6 +31,8 @@ const translations = {
     ],
     allProjects: "All projects",
     projectTitles: {
+      talia: "Talia",
+      handisport: "Handisport",
       ecomiam: "Ecomiam",
       gaiaco: "GaiaCo",
       wwwomen: "WWWomen",
@@ -41,6 +45,16 @@ const translations = {
 };
 
 const projects = [
+  {
+    image: "./Talia/Talia_Image.png",
+    tag: "uiux",
+    page: "talia",
+  },
+  {
+    image: "./Handisport/HandisportImage.png",
+    tag: "uiux",
+    page: "handisport",
+  },
   {
     image: "./Ecomiam/Ecomiammockup2.1.png",
     tag: "uiux",

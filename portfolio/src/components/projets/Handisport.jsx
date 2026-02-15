@@ -1,32 +1,31 @@
 import React from 'react';
-import Section from './Section';
+import Section from './Section.jsx';
 import './ProjectPage.css';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 
 const content = {
   fr: {
     header: {
-      title: 'Better',
-      subtitle: 'Conception UI d\'un blog mettant en avant des objets de design écoresponsable',
+      title: 'Handisport',
+      subtitle: '5 heures pour faire une refonte du site dans le cadre d\'un partiel.',
     },
     sections: [
       {
         texts: [
           {
-            title: 'Mon Travail',
-            text: 'En m\'inspirant directement de l\'objet mis en valeur dans cette version du site, j\'ai créé un moodboard et un univers graphique à Better.',
+            title: 'Le défi',
+            text: 'J’ai réalisé une refonte du site handisport.org en 5 heures. Mon travail s’est concentré sur l’ergonomie afin de réduire la surcharge visuelle et améliorer la lisibilité. J’ai mis en place une navigation à facettes et appliqué des principes de Gestalt tels que la similarité et la continuité pour créer une interface plus agréable et intuitive.',
           },
         ],
         images: [
-          { image: '/Better/Better1.png', title: 'Accueil du site' },
-          { image: '/Better/Better5.png', title: 'Aperçu global' },
+          { image: '/Handisport/Handisport_AvantApres.png', title: 'Avant/Après' },
         ],
       },
       {
         texts: [],
         images: [
-          { image: '/Better/BetterSam.png', title: 'Présentation de la créatrice' },
-          { image: '/Better/Better4.mp4', title: 'Carousel des produits' },
+           { image: '/Handisport/HandisportAccueil.png', title: 'Page d\'Accueil' },
+          { image: '/Handisport/HandisportNosSports.png', title: 'Page Nos ports' },
         ],
       },
     ],
@@ -42,7 +41,7 @@ const content = {
         texts: [
           {
             title: 'My Work',
-            text: 'Inspired directly by the object highlighted on the site, I created a moodboard and graphic universe for Better.',
+            text: 'As part of an exam project, I redesigned a website in just 5 hours. My focus was on ergonomics to reduce visual clutter and improve readability. I implemented a faceted navigation and applied Gestalt principles such as similarity and continuity to create a more intuitive and visually pleasant UI.',
           },
         ],
         images: [
@@ -61,7 +60,7 @@ const content = {
   },
 };
 
-const Better = () => {
+const Handisport = () => {
   const { language } = useLanguage();
   const langContent = content[language];
 
@@ -79,4 +78,4 @@ const Better = () => {
   );
 };
 
-export default Better;
+export default Handisport;

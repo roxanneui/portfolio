@@ -12,6 +12,8 @@ import MichelEtColette from "./components/projets/MichelEtColette";
 import Motif from "./components/projets/Motif";
 import Better from "./components/projets/Better";
 import Sockmates from "./components/projets/Sockmates";
+import Handisport from "./components/projets/Handisport";
+import Talia from "./components/projets/Talia";
 
 import "./App.css";
 
@@ -35,7 +37,9 @@ function App() {
             <Route path="/projets/motif" element={<Motif />} />
             <Route path="/projets/better" element={<Better />} />
             <Route path="/projets/sockmates" element={<Sockmates />} />
-            
+            <Route path="/projets/handisport" element={<Handisport />} />
+            <Route path="/projets/talia" element={<Talia />} />
+
             <Route path="/a-propos" element={<Apropos />} />
             <Route path="/journal" element={<Journal />} />
             
