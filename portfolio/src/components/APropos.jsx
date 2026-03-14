@@ -5,7 +5,7 @@ import { useLanguage } from "../context/LanguageContext.jsx";
 const content = {
   fr: [
     {
-      title: "À la recherche d'une formation niveau Master dès septembre 2025 !",
+      title: "À la recherche d'une formation niveau Master dès septembre 2026 !",
       contents: [
         "Curieuse et passionnée par le digital, le design UI/UX et les nouvelles technologies, je souhaite intégrer un master afin de perfectionner mes compétences et me préparer aux métiers du numérique de demain."
       ]

@@ -15,7 +15,7 @@ const Ecomiam = () => {
           texts: [
             {
               title: "La mission",
-              text: "Réduire le gaspillage alimentaire et facilité l’accès aux produits bio. Une app pensée pour ceux qui veulent mieux gérer leur alimentation, leur temps et leur budget."
+              text: "Réduire le gaspillage alimentaire et faciliter l’accès aux produits bio. Une app pensée pour ceux qui veulent mieux gérer leur alimentation, leur temps et leur budget."
             },
             {
               title: "Mon processus",

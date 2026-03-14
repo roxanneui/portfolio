@@ -38,8 +38,7 @@ const content = {
       {
         texts: [],
         images: [
-          { image: '/Sockmates/AfficheMockup.png', title: '' },
-          { image: '/Sockmates/Bar.png', title: 'Initiation à Blender pour créer un point de vente' },
+          { image: '/Sockmates/AfficheMockup.png', title: '' }
         ],
       },
     ],

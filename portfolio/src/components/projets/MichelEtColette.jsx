@@ -18,7 +18,7 @@ const content = {
           },
         ],
         images: [
-          { image: '/MichelEtColette/CharteLogo.png', title: 'Charte du nouveau logo' },
+          { image: '/MichelEtColette/CharteLogo.png', title: '' },
           { image: '/MichelEtColette/ChartePackaging.png', title: 'Détails du packaging' },
         ],
       },

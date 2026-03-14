@@ -21,6 +21,7 @@ const translations = {
       motif: "Motif",
       better: "Better",
       sockmates: 'Sockmates',
+      protectioncivile: 'Protection Civile',
     },
   },
   en: {
@@ -40,6 +41,7 @@ const translations = {
       motif: "Pattern",
       better: "Better",
       sockmates: 'Sockmates',
+      protectioncivile: 'Protection Civile',
     },
   },
 };
@@ -69,7 +71,7 @@ const projects = [
   { image: "./Motif/Motif.png", tag: "graphicDesign", page: "motif" },
   { image: "./Better/Better1.png", tag: "uiux", page: "better" },
   { image: "./Sockmates/AfficheMockup.png", tag: "artDirection", page: "sockmates" },
-  { image: "./GaiaCo/Logo.png", tag: "uiux", page: "gaiaco" },
+  { image: "./ProtectionCivile/MockupTshirt.jpg", tag: "uiux", page: "protectioncivile" },
 ];
 
 const Projets = () => {

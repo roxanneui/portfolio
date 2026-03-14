@@ -7,14 +7,14 @@ const content = {
   fr: {
     header: {
       title: 'Talia',
-      subtitle: 'Design du tout nouveau chatbot d\'Antalis.',
+      subtitle: 'Design de l\'identité visuelle et du design UI du nouveau chatbot d\'Antalis.',
     },
     sections: [
       {
         texts: [
           {
             title: 'Contexte',
-            text: 'Dans le cadre de mon alternance chez Antalis, j\'ai eu l\'opportunité de créer l\'UI de la fenêtre de conversation Talia. J\'ai fais plusieurs itérations et tests. Les enjeux principaux étaient de rester dans les codes de la charte graphique d\'Antalis et de collaborer avec les developpeurs par rapport à la faisabilité technique.',
+            text: 'Dans le cadre de mon alternance chez Antalis, j\'ai eu l\'opportunité de créer Talia. J\'ai fais plusieurs itérations et tests. Les enjeux principaux étaient de rester dans les codes de la charte graphique d\'Antalis et de collaborer avec les developpeurs par rapport à la faisabilité technique.',
           },
         ],
         images: [

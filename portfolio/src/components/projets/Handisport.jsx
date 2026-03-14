@@ -14,7 +14,7 @@ const content = {
         texts: [
           {
             title: 'Le défi',
-            text: 'J’ai réalisé une refonte du site handisport.org en 5 heures. Mon travail s’est concentré sur l’ergonomie afin de réduire la surcharge visuelle et améliorer la lisibilité. J’ai mis en place une navigation à facettes et appliqué des principes de Gestalt tels que la similarité et la continuité pour créer une interface plus agréable et intuitive.',
+            text: 'J’ai réalisé une refonte du site handisport.org. Je me suis concentrée sur l’ergonomie afin de réduire la surcharge visuelle et améliorer la lisibilité. De plus, j’ai mis en place une navigation à facettes et appliqué des principes de Gestalt tels que la similarité et la continuité pour créer une interface plus agréable et intuitive.',
           },
         ],
         images: [
@@ -25,7 +25,7 @@ const content = {
         texts: [],
         images: [
            { image: '/Handisport/HandisportAccueil.png', title: 'Page d\'Accueil' },
-          { image: '/Handisport/HandisportNosSports.png', title: 'Page Nos ports' },
+          { image: '/Handisport/HandisportNosSports.png', title: 'Page Nos sports' },
         ],
       },
     ],
